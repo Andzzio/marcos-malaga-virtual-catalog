@@ -1,0 +1,420 @@
+[
+  {
+    "id": "PROD-001",
+    "name": "Abrigo Otoño a Cuadros",
+    "description": "Hermoso abrigo de tela gruesa ideal para el clima frío. Diseño geométrico moderno de la colección de invierno. Material premium con forro interno.",
+    "basePrice": 180,
+    "discountPrice": 150,
+    "categoryIds": [
+      "abrigos",
+      "invierno",
+      "nuevo"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-001-A",
+        "name": "Naranja Geométrico",
+        "hexCode": "#CC5500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 5,
+            "sku": "ABR-NAR-S"
+          },
+          {
+            "size": "M",
+            "stock": 2,
+            "sku": "ABR-NAR-M"
+          },
+          {
+            "size": "L",
+            "stock": 0,
+            "sku": "ABR-NAR-L"
+          },
+          {
+            "size": "XL",
+            "stock": 4,
+            "sku": "ABR-NAR-XL"
+          }
+        ]
+      },
+      {
+        "id": "DES-001-B",
+        "name": "Gris Clásico",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 0,
+            "sku": "ABR-GRI-M"
+          },
+          {
+            "size": "XL",
+            "stock": 6,
+            "sku": "ABR-GRI-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-002",
+    "name": "Pantalón Palazzo Rígido",
+    "description": "Pantalón de tiro alto con caída suelta. Ideal para la oficina o salidas formales.",
+    "basePrice": 120,
+    "discountPrice": null,
+    "categoryIds": [
+      "pantalones",
+      "oficina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-002-A",
+        "name": "Vino",
+        "hexCode": "#800020",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 10,
+            "sku": "PAL-VIN-32"
+          },
+          {
+            "size": "34",
+            "stock": 5,
+            "sku": "PAL-VIN-34"
+          },
+          {
+            "size": "36",
+            "stock": 0,
+            "sku": "PAL-VIN-36"
+          }
+        ]
+      },
+      {
+        "id": "DES-002-B",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 15,
+            "sku": "PAL-NEG-34"
+          },
+          {
+            "size": "36",
+            "stock": 8,
+            "sku": "PAL-NEG-36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-003",
+    "name": "Blusa Florencia",
+    "description": "Blusa ligera de verano con mangas abullonadas y cuello cuadrado.",
+    "basePrice": 85,
+    "discountPrice": 70,
+    "categoryIds": [
+      "blusas",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-003-A",
+        "name": "Blanco Puro",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 2,
+            "sku": "BLU-FLO-BLA-S"
+          },
+          {
+            "size": "M",
+            "stock": 0,
+            "sku": "BLU-FLO-BLA-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-004",
+    "name": "Vestido Gala Noche",
+    "description": "Vestido largo de satén con abertura lateral.",
+    "basePrice": 250,
+    "discountPrice": null,
+    "categoryIds": [
+      "vestidos",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-004-A",
+        "name": "Verde Esmeralda",
+        "hexCode": "#50C878",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 1,
+            "sku": "VES-GAL-VER-M"
+          },
+          {
+            "size": "L",
+            "stock": 1,
+            "sku": "VES-GAL-VER-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-005",
+    "name": "Casaca Denim Vintage",
+    "description": "Casaca de jean con diseño oversized y rasgados ligeros.",
+    "basePrice": 140,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-005-A",
+        "name": "Azul Clásico",
+        "hexCode": "#0F52BA",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 8,
+            "sku": "DEN-AZU-S"
+          },
+          {
+            "size": "M",
+            "stock": 12,
+            "sku": "DEN-AZU-M"
+          },
+          {
+            "size": "L",
+            "stock": 3,
+            "sku": "DEN-AZU-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-006",
+    "name": "Enterizo de Lino",
+    "description": "Enterizo fresco de lino para la temporada de calor, con cinturón ajustable.",
+    "basePrice": 160,
+    "discountPrice": 130,
+    "categoryIds": [
+      "enterizos",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-006-A",
+        "name": "Beige Oscuro",
+        "hexCode": "#D2B48C",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 0,
+            "sku": "ENT-LIN-BEI-M"
+          },
+          {
+            "size": "XL",
+            "stock": 5,
+            "sku": "ENT-LIN-BEI-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-007",
+    "name": "Falda Midi Plisada",
+    "description": "Falda a media pierna con pliegues, cintura elástica.",
+    "basePrice": 90,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-007-A",
+        "name": "Rosa Palo",
+        "hexCode": "#FFB6C1",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 4,
+            "sku": "FAL-PLI-ROS-S"
+          },
+          {
+            "size": "M",
+            "stock": 4,
+            "sku": "FAL-PLI-ROS-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-008",
+    "name": "Sweater Tejido Grueso",
+    "description": "Chompa de hilo grueso, modelo holgado y súper abrigador.",
+    "basePrice": 110,
+    "discountPrice": 99,
+    "categoryIds": [
+      "chompas",
+      "invierno"
+    ],
+    "isVisible": false,
+    "designs": [
+      {
+        "id": "DES-008-A",
+        "name": "Mostaza",
+        "hexCode": "#FFDB58",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "Unitalla",
+            "stock": 0,
+            "sku": "SWE-MOS-UNI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-009",
+    "name": "Short de Verano",
+    "description": "Short de tela ligera con bolsillos utilitarios.",
+    "basePrice": 75,
+    "discountPrice": null,
+    "categoryIds": [
+      "shorts",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-009-A",
+        "name": "Verde Olivo",
+        "hexCode": "#808000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 10,
+            "sku": "SHO-OLI-32"
+          },
+          {
+            "size": "34",
+            "stock": 10,
+            "sku": "SHO-OLI-34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-010",
+    "name": "Chaqueta Biker Cuero",
+    "description": "Chaqueta estilo motociclista en cuero sintético premium.",
+    "basePrice": 190,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-010-A",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 2,
+            "sku": "BIK-NEG-S"
+          },
+          {
+            "size": "L",
+            "stock": 1,
+            "sku": "BIK-NEG-L"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "BANNER-001",
+    "desktopImageUrl": "assets/images/banners/banner_1.jpg",
+    "mobileImageUrl": "assets/images/banners/banner_1.jpg",
+    "title": "Colección Nocturna",
+    "actionType": "openCategory",
+    "actionValue": "coleccion_nocturna",
+    "isActive": true
+  },
+  {
+    "id": "BANNER-002",
+    "desktopImageUrl": "assets/images/banners/banner_2.jpg",
+    "mobileImageUrl": "assets/images/banners/banner_2.jpg",
+    "title": "Colección Brisa",
+    "actionType": "openCategory",
+    "actionValue": "coleccion_brisa",
+    "isActive": true
+  },
+  {
+    "id": "BANNER-003",
+    "desktopImageUrl": "assets/images/banners/banner_3.jpg",
+    "mobileImageUrl": "assets/images/banners/banner_3.jpg",
+    "title": "Colección Aurora",
+    "actionType": "openCategory",
+    "actionValue": "coleccion_aurora",
+    "isActive": true
+  }
+]
