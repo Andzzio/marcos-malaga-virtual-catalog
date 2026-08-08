@@ -4,7 +4,7 @@ import 'product_size_entity.dart';
 class ProductDesignEntity extends Equatable {
   final String id;
   final String name;
-  final String? hexCode;
+  final int? colorValue;
   final String? swatchImageUrl;
   final List<String> imageUrls;
   final List<ProductSizeEntity> sizes;
@@ -12,7 +12,7 @@ class ProductDesignEntity extends Equatable {
   const ProductDesignEntity({
     required this.id,
     required this.name,
-    this.hexCode,
+    this.colorValue,
     this.swatchImageUrl,
     required this.imageUrls,
     required this.sizes,
@@ -21,7 +21,7 @@ class ProductDesignEntity extends Equatable {
   ProductDesignEntity copyWith({
     String? id,
     String? name,
-    String? hexCode,
+    int? colorValue,
     String? swatchImageUrl,
     List<String>? imageUrls,
     List<ProductSizeEntity>? sizes,
@@ -29,7 +29,7 @@ class ProductDesignEntity extends Equatable {
     return ProductDesignEntity(
       id: id ?? this.id,
       name: name ?? this.name,
-      hexCode: hexCode ?? this.hexCode,
+      colorValue: colorValue ?? this.colorValue,
       swatchImageUrl: swatchImageUrl ?? this.swatchImageUrl,
       imageUrls: imageUrls ?? this.imageUrls,
       sizes: sizes ?? this.sizes,
@@ -40,7 +40,7 @@ class ProductDesignEntity extends Equatable {
   List<Object?> get props => [
     id,
     name,
-    hexCode,
+    colorValue,
     swatchImageUrl,
     imageUrls,
     sizes,

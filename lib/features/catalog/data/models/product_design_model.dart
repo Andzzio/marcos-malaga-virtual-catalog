@@ -49,10 +49,16 @@ class ProductDesignModel {
   }
 
   ProductDesignEntity toEntity() {
+    int? parsedColor;
+    if (hexCode != null && hexCode!.isNotEmpty) {
+      final cleanHex = hexCode!.replaceFirst('#', '0xFF');
+      parsedColor = int.tryParse(cleanHex);
+    }
+
     return ProductDesignEntity(
       id: id,
       name: name,
-      hexCode: hexCode,
+      colorValue: parsedColor,
       swatchImageUrl: swatchImageUrl,
       imageUrls: imageUrls,
       sizes: sizes.map((e) => e.toEntity()).toList(),
@@ -60,10 +66,15 @@ class ProductDesignModel {
   }
 
   factory ProductDesignModel.fromEntity(ProductDesignEntity entity) {
+    String? stringHex;
+    if (entity.colorValue != null) {
+      stringHex = '#${entity.colorValue!.toRadixString(16).substring(2).toUpperCase()}';
+    }
+
     return ProductDesignModel(
       id: entity.id,
       name: entity.name,
-      hexCode: entity.hexCode,
+      hexCode: stringHex,
       swatchImageUrl: entity.swatchImageUrl,
       imageUrls: entity.imageUrls,
       sizes: entity.sizes.map((e) => ProductSizeModel.fromEntity(e)).toList(),

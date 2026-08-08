@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/providers/banners_provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:marcos_malaga_app/features/catalog/presentation/widgets/custom_image.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/image/custom_image.dart';
 
 class BannerCarousel extends ConsumerStatefulWidget {
   const BannerCarousel({super.key});
@@ -79,3 +79,4 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
     );
   }
 }
+

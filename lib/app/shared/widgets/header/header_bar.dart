@@ -74,7 +74,9 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                         context,
                       ).textTheme.labelMedium?.copyWith(color: textColor),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      context.go('/new-arrivals');
+                    },
                   ),
                   TextButton(
                     style: TextButton.styleFrom(overlayColor: Colors.grey),
@@ -84,7 +86,9 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                         context,
                       ).textTheme.labelMedium?.copyWith(color: textColor),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      context.go('/catalog');
+                    },
                   ),
                   TextButton(
                     style: TextButton.styleFrom(overlayColor: Colors.grey),
@@ -94,7 +98,9 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                         context,
                       ).textTheme.labelMedium?.copyWith(color: textColor),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      context.go('/xl-sizes');
+                    },
                   ),
                 ],
               ),
@@ -118,7 +124,9 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.go('/login');
+                  },
                   icon: FaIcon(
                     FontAwesomeIcons.user,
                     color: textColor,

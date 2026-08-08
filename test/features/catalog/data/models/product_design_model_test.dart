@@ -29,7 +29,7 @@ void main() {
   const tProductDesignEntity = ProductDesignEntity(
     id: 'DES-123',
     name: 'Vino',
-    hexCode: '#800020',
+    colorValue: 0xFF800020,
     swatchImageUrl: null,
     imageUrls: ['img1.jpg', 'img2.jpg'],
     sizes: [tProductSizeEntity],

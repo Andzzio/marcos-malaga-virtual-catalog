@@ -41,7 +41,11 @@ class _ProductCartButtonState extends State<ProductCartButton> {
             mainAxisSize: MainAxisSize.min,
             spacing: 6,
             children: [
-              FaIcon(FontAwesomeIcons.cartPlus, size: 14, color: Colors.black),
+              FaIcon(
+                FontAwesomeIcons.cartPlus,
+                size: 14,
+                color: Theme.of(context).colorScheme.primary,
+              ),
               if (_isHovered)
                 Text(
                   'Elegir',

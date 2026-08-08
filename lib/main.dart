@@ -17,7 +17,7 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      title: 'Marcos Malaga App',
+      title: 'Marcos Malaga',
       theme: AppTheme.lightTheme,
     );
   }

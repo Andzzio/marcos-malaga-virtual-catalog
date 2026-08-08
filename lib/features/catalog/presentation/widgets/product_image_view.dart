@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
-import 'package:marcos_malaga_app/features/catalog/presentation/widgets/custom_image.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/image/custom_image.dart';
 import 'package:photo_view/photo_view.dart';
 
 class ProductImageView extends StatefulWidget {
   final ProductEntity product;
-  const ProductImageView({super.key, required this.product});
+  final String heroPrefix;
+  const ProductImageView({
+    super.key,
+    required this.product,
+    this.heroPrefix = 'detail',
+  });
 
   @override
   State<ProductImageView> createState() => _ProductImageViewState();
@@ -51,6 +56,21 @@ class _ProductImageViewState extends State<ProductImageView> {
                     child: PhotoView(
                       tightMode: true,
                       imageProvider: AssetImage(imageUrl),
+                      heroAttributes: PhotoViewHeroAttributes(
+                        tag:
+                            '${widget.heroPrefix}_photo_view_${widget.product.id}',
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: 10,
+                    right: 10,
+                    child: IconButton(
+                      color: Colors.white,
+                      icon: FaIcon(FontAwesomeIcons.x),
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
                     ),
                   ),
                 ],
@@ -89,7 +109,11 @@ class _ProductImageViewState extends State<ProductImageView> {
                       onTap: () {
                         _openInteractionImageView(imageUrl: images[index]);
                       },
-                      child: CustomImage(images[index], fit: BoxFit.contain),
+                      child: Hero(
+                        tag:
+                            '${widget.heroPrefix}_photo_view_${widget.product.id}',
+                        child: CustomImage(images[index], fit: BoxFit.contain),
+                      ),
                     ),
                   );
                 },
@@ -178,3 +202,4 @@ class _ProductImageViewState extends State<ProductImageView> {
     );
   }
 }
+

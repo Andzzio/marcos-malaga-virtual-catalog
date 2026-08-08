@@ -10,6 +10,7 @@ class ProductModel {
   final List<String> categoryIds;
   final List<ProductDesignModel> designs;
   final bool isVisible;
+  final String? sizeChartImageUrl;
   final DateTime createdAt;
 
   const ProductModel({
@@ -21,6 +22,7 @@ class ProductModel {
     required this.categoryIds,
     required this.designs,
     required this.isVisible,
+    this.sizeChartImageUrl,
     required this.createdAt,
   });
 
@@ -44,6 +46,7 @@ class ProductModel {
               .toList() ??
           [],
       isVisible: json['isVisible'] as bool? ?? true,
+      sizeChartImageUrl: json['sizeChartImageUrl'] as String?,
       createdAt: DateTime.parse(
         json['createdAt'] as String? ?? DateTime.now().toIso8601String(),
       ),
@@ -60,6 +63,7 @@ class ProductModel {
       'categoryIds': categoryIds,
       'designs': designs.map((e) => e.toJson()).toList(),
       'isVisible': isVisible,
+      'sizeChartImageUrl': sizeChartImageUrl,
       'createdAt': createdAt.toIso8601String(),
     };
   }
@@ -74,6 +78,7 @@ class ProductModel {
       categoryIds: categoryIds,
       designs: designs.map((e) => e.toEntity()).toList(),
       isVisible: isVisible,
+      sizeChartImageUrl: sizeChartImageUrl,
       createdAt: createdAt,
     );
   }
@@ -90,6 +95,7 @@ class ProductModel {
           .map((e) => ProductDesignModel.fromEntity(e))
           .toList(),
       isVisible: entity.isVisible,
+      sizeChartImageUrl: entity.sizeChartImageUrl,
       createdAt: entity.createdAt,
     );
   }

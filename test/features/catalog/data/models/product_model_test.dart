@@ -31,6 +31,7 @@ void main() {
     categoryIds: ['pantalones'],
     designs: [tProductDesignModel],
     isVisible: true,
+    sizeChartImageUrl: null,
     createdAt: DateTime.parse('2024-01-01T00:00:00Z'),
   );
 
@@ -43,7 +44,7 @@ void main() {
   const tProductDesignEntity = ProductDesignEntity(
     id: 'DES-123',
     name: 'Vino',
-    hexCode: '#800020',
+    colorValue: 0xFF800020,
     swatchImageUrl: null,
     imageUrls: ['img1.jpg'],
     sizes: [tProductSizeEntity],
@@ -58,6 +59,7 @@ void main() {
     categoryIds: ['pantalones'],
     designs: [tProductDesignEntity],
     isVisible: true,
+    sizeChartImageUrl: null,
     createdAt: DateTime.parse('2024-01-01T00:00:00Z'),
   );
 
@@ -81,6 +83,7 @@ void main() {
       },
     ],
     'isVisible': true,
+    'sizeChartImageUrl': null,
     'createdAt': '2024-01-01T00:00:00.000Z',
   };
 

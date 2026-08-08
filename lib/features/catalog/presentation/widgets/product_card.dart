@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_cart_button.dart';
-import 'package:marcos_malaga_app/features/catalog/presentation/widgets/custom_image.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/image/custom_image.dart';
+import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_price.dart';
 
 class ProductCard extends StatefulWidget {
   const ProductCard({super.key, required this.product});
@@ -57,7 +58,7 @@ class _ProductCardState extends State<ProductCard> {
                       right: 10,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Theme.of(context).colorScheme.secondary,
                           borderRadius: BorderRadiusGeometry.circular(15),
                         ),
                         child: Padding(
@@ -74,9 +75,8 @@ class _ProductCardState extends State<ProductCard> {
                                   100;
                               return '-${discountPrice.toStringAsFixed(0)}% DCTO';
                             }(),
-                            style: Theme.of(
-                              context,
-                            ).textTheme.labelMedium?.copyWith(fontSize: 14),
+                            style: Theme.of(context).textTheme.labelMedium
+                                ?.copyWith(fontSize: 14, color: Colors.white),
                           ),
                         ),
                       ),
@@ -103,30 +103,7 @@ class _ProductCardState extends State<ProductCard> {
                         context,
                       ).textTheme.labelMedium?.copyWith(fontSize: 14),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      spacing: 5,
-                      children: [
-                        Text(
-                          widget.product.discountPrice != null
-                              ? 'S/. ${widget.product.discountPrice?.toStringAsFixed(2)}'
-                              : 'S/. ${widget.product.basePrice.toStringAsFixed(2)}',
-                          style: Theme.of(
-                            context,
-                          ).textTheme.labelMedium?.copyWith(fontSize: 14),
-                        ),
-                        if (widget.product.discountPrice != null)
-                          Text(
-                            'S/. ${widget.product.basePrice.toStringAsFixed(2)}',
-                            style: Theme.of(context).textTheme.labelMedium
-                                ?.copyWith(
-                                  fontSize: 14,
-                                  color: Colors.grey,
-                                  decoration: TextDecoration.lineThrough,
-                                ),
-                          ),
-                      ],
-                    ),
+                    ProductPrice(product: widget.product),
                   ],
                 ),
               ),
@@ -137,3 +114,4 @@ class _ProductCardState extends State<ProductCard> {
     );
   }
 }
+

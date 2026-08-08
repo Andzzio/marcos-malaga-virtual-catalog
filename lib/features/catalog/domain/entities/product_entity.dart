@@ -1,7 +1,6 @@
 import 'package:equatable/equatable.dart';
+import 'package:marcos_malaga_app/features/catalog/domain/entities/stock_availability.dart';
 import 'product_design_entity.dart';
-
-enum StockAvailability { outOfStock, lowStock, inStock }
 
 class ProductEntity extends Equatable {
   final String id;
@@ -12,6 +11,7 @@ class ProductEntity extends Equatable {
   final List<String> categoryIds;
   final List<ProductDesignEntity> designs;
   final bool isVisible;
+  final String? sizeChartImageUrl;
   final DateTime createdAt;
 
   const ProductEntity({
@@ -23,15 +23,16 @@ class ProductEntity extends Equatable {
     required this.categoryIds,
     required this.designs,
     required this.isVisible,
+    this.sizeChartImageUrl,
     required this.createdAt,
   });
+  int get totalStock => designs.fold(
+    0,
+    (sum, design) =>
+        sum + design.sizes.fold(0, (sizeSum, size) => sizeSum + size.stock),
+  );
 
   StockAvailability get stockAvailability {
-    int totalStock = designs.fold(0, (sum, design) {
-      return sum +
-          design.sizes.fold(0, (sizeSum, size) => sizeSum + size.stock);
-    });
-
     if (totalStock == 0) return StockAvailability.outOfStock;
     if (totalStock <= 5) return StockAvailability.lowStock;
     return StockAvailability.inStock;
@@ -46,6 +47,7 @@ class ProductEntity extends Equatable {
     List<String>? categoryIds,
     List<ProductDesignEntity>? designs,
     bool? isVisible,
+    String? sizeChartImageUrl,
     DateTime? createdAt,
   }) {
     return ProductEntity(
@@ -57,6 +59,7 @@ class ProductEntity extends Equatable {
       categoryIds: categoryIds ?? this.categoryIds,
       designs: designs ?? this.designs,
       isVisible: isVisible ?? this.isVisible,
+      sizeChartImageUrl: sizeChartImageUrl ?? this.sizeChartImageUrl,
       createdAt: createdAt ?? this.createdAt,
     );
   }
@@ -71,6 +74,7 @@ class ProductEntity extends Equatable {
     categoryIds,
     designs,
     isVisible,
+    sizeChartImageUrl,
     createdAt,
   ];
 }

@@ -6,7 +6,7 @@ class AppTheme {
 
   static const Color primaryColor = Color(0xff7A2E3B);
   static const Color scaffoldBackground = Color(0xFFFAFAF9);
-  static const Color accentColor = Color(0xFFA16207); // Dorado Clásico
+  static const Color accentColor = Color(0xffaf8026); // Dorado Clásico
   static const Color textColor = Color(0xFF0C0A09);
   static const Color mutedColor = Color(0xFFE8ECF0);
 

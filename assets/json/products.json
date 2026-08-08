@@ -2,7 +2,7 @@
   {
     "id": "PROD-001",
     "name": "Abrigo Otoño a Cuadros",
-    "description": "Hermoso abrigo de tela gruesa ideal para el clima frío. Diseño geométrico moderno de la colección de invierno. Material premium con forro interno.",
+    "description": "Hermoso abrigo de tela gruesa ideal para el clima frío. Su diseño geométrico moderno, inspirado en las últimas tendencias de la colección de invierno, aporta un toque de elegancia a cualquier outfit. Confeccionado con material premium y un forro interno de alta calidad, garantiza no solo un estilo sofisticado sino también la máxima calidez y comodidad durante los días más gélidos de la temporada.",
     "basePrice": 180,
     "discountPrice": 150,
     "categoryIds": [
@@ -11,6 +11,7 @@
       "nuevo"
     ],
     "isVisible": true,
+    "sizeChartImageUrl": "assets/images/size_charts/size_chart_basic.png",
     "designs": [
       {
         "id": "DES-001-A",
@@ -24,22 +25,22 @@
         "sizes": [
           {
             "size": "S",
-            "stock": 5,
+            "stock": 13,
             "sku": "ABR-NAR-S"
           },
           {
             "size": "M",
-            "stock": 2,
+            "stock": 6,
             "sku": "ABR-NAR-M"
           },
           {
             "size": "L",
-            "stock": 0,
+            "stock": 10,
             "sku": "ABR-NAR-L"
           },
           {
             "size": "XL",
-            "stock": 4,
+            "stock": 13,
             "sku": "ABR-NAR-XL"
           }
         ]
@@ -55,12 +56,12 @@
         "sizes": [
           {
             "size": "M",
-            "stock": 0,
+            "stock": 15,
             "sku": "ABR-GRI-M"
           },
           {
             "size": "XL",
-            "stock": 6,
+            "stock": 5,
             "sku": "ABR-GRI-XL"
           }
         ]
@@ -70,7 +71,7 @@
   {
     "id": "PROD-002",
     "name": "Pantalón Palazzo Rígido",
-    "description": "Pantalón de tiro alto con caída suelta. Ideal para la oficina o salidas formales.",
+    "description": "Eleva tu estilo con nuestro Pantalón Palazzo Rígido, diseñado con un favorecedor tiro alto y una elegante caída suelta que estiliza la figura. Su estructura firme pero cómoda lo convierte en la prenda ideal tanto para jornadas exigentes en la oficina como para deslumbrar en salidas formales o eventos de noche. Combínalo con tacones o mocasines para un look impecable.",
     "basePrice": 120,
     "discountPrice": null,
     "categoryIds": [
@@ -78,6 +79,7 @@
       "oficina"
     ],
     "isVisible": true,
+    "sizeChartImageUrl": "assets/images/size_charts/size_chart_basic.png",
     "designs": [
       {
         "id": "DES-002-A",
@@ -91,17 +93,17 @@
         "sizes": [
           {
             "size": "32",
-            "stock": 10,
+            "stock": 8,
             "sku": "PAL-VIN-32"
           },
           {
             "size": "34",
-            "stock": 5,
+            "stock": 4,
             "sku": "PAL-VIN-34"
           },
           {
             "size": "36",
-            "stock": 0,
+            "stock": 3,
             "sku": "PAL-VIN-36"
           }
         ]
@@ -117,12 +119,12 @@
         "sizes": [
           {
             "size": "34",
-            "stock": 15,
+            "stock": 1,
             "sku": "PAL-NEG-34"
           },
           {
             "size": "36",
-            "stock": 8,
+            "stock": 6,
             "sku": "PAL-NEG-36"
           }
         ]
@@ -132,7 +134,7 @@
   {
     "id": "PROD-003",
     "name": "Blusa Florencia",
-    "description": "Blusa ligera de verano con mangas abullonadas y cuello cuadrado.",
+    "description": "Descubre la frescura y el romanticismo de la Blusa Florencia, una prenda esencial para los días soleados. Confeccionada en una tela sumamente ligera que permite a tu piel respirar, destaca por sus encantadoras mangas abullonadas y un delicado cuello cuadrado que enmarca el escote a la perfección. Es la elección perfecta para paseos de fin de semana o una cita casual al atardecer.",
     "basePrice": 85,
     "discountPrice": 70,
     "categoryIds": [
@@ -143,9 +145,9 @@
     "designs": [
       {
         "id": "DES-003-A",
-        "name": "Blanco Puro",
-        "hexCode": "#FFFFFF",
-        "swatchImageUrl": null,
+        "name": "Animal Print",
+        "hexCode": null,
+        "swatchImageUrl": "assets/images/swatches/leopard.png",
         "imageUrls": [
           "assets/images/products/mock_product_3.png",
           "assets/images/products/mock_product.jpg"
@@ -153,12 +155,12 @@
         "sizes": [
           {
             "size": "S",
-            "stock": 2,
+            "stock": 7,
             "sku": "BLU-FLO-BLA-S"
           },
           {
             "size": "M",
-            "stock": 0,
+            "stock": 20,
             "sku": "BLU-FLO-BLA-M"
           }
         ]
@@ -168,7 +170,7 @@
   {
     "id": "PROD-004",
     "name": "Vestido Gala Noche",
-    "description": "Vestido largo de satén con abertura lateral.",
+    "description": "Acapara todas las miradas con este deslumbrante vestido largo confeccionado en satén de seda brillante, que acaricia suavemente la silueta. Su diseño minimalista y sofisticado se ve realzado por una atrevida abertura lateral en la pierna, brindando libertad de movimiento y un toque de sensualidad. Ideal para galas, bodas de noche o cualquier evento de etiqueta donde busques destacar.",
     "basePrice": 250,
     "discountPrice": null,
     "categoryIds": [
@@ -189,12 +191,12 @@
         "sizes": [
           {
             "size": "M",
-            "stock": 1,
+            "stock": 5,
             "sku": "VES-GAL-VER-M"
           },
           {
             "size": "L",
-            "stock": 1,
+            "stock": 12,
             "sku": "VES-GAL-VER-L"
           }
         ]
@@ -204,7 +206,7 @@
   {
     "id": "PROD-005",
     "name": "Casaca Denim Vintage",
-    "description": "Casaca de jean con diseño oversized y rasgados ligeros.",
+    "description": "Dale un giro urbano a tu guardarropa con nuestra Casaca Denim Vintage. Este básico atemporal presenta un corte oversized muy en tendencia, ofreciendo comodidad y un aire relajado a tus combinaciones diarias. Los rasgados ligeros y el desgaste sutil en la tela le otorgan un auténtico aspecto retro, convirtiéndola en la capa exterior perfecta para lucir sobre vestidos florales o tu conjunto de sudadera favorito.",
     "basePrice": 140,
     "discountPrice": null,
     "categoryIds": [
@@ -225,17 +227,17 @@
         "sizes": [
           {
             "size": "S",
-            "stock": 8,
+            "stock": 10,
             "sku": "DEN-AZU-S"
           },
           {
             "size": "M",
-            "stock": 12,
+            "stock": 0,
             "sku": "DEN-AZU-M"
           },
           {
             "size": "L",
-            "stock": 3,
+            "stock": 1,
             "sku": "DEN-AZU-L"
           }
         ]
@@ -245,7 +247,7 @@
   {
     "id": "PROD-006",
     "name": "Enterizo de Lino",
-    "description": "Enterizo fresco de lino para la temporada de calor, con cinturón ajustable.",
+    "description": "Siente la brisa del verano con nuestro Enterizo de Lino, una pieza única que combina practicidad y estilo sin esfuerzo. El tejido de lino natural asegura la máxima frescura durante los días más calurosos, mientras que su corte fluido favorece cualquier tipo de cuerpo. Incluye un cinturón ajustable del mismo material que entalla la cintura, creando una silueta armónica perfecta para paseos por la playa o un brunch dominical.",
     "basePrice": 160,
     "discountPrice": 130,
     "categoryIds": [
@@ -266,12 +268,12 @@
         "sizes": [
           {
             "size": "M",
-            "stock": 0,
+            "stock": 5,
             "sku": "ENT-LIN-BEI-M"
           },
           {
             "size": "XL",
-            "stock": 5,
+            "stock": 0,
             "sku": "ENT-LIN-BEI-XL"
           }
         ]
@@ -281,7 +283,7 @@
   {
     "id": "PROD-007",
     "name": "Falda Midi Plisada",
-    "description": "Falda a media pierna con pliegues, cintura elástica.",
+    "description": "Añade un toque de movimiento y feminidad a tu día a día con esta versátil Falda Midi Plisada. Su diseño a media pierna presenta pliegues definidos que mantienen su forma tras cada uso y lavado, creando un efecto visual encantador al caminar. La cómoda cintura elástica se adapta a ti, ofreciendo confort sin sacrificar el estilo. Úsala con zapatillas para un look casual o con stilettos para una ocasión especial.",
     "basePrice": 90,
     "discountPrice": null,
     "categoryIds": [
@@ -302,12 +304,12 @@
         "sizes": [
           {
             "size": "S",
-            "stock": 4,
+            "stock": 12,
             "sku": "FAL-PLI-ROS-S"
           },
           {
             "size": "M",
-            "stock": 4,
+            "stock": 20,
             "sku": "FAL-PLI-ROS-M"
           }
         ]
@@ -317,7 +319,7 @@
   {
     "id": "PROD-008",
     "name": "Sweater Tejido Grueso",
-    "description": "Chompa de hilo grueso, modelo holgado y súper abrigador.",
+    "description": "Envuélvete en la calidez de nuestro Sweater Tejido Grueso, la prenda refugio que querrás usar todos los días. Tejida a mano con hilos premium súper suaves, este modelo de silueta holgada proporciona una sensación de confort inigualable y no pica en la piel. Su diseño grueso y abrigador te protegerá de las bajas temperaturas con mucho estilo, siendo el complemento ideal para jeans ajustados y botas altas de invierno.",
     "basePrice": 110,
     "discountPrice": 99,
     "categoryIds": [
@@ -338,7 +340,7 @@
         "sizes": [
           {
             "size": "Unitalla",
-            "stock": 0,
+            "stock": 7,
             "sku": "SWE-MOS-UNI"
           }
         ]
@@ -348,7 +350,7 @@
   {
     "id": "PROD-009",
     "name": "Short de Verano",
-    "description": "Short de tela ligera con bolsillos utilitarios.",
+    "description": "Prepárate para la aventura o el relax con nuestro Short de Verano. Diseñado pensando en la máxima comodidad, está confeccionado en una tela ligera, transpirable y de secado rápido que te mantendrá fresca todo el día. Destaca por sus amplios bolsillos utilitarios laterales, perfectos para llevar tus esenciales sin necesidad de un bolso extra. Una pieza clave para tus vacaciones o escapadas de fin de semana.",
     "basePrice": 75,
     "discountPrice": null,
     "categoryIds": [
@@ -369,12 +371,12 @@
         "sizes": [
           {
             "size": "32",
-            "stock": 10,
+            "stock": 9,
             "sku": "SHO-OLI-32"
           },
           {
             "size": "34",
-            "stock": 10,
+            "stock": 11,
             "sku": "SHO-OLI-34"
           }
         ]
@@ -384,7 +386,7 @@
   {
     "id": "PROD-010",
     "name": "Chaqueta Biker Cuero",
-    "description": "Chaqueta estilo motociclista en cuero sintético premium.",
+    "description": "Despierta tu lado más rebelde y chic con esta icónica Chaqueta Biker. Confeccionada en cuero sintético premium de acabado mate, luce indistinguible del cuero real y es completamente amigable con los animales. Cuenta con detalles metálicos, cierres asimétricos y un corte entallado que estructura los hombros maravillosamente. Es la prenda de transición perfecta que le dará actitud instantánea hasta al vestido más romántico.",
     "basePrice": 190,
     "discountPrice": null,
     "categoryIds": [
@@ -405,12 +407,12 @@
         "sizes": [
           {
             "size": "S",
-            "stock": 2,
+            "stock": 6,
             "sku": "BIK-NEG-S"
           },
           {
             "size": "L",
-            "stock": 1,
+            "stock": 15,
             "sku": "BIK-NEG-L"
           }
         ]
