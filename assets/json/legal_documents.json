@@ -1,0 +1,17 @@
+[
+  {
+    "id": "privacy_policy",
+    "title": "Política de Privacidad",
+    "content": "Esta política de privacidad describe cómo Marcos Malaga ('la Empresa', 'nosotros', 'nuestro') recopila, usa y comparte tu información personal cuando visitas o realizas una compra en nuestra tienda virtual.\n\nRecopilamos Información Personal que nos proporcionas directamente, como tu nombre, dirección de envío, dirección de facturación, correo electrónico y número de teléfono al momento de realizar una compra. Utilizamos esta información para procesar pedidos, coordinar el envío con agencias logísticas (Shalom/Sharf) y brindarte actualizaciones sobre tus compras.\n\nTus datos no serán vendidos a terceros bajo ninguna circunstancia."
+  },
+  {
+    "id": "refund_policy",
+    "title": "Política de Cambios y Devoluciones",
+    "content": "En Marcos Malaga deseamos que estés completamente satisfecha con tu compra. Si no es así, aceptamos cambios y devoluciones bajo las siguientes condiciones:\n\n1. Plazo: Tienes hasta 7 días calendario desde la fecha de recepción de tu pedido para solicitar un cambio.\n2. Condición: La prenda debe estar sin uso, sin lavar, con sus etiquetas originales puestas y en el mismo estado en que fue enviada.\n3. Proceso: Debes contactarnos vía WhatsApp para iniciar el trámite. Los costos de envío por devoluciones corren por cuenta del cliente, a menos que se trate de una falla de fábrica comprobada."
+  },
+  {
+    "id": "shipping_policy",
+    "title": "Política de Envíos",
+    "content": "Realizamos envíos a todo el Perú utilizando servicios de paquetería seguros y confiables.\n\nEnvíos en Lima Metropolitana: Los pedidos son procesados en un plazo de 24 a 48 horas hábiles y enviados mediante mensajería local.\nEnvíos a Provincias: Trabajamos mediante envíos pago a destino en agencias como Shalom. El cliente deberá abonar el costo del envío directamente en la agencia al recoger su paquete. Se enviará un número de seguimiento tan pronto como la mercadería sea despachada de nuestro almacén en La Victoria."
+  }
+]

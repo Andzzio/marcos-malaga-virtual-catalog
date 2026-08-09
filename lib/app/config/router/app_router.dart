@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
@@ -51,7 +52,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: 'legal',
             name: 'legal',
-            redirect: (context, state) => 'legal/terms',
+            redirect: (context, state) {
+              if (state.uri.path == '/legal') {
+                return '/legal/terms';
+              }
+              return null;
+            },
             routes: [
               GoRoute(
                 path: 'privacy-policy',
@@ -82,10 +88,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           ),
           GoRoute(
             path: 'products/:id',
-            builder: (context, state) {
+            pageBuilder: (context, state) {
               final extra = state.extra as Map<String, dynamic>;
               final product = extra['product'] as ProductEntity;
-              return ProductDetailScreen(product: product);
+              final productId = state.pathParameters['id'];
+              return MaterialPage(
+                key: ValueKey(productId),
+                child: ProductDetailScreen(product: product),
+              );
             },
           ),
         ],

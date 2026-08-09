@@ -1,0 +1,98 @@
+{
+  "address": "Jr. Gamarra 1234 - La Victoria, Galería Azul",
+  "reference": "Segundo piso, ref. frente al tambo",
+  "ruc": "1234567890",
+  "businessName": "Marcos Malaga SAC",
+  "whatsappNumber": "+51999888777",
+  "location": {
+    "latitude": -12.065507226148398,
+    "longitude": -77.01215598345311
+  },
+  "schedule": {
+    "timeZone": "America/Lima",
+    "regularHours": [
+      {
+        "dayOfWeek": 1,
+        "isClosed": false,
+        "shifts": [
+          {
+            "openTime": "1970-01-01T10:00:00.000",
+            "closeTime": "1970-01-01T20:00:00.000"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": 2,
+        "isClosed": false,
+        "shifts": [
+          {
+            "openTime": "1970-01-01T10:00:00.000",
+            "closeTime": "1970-01-01T20:00:00.000"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": 3,
+        "isClosed": false,
+        "shifts": [
+          {
+            "openTime": "1970-01-01T10:00:00.000",
+            "closeTime": "1970-01-01T20:00:00.000"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": 4,
+        "isClosed": false,
+        "shifts": [
+          {
+            "openTime": "1970-01-01T10:00:00.000",
+            "closeTime": "1970-01-01T20:00:00.000"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": 5,
+        "isClosed": false,
+        "shifts": [
+          {
+            "openTime": "1970-01-01T10:00:00.000",
+            "closeTime": "1970-01-01T20:00:00.000"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": 6,
+        "isClosed": false,
+        "shifts": [
+          {
+            "openTime": "1970-01-01T10:00:00.000",
+            "closeTime": "1970-01-01T20:00:00.000"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": 7,
+        "isClosed": true,
+        "shifts": []
+      }
+    ],
+    "exceptions": [
+      {
+        "date": "2026-12-25T00:00:00.000",
+        "isClosed": true,
+        "customShifts": null
+      },
+      {
+        "date": "2026-12-24T00:00:00.000",
+        "isClosed": false,
+        "customShifts": [
+          {
+            "openTime": "1970-01-01T09:00:00.000",
+            "closeTime": "1970-01-01T14:00:00.000"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/providers/products_provider.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/footer/footer_bar.dart';
+import 'package:marcos_malaga_app/features/catalog/presentation/widgets/map_view.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/consumer_products_widget.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_grid.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/banner_carousel.dart';
@@ -99,6 +101,14 @@ class HomeScreen extends StatelessWidget {
                       );
                     },
                   ),
+                  SliverGap(50),
+                  MapView(
+                    titleSection: TitleSection(
+                      topLabel: 'MIRA',
+                      bottomLabel: 'COMO ENCONTRARNOS',
+                    ),
+                  ),
+                  FooterBar(),
                 ],
               ),
               SliverPositioned(child: HeaderBar()),
