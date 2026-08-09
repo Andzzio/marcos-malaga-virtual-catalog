@@ -1,11 +1,11 @@
 {
-    "name": "marcos_malaga_app",
-    "short_name": "marcos_malaga_app",
+    "name": "Marcos Málaga - Moda Femenina & Tallas Reales",
+    "short_name": "Marcos Málaga",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#FAFAF9",
     "theme_color": "#7A2E3B",
-    "description": "A new Flutter project.",
+    "description": "Tienda virtual e-Commerce boutique de moda femenina y tallas reales en Perú.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

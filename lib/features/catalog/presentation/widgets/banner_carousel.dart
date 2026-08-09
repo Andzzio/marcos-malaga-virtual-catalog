@@ -42,8 +42,9 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
                 ),
                 itemBuilder: (context, index, realIndex) {
                   final banner = banners[index];
+                  final isMobile = size.width < 600;
                   return CustomImage(
-                    banner.desktopImageUrl,
+                    isMobile ? banner.mobileImageUrl : banner.desktopImageUrl,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   );

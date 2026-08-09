@@ -2,7 +2,7 @@
   {
     "id": "BANNER-001",
     "desktopImageUrl": "assets/images/banners/banner_1.jpg",
-    "mobileImageUrl": "assets/images/banners/banner_1.jpg",
+    "mobileImageUrl": "assets/images/banners/banner_1_mobile.jpg",
     "title": "Colección Nocturna",
     "actionType": "openCategory",
     "actionValue": "coleccion_nocturna",
@@ -11,7 +11,7 @@
   {
     "id": "BANNER-002",
     "desktopImageUrl": "assets/images/banners/banner_2.jpg",
-    "mobileImageUrl": "assets/images/banners/banner_2.jpg",
+    "mobileImageUrl": "assets/images/banners/banner_2_mobile.jpg",
     "title": "Colección Brisa",
     "actionType": "openCategory",
     "actionValue": "coleccion_brisa",
@@ -20,7 +20,7 @@
   {
     "id": "BANNER-003",
     "desktopImageUrl": "assets/images/banners/banner_3.jpg",
-    "mobileImageUrl": "assets/images/banners/banner_3.jpg",
+    "mobileImageUrl": "assets/images/banners/banner_3_mobile.jpg",
     "title": "Colección Aurora",
     "actionType": "openCategory",
     "actionValue": "coleccion_aurora",
