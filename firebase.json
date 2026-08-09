@@ -1,0 +1,37 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "marcos-malaga-app",
+          "appId": "1:286889341648:android:a2773ee31fb9cdc097a4d5",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "marcos-malaga-app",
+          "configurations": {
+            "android": "1:286889341648:android:a2773ee31fb9cdc097a4d5",
+            "ios": "1:286889341648:ios:541c0eb410d2f05a97a4d5",
+            "web": "1:286889341648:web:681b3aed45deb7cc97a4d5"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
