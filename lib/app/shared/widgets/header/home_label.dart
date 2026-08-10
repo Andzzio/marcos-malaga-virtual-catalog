@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 
 class HomeLabel extends StatelessWidget {
   final String label;
@@ -16,7 +17,7 @@ class HomeLabel extends StatelessWidget {
             label,
             style: Theme.of(context).textTheme.displayMedium?.copyWith(
               color: Colors.white,
-              fontSize: 18,
+              fontSize: ResponsiveTheme.isMobile(context) ? 14 : 18,
             ),
           ),
         ),

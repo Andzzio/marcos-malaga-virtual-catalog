@@ -76,7 +76,7 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                       ).textTheme.labelMedium?.copyWith(color: textColor),
                     ),
                     onPressed: () {
-                      context.go('/new-arrivals');
+                      context.go('/search/new-arrivals');
                     },
                   ),
                   TextButton(
@@ -88,7 +88,7 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                       ).textTheme.labelMedium?.copyWith(color: textColor),
                     ),
                     onPressed: () {
-                      context.go('/catalog');
+                      context.go('/search/catalog');
                     },
                   ),
                   TextButton(
@@ -100,7 +100,7 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                       ).textTheme.labelMedium?.copyWith(color: textColor),
                     ),
                     onPressed: () {
-                      context.go('/xl-sizes');
+                      context.go('/search/xl-sizes');
                     },
                   ),
                 ],

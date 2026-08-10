@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:marcos_malaga_app/app/core/presentation/shell/app_shell.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/home_screen.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/product_detail_screen.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/new_arrivals_screen.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/catalog_screen.dart';
+import 'package:marcos_malaga_app/features/catalog/presentation/screens/search_screen.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/xl_sizes_screen.dart';
 import 'package:marcos_malaga_app/features/auth/presentation/screens/login_screen.dart';
 import 'package:marcos_malaga_app/features/checkout/presentation/screens/checkout_screen.dart';
@@ -19,84 +21,113 @@ final appRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     initialLocation: '/',
     routes: [
-      GoRoute(
-        path: '/',
-        name: 'home',
-        builder: (context, state) => const HomeScreen(),
-        routes: [
-          GoRoute(
-            path: 'new-arrivals',
-            name: 'new-arrivals',
-            builder: (context, state) => const NewArrivalsScreen(),
-          ),
-          GoRoute(
-            path: 'catalog',
-            name: 'catalog',
-            builder: (context, state) => const CatalogScreen(),
-          ),
-          GoRoute(
-            path: 'xl-sizes',
-            name: 'xl-sizes',
-            builder: (context, state) => const XlSizesScreen(),
-          ),
-          GoRoute(
-            path: 'login',
-            name: 'login',
-            builder: (context, state) => const LoginScreen(),
-          ),
-          GoRoute(
-            path: 'checkout',
-            name: 'checkout',
-            builder: (context, state) => const CheckoutScreen(),
-          ),
-          GoRoute(
-            path: 'legal',
-            name: 'legal',
-            redirect: (context, state) {
-              if (state.uri.path == '/legal') {
-                return '/legal/terms';
-              }
-              return null;
-            },
+      StatefulShellRoute.indexedStack(
+        builder: (context, state, navigationShell) {
+          return AppShell(navigationShell: navigationShell);
+        },
+        branches: [
+          StatefulShellBranch(
             routes: [
               GoRoute(
-                path: 'privacy-policy',
-                name: 'privacy-policy',
-                builder: (context, state) => const PrivacyPolicyScreen(),
-              ),
-              GoRoute(
-                path: 'refund-policy',
-                name: 'refund-policy',
-                builder: (context, state) => const RefundPolicyScreen(),
-              ),
-              GoRoute(
-                path: 'shipping-policy',
-                name: 'shipping-policy',
-                builder: (context, state) => const ShippingPolicyScreen(),
-              ),
-              GoRoute(
-                path: 'terms',
-                name: 'terms',
-                builder: (context, state) => const TermsScreen(),
-              ),
-              GoRoute(
-                path: 'complaints-book',
-                name: 'complaints-book',
-                builder: (context, state) => const ComplaintsBookScreen(),
+                path: '/',
+                name: 'home',
+                builder: (context, state) => const HomeScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'checkout',
+                    name: 'checkout',
+                    builder: (context, state) => const CheckoutScreen(),
+                  ),
+                  GoRoute(
+                    path: 'legal',
+                    name: 'legal',
+                    redirect: (context, state) {
+                      if (state.uri.path == '/legal') {
+                        return '/legal/terms';
+                      }
+                      return null;
+                    },
+                    routes: [
+                      GoRoute(
+                        path: 'privacy-policy',
+                        name: 'privacy-policy',
+                        builder: (context, state) =>
+                            const PrivacyPolicyScreen(),
+                      ),
+                      GoRoute(
+                        path: 'refund-policy',
+                        name: 'refund-policy',
+                        builder: (context, state) => const RefundPolicyScreen(),
+                      ),
+                      GoRoute(
+                        path: 'shipping-policy',
+                        name: 'shipping-policy',
+                        builder: (context, state) =>
+                            const ShippingPolicyScreen(),
+                      ),
+                      GoRoute(
+                        path: 'terms',
+                        name: 'terms',
+                        builder: (context, state) => const TermsScreen(),
+                      ),
+                      GoRoute(
+                        path: 'complaints-book',
+                        name: 'complaints-book',
+                        builder: (context, state) =>
+                            const ComplaintsBookScreen(),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'products/:id',
+                    pageBuilder: (context, state) {
+                      final extra = state.extra as Map<String, dynamic>;
+                      final product = extra['product'] as ProductEntity;
+                      final productId = state.pathParameters['id'];
+                      return MaterialPage(
+                        key: ValueKey(productId),
+                        child: ProductDetailScreen(product: product),
+                      );
+                    },
+                  ),
+                ],
               ),
             ],
           ),
-          GoRoute(
-            path: 'products/:id',
-            pageBuilder: (context, state) {
-              final extra = state.extra as Map<String, dynamic>;
-              final product = extra['product'] as ProductEntity;
-              final productId = state.pathParameters['id'];
-              return MaterialPage(
-                key: ValueKey(productId),
-                child: ProductDetailScreen(product: product),
-              );
-            },
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/search',
+                name: 'search',
+                builder: (context, state) => const SearchScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'new-arrivals',
+                    name: 'new-arrivals',
+                    builder: (context, state) => const NewArrivalsScreen(),
+                  ),
+                  GoRoute(
+                    path: 'catalog',
+                    name: 'catalog',
+                    builder: (context, state) => const CatalogScreen(),
+                  ),
+                  GoRoute(
+                    path: 'xl-sizes',
+                    name: 'xl-sizes',
+                    builder: (context, state) => const XlSizesScreen(),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/login',
+                name: 'login',
+                builder: (context, state) => const LoginScreen(),
+              ),
+            ],
           ),
         ],
       ),

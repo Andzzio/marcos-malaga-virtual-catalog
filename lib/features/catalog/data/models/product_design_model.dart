@@ -68,7 +68,8 @@ class ProductDesignModel {
   factory ProductDesignModel.fromEntity(ProductDesignEntity entity) {
     String? stringHex;
     if (entity.colorValue != null) {
-      stringHex = '#${entity.colorValue!.toRadixString(16).substring(2).toUpperCase()}';
+      stringHex =
+          '#${entity.colorValue!.toRadixString(16).substring(2).toUpperCase()}';
     }
 
     return ProductDesignModel(

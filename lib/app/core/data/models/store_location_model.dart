@@ -4,10 +4,7 @@ class StoreLocationModel {
   final double latitude;
   final double longitude;
 
-  const StoreLocationModel({
-    required this.latitude,
-    required this.longitude,
-  });
+  const StoreLocationModel({required this.latitude, required this.longitude});
 
   factory StoreLocationModel.fromJson(Map<String, dynamic> json) {
     return StoreLocationModel(
@@ -17,9 +14,6 @@ class StoreLocationModel {
   }
 
   StoreLocationEntity toEntity() {
-    return StoreLocationEntity(
-      latitude: latitude,
-      longitude: longitude,
-    );
+    return StoreLocationEntity(latitude: latitude, longitude: longitude);
   }
 }

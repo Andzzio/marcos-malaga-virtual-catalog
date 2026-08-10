@@ -7,10 +7,7 @@ class StoreMapUiMapper {
 
   static StoreMapUiModel fromEntity(StoreInfoEntity entity) {
     return StoreMapUiModel(
-      coordinates: LatLng(
-        entity.location.latitude,
-        entity.location.longitude,
-      ),
+      coordinates: LatLng(entity.location.latitude, entity.location.longitude),
     );
   }
 }

@@ -6,24 +6,24 @@ import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/mobile_header_bar.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/home_label.dart';
 
-class TermsScreen extends StatelessWidget {
-  const TermsScreen({super.key});
+class SearchScreen extends StatelessWidget {
+  const SearchScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        const HomeLabel(label: 'INAUGURACIÓN MARCOSMALAGA.COM'),
+        const HomeLabel(label: 'NUESTROS CATÁLOGOS'),
         ResponsiveTheme.isMobile(context)
-            ? MobileHeaderBar(colorLerp: false)
+            ? const MobileHeaderBar(colorLerp: false)
             : const HeaderBar(colorLerp: false),
-        SliverFillRemaining(
+        const SliverFillRemaining(
           child: Center(
-            child: Text('Terms Screen', style: const TextStyle(fontSize: 24)),
+            child: Text('Search Screen', style: TextStyle(fontSize: 24)),
           ),
         ),
-        SliverGap(50),
-        FooterBar(),
+        const SliverGap(50),
+        const FooterBar(),
       ],
     );
   }

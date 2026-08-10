@@ -5,11 +5,25 @@ class CustomImage extends StatelessWidget {
   final BoxFit? fit;
   final double? width;
   final double? height;
+  final Alignment alignment;
 
-  const CustomImage(this.path, {super.key, this.fit, this.width, this.height});
+  const CustomImage(
+    this.path, {
+    super.key,
+    this.fit,
+    this.width,
+    this.height,
+    this.alignment = Alignment.center,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(path, fit: fit, width: width, height: height);
+    return Image.asset(
+      path,
+      fit: fit,
+      width: width,
+      height: height,
+      alignment: alignment,
+    );
   }
 }

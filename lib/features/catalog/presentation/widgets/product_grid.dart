@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_card.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/title_section.dart';
@@ -41,43 +42,46 @@ class ProductGrid<T extends AsyncNotifier<List<ProductEntity>>>
           ),
         SliverCrossAxisConstrained(
           maxCrossAxisExtent: maxWidth,
-          child: SliverGrid.builder(
-            itemCount: itemCount,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 4,
-              mainAxisSpacing: 60,
-              crossAxisSpacing: 15,
-              childAspectRatio: 0.55,
-            ),
-            itemBuilder: (context, index) {
-              return productsAsync.when(
-                data: (products) {
-                  final product = products[index];
-                  return ProductCard(product: product);
-                },
-                error: (error, stackTrace) {
-                  return Shimmer.fromColors(
-                    baseColor: Colors.grey[300]!,
-                    highlightColor: Colors.grey[100]!,
-                    child: Container(
-                      decoration: BoxDecoration(color: Colors.white),
-                      child: Center(
-                        child: FaIcon(FontAwesomeIcons.circleXmark),
+          child: SliverPadding(
+            padding: EdgeInsetsGeometry.symmetric(horizontal: 10),
+            sliver: SliverGrid.builder(
+              itemCount: itemCount,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: ResponsiveTheme.isMobile(context) ? 2 : 4,
+                mainAxisSpacing: 60,
+                crossAxisSpacing: 15,
+                childAspectRatio: 0.55,
+              ),
+              itemBuilder: (context, index) {
+                return productsAsync.when(
+                  data: (products) {
+                    final product = products[index];
+                    return ProductCard(product: product);
+                  },
+                  error: (error, stackTrace) {
+                    return Shimmer.fromColors(
+                      baseColor: Colors.grey[300]!,
+                      highlightColor: Colors.grey[100]!,
+                      child: Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                        child: Center(
+                          child: FaIcon(FontAwesomeIcons.circleXmark),
+                        ),
                       ),
-                    ),
-                  );
-                },
-                loading: () {
-                  return Shimmer.fromColors(
-                    baseColor: Colors.grey[300]!,
-                    highlightColor: Colors.grey[100]!,
-                    child: Container(
-                      decoration: BoxDecoration(color: Colors.white),
-                    ),
-                  );
-                },
-              );
-            },
+                    );
+                  },
+                  loading: () {
+                    return Shimmer.fromColors(
+                      baseColor: Colors.grey[300]!,
+                      highlightColor: Colors.grey[100]!,
+                      child: Container(
+                        decoration: BoxDecoration(color: Colors.white),
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
           ),
         ),
       ],

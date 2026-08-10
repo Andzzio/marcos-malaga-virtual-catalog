@@ -8,10 +8,12 @@ import 'package:photo_view/photo_view.dart';
 class ProductImageView extends StatefulWidget {
   final ProductEntity product;
   final String heroPrefix;
+  final BoxFit fit;
   const ProductImageView({
     super.key,
     required this.product,
     this.heroPrefix = 'detail',
+    this.fit = BoxFit.contain,
   });
 
   @override
@@ -112,7 +114,7 @@ class _ProductImageViewState extends State<ProductImageView> {
                       child: Hero(
                         tag:
                             '${widget.heroPrefix}_photo_view_${widget.product.id}',
-                        child: CustomImage(images[index], fit: BoxFit.contain),
+                        child: CustomImage(images[index], fit: widget.fit),
                       ),
                     ),
                   );
@@ -202,4 +204,3 @@ class _ProductImageViewState extends State<ProductImageView> {
     );
   }
 }
-

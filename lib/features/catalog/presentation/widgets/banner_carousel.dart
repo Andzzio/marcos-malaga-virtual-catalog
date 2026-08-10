@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/providers/banners_provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/image/custom_image.dart';
@@ -30,7 +31,9 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
               CarouselSlider.builder(
                 itemCount: banners.length,
                 options: CarouselOptions(
-                  height: size.height * 0.95,
+                  height: ResponsiveTheme.isMobile(context)
+                      ? size.height * 0.95 - 65
+                      : size.height * 0.95,
                   viewportFraction: 1.0,
                   autoPlay: true,
                   enlargeCenterPage: false,
@@ -42,11 +45,13 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
                 ),
                 itemBuilder: (context, index, realIndex) {
                   final banner = banners[index];
-                  final isMobile = size.width < 600;
                   return CustomImage(
-                    isMobile ? banner.mobileImageUrl : banner.desktopImageUrl,
+                    ResponsiveTheme.isMobile(context)
+                        ? banner.mobileImageUrl
+                        : banner.desktopImageUrl,
                     width: double.infinity,
                     fit: BoxFit.cover,
+                    alignment: Alignment.center,
                   );
                 },
               ),
@@ -80,4 +85,3 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
     );
   }
 }
-

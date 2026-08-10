@@ -5,6 +5,8 @@ import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entit
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/related_products.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_view.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/header_bar.dart';
+import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/header/mobile_header_bar.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/home_label.dart';
 
 class ProductDetailScreen extends StatelessWidget {
@@ -13,18 +15,18 @@ class ProductDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          HomeLabel(label: 'INAUGURACIÓN MARCOSMALAGA.COM'),
-          HeaderBar(colorLerp: false),
-          ProductView(product: product),
-          SliverGap(30),
-          RelatedProducts(),
-          SliverGap(50),
-          FooterBar(),
-        ],
-      ),
+    return CustomScrollView(
+      slivers: [
+        HomeLabel(label: 'INAUGURACIÓN MARCOSMALAGA.COM'),
+        ResponsiveTheme.isMobile(context)
+            ? MobileHeaderBar(colorLerp: false)
+            : HeaderBar(colorLerp: false),
+        ProductView(product: product),
+        SliverGap(30),
+        RelatedProducts(),
+        SliverGap(50),
+        FooterBar(),
+      ],
     );
   }
 }

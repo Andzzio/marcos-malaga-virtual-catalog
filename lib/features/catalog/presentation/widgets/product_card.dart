@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_cart_button.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/image/custom_image.dart';
@@ -76,7 +77,12 @@ class _ProductCardState extends State<ProductCard> {
                               return '-${discountPrice.toStringAsFixed(0)}% DCTO';
                             }(),
                             style: Theme.of(context).textTheme.labelMedium
-                                ?.copyWith(fontSize: 14, color: Colors.white),
+                                ?.copyWith(
+                                  fontSize: ResponsiveTheme.isMobile(context)
+                                      ? 11
+                                      : 14,
+                                  color: Colors.white,
+                                ),
                           ),
                         ),
                       ),
@@ -99,9 +105,9 @@ class _ProductCardState extends State<ProductCard> {
                   children: [
                     Text(
                       widget.product.name,
-                      style: Theme.of(
-                        context,
-                      ).textTheme.labelMedium?.copyWith(fontSize: 14),
+                      style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                        fontSize: ResponsiveTheme.isMobile(context) ? 12 : 14,
+                      ),
                     ),
                     ProductPrice(product: widget.product),
                   ],
@@ -114,4 +120,3 @@ class _ProductCardState extends State<ProductCard> {
     );
   }
 }
-

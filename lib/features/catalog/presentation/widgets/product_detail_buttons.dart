@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
+import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/entities/stock_availability.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/providers/product_detail_provider.dart';
@@ -37,14 +38,19 @@ class ProductDetailButtons extends ConsumerWidget {
                   borderRadius: BorderRadiusGeometry.circular(8),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 10,
-                  ),
+                  padding: ResponsiveTheme.isMobile(context)
+                      ? const EdgeInsetsGeometry.symmetric(
+                          horizontal: 0,
+                          vertical: 10,
+                        )
+                      : const EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10,
+                        ),
                   child: Row(
                     children: [
                       IconButton(
-                        iconSize: 15,
+                        iconSize: ResponsiveTheme.isMobile(context) ? 11 : 14,
                         color: Theme.of(context).colorScheme.secondary,
                         icon: FaIcon(FontAwesomeIcons.minus),
                         onPressed: () {
@@ -58,13 +64,15 @@ class ProductDetailButtons extends ConsumerWidget {
                           textAlign: TextAlign.center,
                           style: Theme.of(context).textTheme.labelMedium
                               ?.copyWith(
-                                fontSize: 14,
+                                fontSize: ResponsiveTheme.isMobile(context)
+                                    ? 11
+                                    : 14,
                                 color: Theme.of(context).colorScheme.secondary,
                               ),
                         ),
                       ),
                       IconButton(
-                        iconSize: 15,
+                        iconSize: ResponsiveTheme.isMobile(context) ? 11 : 14,
                         color: Theme.of(context).colorScheme.secondary,
                         icon: FaIcon(FontAwesomeIcons.plus),
                         onPressed: () {

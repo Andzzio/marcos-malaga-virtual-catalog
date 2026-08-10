@@ -22,7 +22,7 @@ class _SearchHeadBarState extends State<SearchHeadBar> {
   void _onSubmit() {
     final query = _searchController.text.trim();
     if (query.isEmpty) return;
-    context.go('/catalog?q=$query');
+    context.go('/search/catalog?q=$query');
   }
 
   @override
@@ -42,11 +42,7 @@ class _SearchHeadBarState extends State<SearchHeadBar> {
       Colors.black.withValues(alpha: 0.4),
       widget.progress,
     );
-    final textColor = Color.lerp(
-      Colors.white,
-      Colors.black,
-      widget.progress,
-    );
+    final textColor = Color.lerp(Colors.white, Colors.black, widget.progress);
     final iconColor = Color.lerp(
       Colors.white.withValues(alpha: 0.9),
       Colors.black.withValues(alpha: 0.7),
