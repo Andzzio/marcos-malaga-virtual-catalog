@@ -19,7 +19,9 @@ class FooterBar extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(color: primaryColor),
             child: Padding(
-              padding: ResponsiveTheme.isMobile(context)
+              padding:
+                  ResponsiveTheme.isMobile(context) ||
+                      ResponsiveTheme.isTablet(context)
                   ? EdgeInsetsGeometry.symmetric(horizontal: 20, vertical: 50)
                   : EdgeInsetsGeometry.symmetric(horizontal: 100, vertical: 50),
               child: DefaultTextStyle.merge(
@@ -32,6 +34,26 @@ class FooterBar extends StatelessWidget {
                           BusinessInfoSection(),
                           NewsletterSection(),
                           LegalSection(),
+                        ],
+                      )
+                    : ResponsiveTheme.isTablet(context)
+                    ? Row(
+                        spacing: 50,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Column(
+                            spacing: 50,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              BusinessInfoSection(),
+                              NewsletterSection(),
+                            ],
+                          ),
+                          Column(
+                            spacing: 50,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [LegalSection()],
+                          ),
                         ],
                       )
                     : Row(

@@ -65,10 +65,7 @@ class ProductView extends StatelessWidget {
                         ),
                         Expanded(
                           flex: 9,
-                          child: SizedBox(
-                            height: size.height,
-                            child: ProductDetailView(product: product),
-                          ),
+                          child: ProductDetailView(product: product),
                         ),
                       ],
                     ),

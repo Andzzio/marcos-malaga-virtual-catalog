@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
+import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/search_head_bar.dart';
 
 class HeaderBar extends StatelessWidget {
@@ -116,7 +117,18 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                   ).textTheme.displayLarge?.copyWith(color: titleColor),
                 ),
                 Spacer(),
-                SearchHeadBar(progress: progress),
+                ResponsiveTheme.isDesktopWithLimitedSpace(context)
+                    ? IconButton(
+                        onPressed: () {
+                          context.go('/search');
+                        },
+                        icon: FaIcon(
+                          FontAwesomeIcons.magnifyingGlass,
+                          color: textColor,
+                          size: 18,
+                        ),
+                      )
+                    : SearchHeadBar(progress: progress),
                 IconButton(
                   onPressed: () {
                     context.go('/login');

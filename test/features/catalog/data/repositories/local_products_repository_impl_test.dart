@@ -56,5 +56,26 @@ void main() {
       expect(result, isA<List<ProductEntity>>());
       expect(result, isEmpty);
     });
+
+    test('should return ProductEntity when getProductById finds a product', () async {
+      when(() => mockDatasource.fetchProductById(any()))
+          .thenAnswer((_) async => tProductModel);
+
+      final result = await repository.getProductById('PROD-001');
+
+      verify(() => mockDatasource.fetchProductById('PROD-001')).called(1);
+      expect(result, isA<ProductEntity>());
+      expect(result, equals(tProductEntity));
+    });
+
+    test('should return null when getProductById does not find a product', () async {
+      when(() => mockDatasource.fetchProductById(any()))
+          .thenAnswer((_) async => null);
+
+      final result = await repository.getProductById('NON-EXISTENT-ID');
+
+      verify(() => mockDatasource.fetchProductById('NON-EXISTENT-ID')).called(1);
+      expect(result, isNull);
+    });
   });
 }

@@ -10,4 +10,11 @@ class LocalProductsRepositoryImpl implements ProductsRepository {
     final productsModels = await datasource.fetchProducts();
     return productsModels.map((p) => p.toEntity()).toList();
   }
+
+  @override
+  Future<ProductEntity?> getProductById(String id) async {
+    final productModel = await datasource.fetchProductById(id);
+    if (productModel == null) return null;
+    return productModel.toEntity();
+  }
 }

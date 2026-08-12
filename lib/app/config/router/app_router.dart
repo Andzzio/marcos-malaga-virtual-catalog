@@ -81,12 +81,18 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                   GoRoute(
                     path: 'products/:id',
                     pageBuilder: (context, state) {
-                      final extra = state.extra as Map<String, dynamic>;
-                      final product = extra['product'] as ProductEntity;
-                      final productId = state.pathParameters['id'];
+                      final extra = state.extra as Map<String, dynamic>?;
+                      ProductEntity? product;
+                      if (extra != null) {
+                        product = extra['product'] as ProductEntity?;
+                      }
+                      String? productId = state.pathParameters['id'];
                       return MaterialPage(
                         key: ValueKey(productId),
-                        child: ProductDetailScreen(product: product),
+                        child: ProductDetailScreen(
+                          product: product,
+                          productId: productId ??= 'NULL-PRODUCT',
+                        ),
                       );
                     },
                   ),

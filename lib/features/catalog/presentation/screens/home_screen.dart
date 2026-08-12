@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/mobile_header_bar.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/header/tablet_header_bar.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/providers/products_provider.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/footer/footer_bar.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/map_view.dart';
@@ -115,6 +116,8 @@ class HomeScreen extends StatelessWidget {
             SliverPositioned(
               child: ResponsiveTheme.isMobile(context)
                   ? MobileHeaderBar()
+                  : ResponsiveTheme.isTablet(context)
+                  ? TabletHeaderBar()
                   : HeaderBar(),
             ),
           ],

@@ -47,7 +47,11 @@ class ProductGrid<T extends AsyncNotifier<List<ProductEntity>>>
             sliver: SliverGrid.builder(
               itemCount: itemCount,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: ResponsiveTheme.isMobile(context) ? 2 : 4,
+                crossAxisCount:
+                    ResponsiveTheme.isMobile(context) ||
+                        ResponsiveTheme.isTablet(context)
+                    ? 2
+                    : 4,
                 mainAxisSpacing: 60,
                 crossAxisSpacing: 15,
                 childAspectRatio: 0.55,

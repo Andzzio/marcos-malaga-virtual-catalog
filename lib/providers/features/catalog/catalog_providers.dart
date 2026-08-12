@@ -6,6 +6,7 @@ import 'package:marcos_malaga_app/features/catalog/data/repositories/local_produ
 import 'package:marcos_malaga_app/features/catalog/domain/repositories/banners_repository.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/repositories/products_repository.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/usecases/get_banners_usecase.dart';
+import 'package:marcos_malaga_app/features/catalog/domain/usecases/get_product_by_id_usecase.dart';
 import 'package:marcos_malaga_app/features/catalog/domain/usecases/get_products_usecase.dart';
 
 final localProductsDatasourceProvider = Provider<LocalProductsDatasource>(
@@ -18,6 +19,10 @@ final localProductsRepositoryProvider = Provider<ProductsRepository>(
 );
 final getProductsUsecaseProvider = Provider<GetProductsUsecase>(
   (ref) => GetProductsUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final getProductByIdUsecaseProvider = Provider<GetProductByIdUsecase>(
+  (ref) =>
+      GetProductByIdUsecase(repo: ref.watch(localProductsRepositoryProvider)),
 );
 
 final localBannersDatasourceProvider = Provider<LocalBannersDatasource>(

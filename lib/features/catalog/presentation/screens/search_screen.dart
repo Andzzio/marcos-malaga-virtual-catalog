@@ -4,7 +4,9 @@ import 'package:marcos_malaga_app/app/shared/widgets/footer/footer_bar.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/header_bar.dart';
 import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/mobile_header_bar.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/header/tablet_header_bar.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/home_label.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/header/search_head_bar.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -16,10 +18,13 @@ class SearchScreen extends StatelessWidget {
         const HomeLabel(label: 'NUESTROS CATÁLOGOS'),
         ResponsiveTheme.isMobile(context)
             ? const MobileHeaderBar(colorLerp: false)
+            : ResponsiveTheme.isTablet(context)
+            ? const TabletHeaderBar(colorLerp: false)
             : const HeaderBar(colorLerp: false),
-        const SliverFillRemaining(
-          child: Center(
-            child: Text('Search Screen', style: TextStyle(fontSize: 24)),
+        SliverPadding(
+          padding: EdgeInsetsGeometry.symmetric(horizontal: 20),
+          sliver: SliverMainAxisGroup(
+            slivers: [SliverToBoxAdapter(child: const SearchHeadBar())],
           ),
         ),
         const SliverGap(50),

@@ -2,4 +2,5 @@ import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entit
 
 abstract class ProductsRepository {
   Future<List<ProductEntity>> getProducts();
+  Future<ProductEntity?> getProductById(String id);
 }

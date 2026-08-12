@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 class SearchHeadBar extends StatefulWidget {
   final double progress;
-  const SearchHeadBar({super.key, required this.progress});
+  const SearchHeadBar({super.key, this.progress = 1.0});
 
   @override
   State<SearchHeadBar> createState() => _SearchHeadBarState();
