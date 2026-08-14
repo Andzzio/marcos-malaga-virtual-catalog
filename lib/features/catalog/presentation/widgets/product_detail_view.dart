@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/availability_widget.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/design_selector.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/buttons/no_filled_button.dart';

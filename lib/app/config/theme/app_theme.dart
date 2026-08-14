@@ -62,13 +62,11 @@ class AppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.white,
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 16,
-        ),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
         hintStyle: GoogleFonts.instrumentSans(
-          color: mutedColor,
+          color: Colors.grey,
           fontWeight: FontWeight.w400,
+          fontSize: 14,
         ),
         labelStyle: GoogleFonts.instrumentSans(
           color: primaryColor,

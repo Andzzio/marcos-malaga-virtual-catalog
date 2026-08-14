@@ -5,7 +5,7 @@ import 'package:gap/gap.dart';
 import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/mobile_header_bar.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/tablet_header_bar.dart';
-import 'package:marcos_malaga_app/features/catalog/presentation/providers/products_provider.dart';
+import 'package:marcos_malaga_app/app/shared/presentation/providers/products_provider.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/footer/footer_bar.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/map_view.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/consumer_products_widget.dart';
@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                 BannerCarousel(),
                 HomeLabel(label: "DESCUENTOS 2 X 1 POR INAUGURACIÓN"),
                 SliverGap(50),
-                ProductGrid<ProductsProvider>(
+                ProductGrid(
                   itemCount: 8,
                   productsProvider: productsProvider,
                   titleSection: TitleSection(
@@ -41,6 +41,7 @@ class HomeScreen extends StatelessWidget {
                     bottomLabel: 'NUEVOS PRODUCTOS',
                   ),
                   maxWidth: 1500,
+                  isMobile: ResponsiveTheme.isMobile(context),
                 ),
                 SliverGap(50),
                 ConsumerProductsWidget(

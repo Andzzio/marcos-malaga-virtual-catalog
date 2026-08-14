@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_size_entity.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/stock_availability.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_size_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/stock_availability.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/providers/product_detail_provider.dart';
 
 class AvailabilityWidget extends ConsumerWidget {

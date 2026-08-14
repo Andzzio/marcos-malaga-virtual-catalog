@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marcos_malaga_app/app/core/presentation/shell/app_shell.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/home_screen.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/product_detail_screen.dart';
-import 'package:marcos_malaga_app/features/catalog/presentation/screens/new_arrivals_screen.dart';
+import 'package:marcos_malaga_app/features/catalog/presentation/states/product_filters_state.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/catalog_screen.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/search_screen.dart';
-import 'package:marcos_malaga_app/features/catalog/presentation/screens/xl_sizes_screen.dart';
-import 'package:marcos_malaga_app/features/auth/presentation/screens/login_screen.dart';
+import 'package:marcos_malaga_app/features/account/presentation/screens/login_screen.dart';
 import 'package:marcos_malaga_app/features/checkout/presentation/screens/checkout_screen.dart';
 import 'package:marcos_malaga_app/features/legal/presentation/screens/privacy_policy_screen.dart';
 import 'package:marcos_malaga_app/features/legal/presentation/screens/refund_policy_screen.dart';
@@ -78,24 +77,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                       ),
                     ],
                   ),
-                  GoRoute(
-                    path: 'products/:id',
-                    pageBuilder: (context, state) {
-                      final extra = state.extra as Map<String, dynamic>?;
-                      ProductEntity? product;
-                      if (extra != null) {
-                        product = extra['product'] as ProductEntity?;
-                      }
-                      String? productId = state.pathParameters['id'];
-                      return MaterialPage(
-                        key: ValueKey(productId),
-                        child: ProductDetailScreen(
-                          product: product,
-                          productId: productId ??= 'NULL-PRODUCT',
-                        ),
-                      );
-                    },
-                  ),
+                  productRoute,
                 ],
               ),
             ],
@@ -107,20 +89,24 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 name: 'search',
                 builder: (context, state) => const SearchScreen(),
                 routes: [
-                  GoRoute(
+                  productRoute,
+                  _buildCatalogRoute(
                     path: 'new-arrivals',
                     name: 'new-arrivals',
-                    builder: (context, state) => const NewArrivalsScreen(),
+                    category: CatalogCategory.newArrivals,
+                    title: 'Nuevos Ingresos',
                   ),
-                  GoRoute(
+                  _buildCatalogRoute(
                     path: 'catalog',
                     name: 'catalog',
-                    builder: (context, state) => const CatalogScreen(),
+                    category: CatalogCategory.global,
+                    title: 'Catálogo',
                   ),
-                  GoRoute(
+                  _buildCatalogRoute(
                     path: 'xl-sizes',
                     name: 'xl-sizes',
-                    builder: (context, state) => const XlSizesScreen(),
+                    category: CatalogCategory.xlSizes,
+                    title: 'Tallas XL',
                   ),
                 ],
               ),
@@ -140,3 +126,53 @@ final appRouterProvider = Provider<GoRouter>((ref) {
     ],
   );
 });
+final GoRoute productRoute = GoRoute(
+  path: 'products/:id',
+  pageBuilder: (context, state) {
+    final extra = state.extra as Map<String, dynamic>?;
+    ProductEntity? product;
+    if (extra != null) {
+      product = extra['product'] as ProductEntity?;
+    }
+    String? productId = state.pathParameters['id'];
+    return MaterialPage(
+      key: ValueKey(productId),
+      child: ProductDetailScreen(
+        product: product,
+        productId: productId ??= 'NULL-PRODUCT',
+      ),
+    );
+  },
+);
+
+GoRoute _buildCatalogRoute({
+  required String path,
+  required String name,
+  required CatalogCategory category,
+  required String title,
+}) {
+  return GoRoute(
+    path: path,
+    name: name,
+    builder: (context, state) {
+      final showInStock = state.uri.queryParameters['inStock'];
+      final showOutOfStock = state.uri.queryParameters['outStock'];
+      final query = state.uri.queryParameters['q'];
+      final categoryName = state.uri.queryParameters['category'];
+      final minPrice = state.uri.queryParameters['min'];
+      final maxPrice = state.uri.queryParameters['max'];
+      final orderBy = state.uri.queryParameters['order'];
+      return CatalogScreen(
+        category: category,
+        title: title,
+        showInStock: showInStock,
+        showOutOfStock: showOutOfStock,
+        query: query,
+        categoryName: categoryName,
+        minPrice: minPrice,
+        maxPrice: maxPrice,
+        orderBy: orderBy,
+      );
+    },
+  );
+}

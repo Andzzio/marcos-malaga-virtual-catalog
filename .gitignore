@@ -50,3 +50,6 @@ android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
 .firebase/
 .firebaserc
+
+# Architecture/Engram
+.architecture/

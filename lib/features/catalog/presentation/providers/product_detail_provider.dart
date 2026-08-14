@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/states/product_detail_state.dart';
 
 class ProductDetailProvider extends Notifier<ProductDetailState> {

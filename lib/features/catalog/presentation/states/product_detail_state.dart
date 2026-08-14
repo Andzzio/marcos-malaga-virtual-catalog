@@ -1,6 +1,6 @@
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_design_entity.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_size_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_design_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_size_entity.dart';
 
 class ProductDetailState {
   final ProductEntity product;

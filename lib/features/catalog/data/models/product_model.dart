@@ -1,5 +1,5 @@
 import 'package:marcos_malaga_app/features/catalog/data/models/product_design_model.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
 
 class ProductModel {
   final String id;

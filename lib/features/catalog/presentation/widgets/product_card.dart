@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_cart_button.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/image/custom_image.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_price.dart';
 
 class ProductCard extends StatefulWidget {
-  const ProductCard({super.key, required this.product});
+  const ProductCard({
+    super.key,
+    required this.product,
+    this.isMobile = false,
+    this.isCatalog = false,
+  });
 
   final ProductEntity product;
+  final bool isMobile;
+  final bool isCatalog;
 
   @override
   State<ProductCard> createState() => _ProductCardState();
@@ -33,6 +40,13 @@ class _ProductCardState extends State<ProductCard> {
       },
       child: GestureDetector(
         onTap: () {
+          if (widget.isCatalog) {
+            context.go(
+              '/search/products/${widget.product.id}',
+              extra: {'product': widget.product},
+            );
+            return;
+          }
           context.go(
             '/products/${widget.product.id}',
             extra: {'product': widget.product},
@@ -109,7 +123,10 @@ class _ProductCardState extends State<ProductCard> {
                         fontSize: ResponsiveTheme.isMobile(context) ? 12 : 14,
                       ),
                     ),
-                    ProductPrice(product: widget.product),
+                    ProductPrice(
+                      product: widget.product,
+                      isMobile: widget.isMobile,
+                    ),
                   ],
                 ),
               ),

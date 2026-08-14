@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_detail_view.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_image_view.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/title_section.dart';

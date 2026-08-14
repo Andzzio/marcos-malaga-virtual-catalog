@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:marcos_malaga_app/features/catalog/domain/entities/product_entity.dart';
-import 'package:marcos_malaga_app/features/catalog/presentation/providers/products_provider.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
+import 'package:marcos_malaga_app/app/shared/presentation/providers/products_provider.dart';
 
 class ConsumerProductsWidget extends ConsumerWidget {
   final Widget Function(
