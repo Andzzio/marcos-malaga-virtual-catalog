@@ -102,62 +102,54 @@ class _FilterWidgetState extends ConsumerState<FilterWidget> {
   @override
   void didUpdateWidget(covariant FilterWidget oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (widget.query != null && (oldWidget.query != widget.query)) {
-      ref
-          .read(productFiltersProvider(widget.category).notifier)
-          .updateQuery(widget.query!);
+    
+    if (oldWidget.minPrice != widget.minPrice) {
+      _minContoller.text = widget.minPrice ?? '';
     }
-    if (widget.categoryName != null &&
-        (oldWidget.categoryName != widget.categoryName)) {
-      ref
-          .read(productFiltersProvider(widget.category).notifier)
-          .updateCategory(widget.categoryName);
+    if (oldWidget.maxPrice != widget.maxPrice) {
+      _maxController.text = widget.maxPrice ?? '';
     }
-    if (widget.minPrice != null && (oldWidget.minPrice != widget.minPrice)) {
-      _minContoller.text = widget.minPrice!;
-    }
-    if (widget.maxPrice != null && (oldWidget.maxPrice != widget.maxPrice)) {
-      _maxController.text = widget.maxPrice!;
-    }
+
     Future.microtask(() {
-      if (oldWidget.minPrice != widget.minPrice ||
-          oldWidget.maxPrice != widget.maxPrice) {
-        ref
-            .read(productFiltersProvider(widget.category).notifier)
-            .setPriceRange(
-              widget.minPrice != null
-                  ? double.tryParse(widget.minPrice!)
-                  : null,
-              widget.maxPrice != null
-                  ? double.tryParse(widget.maxPrice!)
-                  : null,
-            );
+      final notifier = ref.read(productFiltersProvider(widget.category).notifier);
+
+      if (oldWidget.query != widget.query) {
+        notifier.updateQuery(widget.query ?? '');
       }
-      if (widget.showInStock != null &&
-          (oldWidget.showInStock != widget.showInStock)) {
-        final showInStock =
-            bool.tryParse(widget.showInStock!, caseSensitive: false) ?? false;
-        ref
-            .read(productFiltersProvider(widget.category).notifier)
-            .setAvailability(showInStock: showInStock);
+
+      if (oldWidget.categoryName != widget.categoryName) {
+        notifier.updateCategory(widget.categoryName);
       }
-      if (widget.showOutOfStock != null &&
-          (oldWidget.showOutOfStock != widget.showOutOfStock)) {
-        final showOutStock =
-            bool.tryParse(widget.showOutOfStock!, caseSensitive: false) ??
-            false;
-        ref
-            .read(productFiltersProvider(widget.category).notifier)
-            .setAvailability(showOutOfStock: showOutStock);
-      }
-      if (widget.orderBy != null && (oldWidget.orderBy != widget.orderBy)) {
-        final sortOrder = CatalogSortOrder.values.firstWhere(
-          (e) => e.name == widget.orderBy,
-          orElse: () => CatalogSortOrder.relevance,
+
+      if (oldWidget.minPrice != widget.minPrice || oldWidget.maxPrice != widget.maxPrice) {
+        notifier.setPriceRange(
+          widget.minPrice != null ? double.tryParse(widget.minPrice!) : null,
+          widget.maxPrice != null ? double.tryParse(widget.maxPrice!) : null,
         );
-        ref
-            .read(productFiltersProvider(widget.category).notifier)
-            .setSortOrder(sortOrder);
+      }
+
+      if (oldWidget.showInStock != widget.showInStock) {
+        final showInStock = widget.showInStock == null
+            ? true
+            : (bool.tryParse(widget.showInStock!, caseSensitive: false) ?? false);
+        notifier.setAvailability(showInStock: showInStock);
+      }
+
+      if (oldWidget.showOutOfStock != widget.showOutOfStock) {
+        final showOutStock = widget.showOutOfStock == null
+            ? true
+            : (bool.tryParse(widget.showOutOfStock!, caseSensitive: false) ?? false);
+        notifier.setAvailability(showOutOfStock: showOutStock);
+      }
+
+      if (oldWidget.orderBy != widget.orderBy) {
+        final sortOrder = widget.orderBy == null
+            ? CatalogSortOrder.relevance
+            : CatalogSortOrder.values.firstWhere(
+                (e) => e.name == widget.orderBy,
+                orElse: () => CatalogSortOrder.relevance,
+              );
+        notifier.setSortOrder(sortOrder);
       }
     });
   }
@@ -174,6 +166,8 @@ class _FilterWidgetState extends ConsumerState<FilterWidget> {
       context: context,
       isScrollControlled: true,
       useRootNavigator: true,
+      useSafeArea: true,
+      constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.85),
       backgroundColor: Theme.of(context).colorScheme.surface,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadiusGeometry.circular(8),
@@ -190,7 +184,8 @@ class _FilterWidgetState extends ConsumerState<FilterWidget> {
     } else {
       queryParams[key] = value;
     }
-    final newUri = uri.replace(
+    final newUri = Uri(
+      path: uri.path,
       queryParameters: queryParams.isEmpty ? null : queryParams,
     );
     return context.replace(newUri.toString());

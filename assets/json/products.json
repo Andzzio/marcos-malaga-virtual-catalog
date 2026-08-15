@@ -8,7 +8,7 @@
     "categoryIds": [
       "abrigos",
       "invierno",
-      "nuevo"
+      "casual"
     ],
     "isVisible": true,
     "sizeChartImageUrl": "assets/images/size_charts/size_chart_basic.png",
@@ -75,8 +75,8 @@
     "basePrice": 120,
     "discountPrice": null,
     "categoryIds": [
-      "pantalones",
-      "oficina"
+      "oficina",
+      "pantalones"
     ],
     "isVisible": true,
     "sizeChartImageUrl": "assets/images/size_charts/size_chart_basic.png",
@@ -174,8 +174,8 @@
     "basePrice": 250,
     "discountPrice": null,
     "categoryIds": [
-      "vestidos",
-      "fiesta"
+      "fiesta",
+      "vestidos"
     ],
     "isVisible": true,
     "designs": [
@@ -323,8 +323,8 @@
     "basePrice": 110,
     "discountPrice": 99,
     "categoryIds": [
-      "chompas",
-      "invierno"
+      "invierno",
+      "chompas"
     ],
     "isVisible": false,
     "designs": [
@@ -390,8 +390,8 @@
     "basePrice": 190,
     "discountPrice": null,
     "categoryIds": [
-      "casacas",
-      "cuerina"
+      "cuerina",
+      "casacas"
     ],
     "isVisible": true,
     "designs": [
@@ -414,6 +414,4435 @@
             "size": "L",
             "stock": 15,
             "sku": "BIK-NEG-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-011",
+    "name": "Blusa Vintage",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 77,
+    "discountPrice": 50,
+    "categoryIds": [
+      "blusas",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-011-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 16,
+            "sku": "PROD-011-ROS-34"
+          },
+          {
+            "size": "36",
+            "stock": 4,
+            "sku": "PROD-011-ROS-36"
+          },
+          {
+            "size": "38",
+            "stock": 4,
+            "sku": "PROD-011-ROS-38"
+          },
+          {
+            "size": "32",
+            "stock": 7,
+            "sku": "PROD-011-ROS-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-012",
+    "name": "Vestido Premium",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 105,
+    "discountPrice": null,
+    "categoryIds": [
+      "vestidos",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-012-A",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 11,
+            "sku": "PROD-012-NEG-M"
+          },
+          {
+            "size": "S",
+            "stock": 3,
+            "sku": "PROD-012-NEG-S"
+          },
+          {
+            "size": "L",
+            "stock": 12,
+            "sku": "PROD-012-NEG-L"
+          }
+        ]
+      },
+      {
+        "id": "DES-012-B",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 3,
+            "sku": "PROD-012-BLA-M"
+          },
+          {
+            "size": "S",
+            "stock": 1,
+            "sku": "PROD-012-BLA-S"
+          },
+          {
+            "size": "XL",
+            "stock": 11,
+            "sku": "PROD-012-BLA-XL"
+          },
+          {
+            "size": "L",
+            "stock": 14,
+            "sku": "PROD-012-BLA-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-013",
+    "name": "Casaca Casual",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 126,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "invierno"
+    ],
+    "isVisible": false,
+    "designs": [
+      {
+        "id": "DES-013-A",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 20,
+            "sku": "PROD-013-GRI-L"
+          },
+          {
+            "size": "XL",
+            "stock": 17,
+            "sku": "PROD-013-GRI-XL"
+          }
+        ]
+      },
+      {
+        "id": "DES-013-B",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 2,
+            "sku": "PROD-013-ROS-M"
+          },
+          {
+            "size": "L",
+            "stock": 13,
+            "sku": "PROD-013-ROS-L"
+          },
+          {
+            "size": "XL",
+            "stock": 4,
+            "sku": "PROD-013-ROS-XL"
+          },
+          {
+            "size": "S",
+            "stock": 10,
+            "sku": "PROD-013-ROS-S"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-014",
+    "name": "Enterizo Moderno",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 111,
+    "discountPrice": null,
+    "categoryIds": [
+      "enterizos",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-014-A",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 0,
+            "sku": "PROD-014-NEG-38"
+          },
+          {
+            "size": "34",
+            "stock": 8,
+            "sku": "PROD-014-NEG-34"
+          },
+          {
+            "size": "32",
+            "stock": 5,
+            "sku": "PROD-014-NEG-32"
+          }
+        ]
+      },
+      {
+        "id": "DES-014-B",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 8,
+            "sku": "PROD-014-ROJ-38"
+          },
+          {
+            "size": "34",
+            "stock": 7,
+            "sku": "PROD-014-ROJ-34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-015",
+    "name": "Falda Clásico",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 299,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-015-A",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 15,
+            "sku": "PROD-015-NAR-XL"
+          },
+          {
+            "size": "S",
+            "stock": 15,
+            "sku": "PROD-015-NAR-S"
+          },
+          {
+            "size": "L",
+            "stock": 14,
+            "sku": "PROD-015-NAR-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-016",
+    "name": "Chompa Casual",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 120,
+    "discountPrice": null,
+    "categoryIds": [
+      "chompas",
+      "oficina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-016-A",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 3,
+            "sku": "PROD-016-NAR-S"
+          },
+          {
+            "size": "M",
+            "stock": 15,
+            "sku": "PROD-016-NAR-M"
+          },
+          {
+            "size": "L",
+            "stock": 3,
+            "sku": "PROD-016-NAR-L"
+          }
+        ]
+      },
+      {
+        "id": "DES-016-B",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 0,
+            "sku": "PROD-016-NEG-M"
+          },
+          {
+            "size": "S",
+            "stock": 10,
+            "sku": "PROD-016-NEG-S"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-017",
+    "name": "Short Vintage",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 56,
+    "discountPrice": 43,
+    "categoryIds": [
+      "shorts",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-017-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 19,
+            "sku": "PROD-017-ROS-M"
+          },
+          {
+            "size": "S",
+            "stock": 13,
+            "sku": "PROD-017-ROS-S"
+          },
+          {
+            "size": "XL",
+            "stock": 5,
+            "sku": "PROD-017-ROS-XL"
+          }
+        ]
+      },
+      {
+        "id": "DES-017-B",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 6,
+            "sku": "PROD-017-NAR-S"
+          },
+          {
+            "size": "M",
+            "stock": 8,
+            "sku": "PROD-017-NAR-M"
+          },
+          {
+            "size": "L",
+            "stock": 7,
+            "sku": "PROD-017-NAR-L"
+          },
+          {
+            "size": "XL",
+            "stock": 14,
+            "sku": "PROD-017-NAR-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-018",
+    "name": "Abrigo Clásico",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 79,
+    "discountPrice": 59,
+    "categoryIds": [
+      "abrigos",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-018-A",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 11,
+            "sku": "PROD-018-NEG-M"
+          },
+          {
+            "size": "XL",
+            "stock": 1,
+            "sku": "PROD-018-NEG-XL"
+          },
+          {
+            "size": "S",
+            "stock": 3,
+            "sku": "PROD-018-NEG-S"
+          }
+        ]
+      },
+      {
+        "id": "DES-018-B",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 2,
+            "sku": "PROD-018-NEG-M"
+          },
+          {
+            "size": "XL",
+            "stock": 19,
+            "sku": "PROD-018-NEG-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-019",
+    "name": "Pantalón Clásico",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 242,
+    "discountPrice": null,
+    "categoryIds": [
+      "pantalones",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-019-A",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 10,
+            "sku": "PROD-019-NEG-M"
+          },
+          {
+            "size": "XL",
+            "stock": 4,
+            "sku": "PROD-019-NEG-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-020",
+    "name": "Blusa Premium",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 52,
+    "discountPrice": null,
+    "categoryIds": [
+      "blusas",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-020-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 18,
+            "sku": "PROD-020-MOR-32"
+          },
+          {
+            "size": "36",
+            "stock": 16,
+            "sku": "PROD-020-MOR-36"
+          },
+          {
+            "size": "34",
+            "stock": 17,
+            "sku": "PROD-020-MOR-34"
+          }
+        ]
+      },
+      {
+        "id": "DES-020-B",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 16,
+            "sku": "PROD-020-NAR-32"
+          },
+          {
+            "size": "34",
+            "stock": 7,
+            "sku": "PROD-020-NAR-34"
+          },
+          {
+            "size": "36",
+            "stock": 20,
+            "sku": "PROD-020-NAR-36"
+          },
+          {
+            "size": "38",
+            "stock": 7,
+            "sku": "PROD-020-NAR-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-021",
+    "name": "Vestido Moderno",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 295,
+    "discountPrice": null,
+    "categoryIds": [
+      "vestidos",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-021-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 1,
+            "sku": "PROD-021-ROS-34"
+          },
+          {
+            "size": "32",
+            "stock": 20,
+            "sku": "PROD-021-ROS-32"
+          },
+          {
+            "size": "36",
+            "stock": 11,
+            "sku": "PROD-021-ROS-36"
+          },
+          {
+            "size": "38",
+            "stock": 2,
+            "sku": "PROD-021-ROS-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-021-B",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 17,
+            "sku": "PROD-021-MOR-34"
+          },
+          {
+            "size": "32",
+            "stock": 7,
+            "sku": "PROD-021-MOR-32"
+          },
+          {
+            "size": "36",
+            "stock": 16,
+            "sku": "PROD-021-MOR-36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-022",
+    "name": "Casaca Moderno",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 91,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-022-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 6,
+            "sku": "PROD-022-ROS-M"
+          },
+          {
+            "size": "L",
+            "stock": 10,
+            "sku": "PROD-022-ROS-L"
+          },
+          {
+            "size": "XL",
+            "stock": 18,
+            "sku": "PROD-022-ROS-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-023",
+    "name": "Enterizo Casual",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 92,
+    "discountPrice": 67,
+    "categoryIds": [
+      "enterizos",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-023-A",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 13,
+            "sku": "PROD-023-AMA-34"
+          },
+          {
+            "size": "36",
+            "stock": 9,
+            "sku": "PROD-023-AMA-36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-024",
+    "name": "Falda Clásico",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 177,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-024-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 2,
+            "sku": "PROD-024-MOR-XL"
+          },
+          {
+            "size": "M",
+            "stock": 2,
+            "sku": "PROD-024-MOR-M"
+          },
+          {
+            "size": "S",
+            "stock": 12,
+            "sku": "PROD-024-MOR-S"
+          },
+          {
+            "size": "L",
+            "stock": 16,
+            "sku": "PROD-024-MOR-L"
+          }
+        ]
+      },
+      {
+        "id": "DES-024-B",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 4,
+            "sku": "PROD-024-MOR-S"
+          },
+          {
+            "size": "L",
+            "stock": 17,
+            "sku": "PROD-024-MOR-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-025",
+    "name": "Chompa Moderno",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 130,
+    "discountPrice": null,
+    "categoryIds": [
+      "chompas",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-025-A",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 6,
+            "sku": "PROD-025-AMA-S"
+          },
+          {
+            "size": "M",
+            "stock": 1,
+            "sku": "PROD-025-AMA-M"
+          },
+          {
+            "size": "L",
+            "stock": 4,
+            "sku": "PROD-025-AMA-L"
+          }
+        ]
+      },
+      {
+        "id": "DES-025-B",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 2,
+            "sku": "PROD-025-ROJ-XL"
+          },
+          {
+            "size": "L",
+            "stock": 16,
+            "sku": "PROD-025-ROJ-L"
+          },
+          {
+            "size": "S",
+            "stock": 10,
+            "sku": "PROD-025-ROJ-S"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-026",
+    "name": "Short Casual",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 96,
+    "discountPrice": null,
+    "categoryIds": [
+      "shorts",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-026-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 6,
+            "sku": "PROD-026-VER-34"
+          },
+          {
+            "size": "36",
+            "stock": 11,
+            "sku": "PROD-026-VER-36"
+          },
+          {
+            "size": "38",
+            "stock": 1,
+            "sku": "PROD-026-VER-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-026-B",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 17,
+            "sku": "PROD-026-AZU-36"
+          },
+          {
+            "size": "32",
+            "stock": 20,
+            "sku": "PROD-026-AZU-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-027",
+    "name": "Abrigo Vintage",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 143,
+    "discountPrice": 97,
+    "categoryIds": [
+      "abrigos",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-027-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 3,
+            "sku": "PROD-027-ROS-32"
+          },
+          {
+            "size": "38",
+            "stock": 20,
+            "sku": "PROD-027-ROS-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-028",
+    "name": "Pantalón Casual",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 114,
+    "discountPrice": 71,
+    "categoryIds": [
+      "pantalones",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-028-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 0,
+            "sku": "PROD-028-MOR-M"
+          },
+          {
+            "size": "L",
+            "stock": 20,
+            "sku": "PROD-028-MOR-L"
+          }
+        ]
+      },
+      {
+        "id": "DES-028-B",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 0,
+            "sku": "PROD-028-NEG-M"
+          },
+          {
+            "size": "L",
+            "stock": 18,
+            "sku": "PROD-028-NEG-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-029",
+    "name": "Blusa Clásico",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 112,
+    "discountPrice": null,
+    "categoryIds": [
+      "blusas",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-029-A",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 9,
+            "sku": "PROD-029-BLA-M"
+          },
+          {
+            "size": "L",
+            "stock": 17,
+            "sku": "PROD-029-BLA-L"
+          },
+          {
+            "size": "S",
+            "stock": 1,
+            "sku": "PROD-029-BLA-S"
+          },
+          {
+            "size": "XL",
+            "stock": 4,
+            "sku": "PROD-029-BLA-XL"
+          }
+        ]
+      },
+      {
+        "id": "DES-029-B",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 7,
+            "sku": "PROD-029-ROS-S"
+          },
+          {
+            "size": "L",
+            "stock": 5,
+            "sku": "PROD-029-ROS-L"
+          },
+          {
+            "size": "M",
+            "stock": 5,
+            "sku": "PROD-029-ROS-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-030",
+    "name": "Vestido Vintage",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 193,
+    "discountPrice": 167,
+    "categoryIds": [
+      "vestidos",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-030-A",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 15,
+            "sku": "PROD-030-ROJ-32"
+          },
+          {
+            "size": "36",
+            "stock": 16,
+            "sku": "PROD-030-ROJ-36"
+          },
+          {
+            "size": "38",
+            "stock": 11,
+            "sku": "PROD-030-ROJ-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-030-B",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 9,
+            "sku": "PROD-030-NAR-32"
+          },
+          {
+            "size": "34",
+            "stock": 18,
+            "sku": "PROD-030-NAR-34"
+          },
+          {
+            "size": "38",
+            "stock": 1,
+            "sku": "PROD-030-NAR-38"
+          },
+          {
+            "size": "36",
+            "stock": 14,
+            "sku": "PROD-030-NAR-36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-031",
+    "name": "Casaca Elegante",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 225,
+    "discountPrice": 177,
+    "categoryIds": [
+      "casacas",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-031-A",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 0,
+            "sku": "PROD-031-NAR-L"
+          },
+          {
+            "size": "M",
+            "stock": 9,
+            "sku": "PROD-031-NAR-M"
+          }
+        ]
+      },
+      {
+        "id": "DES-031-B",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 14,
+            "sku": "PROD-031-AMA-M"
+          },
+          {
+            "size": "L",
+            "stock": 10,
+            "sku": "PROD-031-AMA-L"
+          },
+          {
+            "size": "XL",
+            "stock": 16,
+            "sku": "PROD-031-AMA-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-032",
+    "name": "Enterizo Vintage",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 109,
+    "discountPrice": 74,
+    "categoryIds": [
+      "enterizos",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-032-A",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 11,
+            "sku": "PROD-032-ROJ-32"
+          },
+          {
+            "size": "38",
+            "stock": 20,
+            "sku": "PROD-032-ROJ-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-032-B",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 14,
+            "sku": "PROD-032-VER-32"
+          },
+          {
+            "size": "34",
+            "stock": 5,
+            "sku": "PROD-032-VER-34"
+          },
+          {
+            "size": "38",
+            "stock": 1,
+            "sku": "PROD-032-VER-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-033",
+    "name": "Falda Vintage",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 246,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-033-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 13,
+            "sku": "PROD-033-VER-M"
+          },
+          {
+            "size": "S",
+            "stock": 13,
+            "sku": "PROD-033-VER-S"
+          },
+          {
+            "size": "XL",
+            "stock": 1,
+            "sku": "PROD-033-VER-XL"
+          },
+          {
+            "size": "L",
+            "stock": 8,
+            "sku": "PROD-033-VER-L"
+          }
+        ]
+      },
+      {
+        "id": "DES-033-B",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 20,
+            "sku": "PROD-033-VER-L"
+          },
+          {
+            "size": "M",
+            "stock": 16,
+            "sku": "PROD-033-VER-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-034",
+    "name": "Chompa Casual",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 62,
+    "discountPrice": null,
+    "categoryIds": [
+      "chompas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-034-A",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 12,
+            "sku": "PROD-034-ROJ-M"
+          },
+          {
+            "size": "S",
+            "stock": 9,
+            "sku": "PROD-034-ROJ-S"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-035",
+    "name": "Short Clásico",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 55,
+    "discountPrice": null,
+    "categoryIds": [
+      "shorts",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-035-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 0,
+            "sku": "PROD-035-VER-M"
+          },
+          {
+            "size": "XL",
+            "stock": 7,
+            "sku": "PROD-035-VER-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-036",
+    "name": "Abrigo Casual",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 100,
+    "discountPrice": null,
+    "categoryIds": [
+      "abrigos",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-036-A",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 16,
+            "sku": "PROD-036-NAR-38"
+          },
+          {
+            "size": "32",
+            "stock": 1,
+            "sku": "PROD-036-NAR-32"
+          },
+          {
+            "size": "36",
+            "stock": 9,
+            "sku": "PROD-036-NAR-36"
+          },
+          {
+            "size": "34",
+            "stock": 6,
+            "sku": "PROD-036-NAR-34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-037",
+    "name": "Pantalón Moderno",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 297,
+    "discountPrice": null,
+    "categoryIds": [
+      "pantalones",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-037-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 20,
+            "sku": "PROD-037-VER-M"
+          },
+          {
+            "size": "XL",
+            "stock": 6,
+            "sku": "PROD-037-VER-XL"
+          }
+        ]
+      },
+      {
+        "id": "DES-037-B",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 17,
+            "sku": "PROD-037-NEG-S"
+          },
+          {
+            "size": "M",
+            "stock": 3,
+            "sku": "PROD-037-NEG-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-038",
+    "name": "Blusa Urbano",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 75,
+    "discountPrice": null,
+    "categoryIds": [
+      "blusas",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-038-A",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 2,
+            "sku": "PROD-038-AZU-32"
+          },
+          {
+            "size": "38",
+            "stock": 2,
+            "sku": "PROD-038-AZU-38"
+          },
+          {
+            "size": "34",
+            "stock": 16,
+            "sku": "PROD-038-AZU-34"
+          },
+          {
+            "size": "36",
+            "stock": 1,
+            "sku": "PROD-038-AZU-36"
+          }
+        ]
+      },
+      {
+        "id": "DES-038-B",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 4,
+            "sku": "PROD-038-BLA-34"
+          },
+          {
+            "size": "38",
+            "stock": 0,
+            "sku": "PROD-038-BLA-38"
+          },
+          {
+            "size": "36",
+            "stock": 10,
+            "sku": "PROD-038-BLA-36"
+          },
+          {
+            "size": "32",
+            "stock": 5,
+            "sku": "PROD-038-BLA-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-039",
+    "name": "Vestido Elegante",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 173,
+    "discountPrice": null,
+    "categoryIds": [
+      "vestidos",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-039-A",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 8,
+            "sku": "PROD-039-BLA-34"
+          },
+          {
+            "size": "36",
+            "stock": 11,
+            "sku": "PROD-039-BLA-36"
+          },
+          {
+            "size": "38",
+            "stock": 17,
+            "sku": "PROD-039-BLA-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-040",
+    "name": "Casaca Básico",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 223,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-040-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 3,
+            "sku": "PROD-040-ROS-S"
+          },
+          {
+            "size": "XL",
+            "stock": 0,
+            "sku": "PROD-040-ROS-XL"
+          },
+          {
+            "size": "L",
+            "stock": 6,
+            "sku": "PROD-040-ROS-L"
+          },
+          {
+            "size": "M",
+            "stock": 1,
+            "sku": "PROD-040-ROS-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-041",
+    "name": "Enterizo Premium",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 211,
+    "discountPrice": null,
+    "categoryIds": [
+      "enterizos",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-041-A",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 6,
+            "sku": "PROD-041-AZU-XL"
+          },
+          {
+            "size": "L",
+            "stock": 18,
+            "sku": "PROD-041-AZU-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-042",
+    "name": "Falda Moderno",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 119,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "oficina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-042-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 4,
+            "sku": "PROD-042-VER-36"
+          },
+          {
+            "size": "32",
+            "stock": 6,
+            "sku": "PROD-042-VER-32"
+          },
+          {
+            "size": "38",
+            "stock": 1,
+            "sku": "PROD-042-VER-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-042-B",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 5,
+            "sku": "PROD-042-GRI-34"
+          },
+          {
+            "size": "32",
+            "stock": 14,
+            "sku": "PROD-042-GRI-32"
+          },
+          {
+            "size": "38",
+            "stock": 6,
+            "sku": "PROD-042-GRI-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-043",
+    "name": "Chompa Vintage",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 210,
+    "discountPrice": null,
+    "categoryIds": [
+      "chompas",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-043-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 5,
+            "sku": "PROD-043-ROS-L"
+          },
+          {
+            "size": "M",
+            "stock": 4,
+            "sku": "PROD-043-ROS-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-044",
+    "name": "Short Moderno",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 92,
+    "discountPrice": 64,
+    "categoryIds": [
+      "shorts",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-044-A",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 1,
+            "sku": "PROD-044-AMA-32"
+          },
+          {
+            "size": "34",
+            "stock": 19,
+            "sku": "PROD-044-AMA-34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-045",
+    "name": "Abrigo Básico",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 78,
+    "discountPrice": null,
+    "categoryIds": [
+      "abrigos",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-045-A",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 7,
+            "sku": "PROD-045-ROJ-36"
+          },
+          {
+            "size": "32",
+            "stock": 1,
+            "sku": "PROD-045-ROJ-32"
+          }
+        ]
+      },
+      {
+        "id": "DES-045-B",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 20,
+            "sku": "PROD-045-ROS-38"
+          },
+          {
+            "size": "36",
+            "stock": 10,
+            "sku": "PROD-045-ROS-36"
+          },
+          {
+            "size": "34",
+            "stock": 4,
+            "sku": "PROD-045-ROS-34"
+          },
+          {
+            "size": "32",
+            "stock": 18,
+            "sku": "PROD-045-ROS-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-046",
+    "name": "Pantalón Moderno",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 179,
+    "discountPrice": 143,
+    "categoryIds": [
+      "pantalones",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-046-A",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 9,
+            "sku": "PROD-046-NAR-M"
+          },
+          {
+            "size": "S",
+            "stock": 17,
+            "sku": "PROD-046-NAR-S"
+          },
+          {
+            "size": "XL",
+            "stock": 4,
+            "sku": "PROD-046-NAR-XL"
+          },
+          {
+            "size": "L",
+            "stock": 3,
+            "sku": "PROD-046-NAR-L"
+          }
+        ]
+      },
+      {
+        "id": "DES-046-B",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 11,
+            "sku": "PROD-046-AZU-L"
+          },
+          {
+            "size": "XL",
+            "stock": 10,
+            "sku": "PROD-046-AZU-XL"
+          },
+          {
+            "size": "S",
+            "stock": 6,
+            "sku": "PROD-046-AZU-S"
+          },
+          {
+            "size": "M",
+            "stock": 13,
+            "sku": "PROD-046-AZU-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-047",
+    "name": "Blusa Urbano",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 64,
+    "discountPrice": null,
+    "categoryIds": [
+      "blusas",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-047-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 5,
+            "sku": "PROD-047-MOR-M"
+          },
+          {
+            "size": "L",
+            "stock": 20,
+            "sku": "PROD-047-MOR-L"
+          },
+          {
+            "size": "XL",
+            "stock": 14,
+            "sku": "PROD-047-MOR-XL"
+          },
+          {
+            "size": "S",
+            "stock": 10,
+            "sku": "PROD-047-MOR-S"
+          }
+        ]
+      },
+      {
+        "id": "DES-047-B",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 1,
+            "sku": "PROD-047-BLA-S"
+          },
+          {
+            "size": "M",
+            "stock": 14,
+            "sku": "PROD-047-BLA-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-048",
+    "name": "Vestido Premium",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 134,
+    "discountPrice": null,
+    "categoryIds": [
+      "vestidos",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-048-A",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 9,
+            "sku": "PROD-048-AZU-XL"
+          },
+          {
+            "size": "S",
+            "stock": 17,
+            "sku": "PROD-048-AZU-S"
+          },
+          {
+            "size": "L",
+            "stock": 0,
+            "sku": "PROD-048-AZU-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-049",
+    "name": "Casaca Básico",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 204,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-049-A",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 4,
+            "sku": "PROD-049-BLA-38"
+          },
+          {
+            "size": "34",
+            "stock": 10,
+            "sku": "PROD-049-BLA-34"
+          },
+          {
+            "size": "36",
+            "stock": 14,
+            "sku": "PROD-049-BLA-36"
+          }
+        ]
+      },
+      {
+        "id": "DES-049-B",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 4,
+            "sku": "PROD-049-ROJ-32"
+          },
+          {
+            "size": "36",
+            "stock": 0,
+            "sku": "PROD-049-ROJ-36"
+          },
+          {
+            "size": "38",
+            "stock": 4,
+            "sku": "PROD-049-ROJ-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-050",
+    "name": "Enterizo Urbano",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 191,
+    "discountPrice": 146,
+    "categoryIds": [
+      "enterizos",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-050-A",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 14,
+            "sku": "PROD-050-ROJ-32"
+          },
+          {
+            "size": "38",
+            "stock": 15,
+            "sku": "PROD-050-ROJ-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-050-B",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 18,
+            "sku": "PROD-050-GRI-32"
+          },
+          {
+            "size": "36",
+            "stock": 19,
+            "sku": "PROD-050-GRI-36"
+          },
+          {
+            "size": "38",
+            "stock": 6,
+            "sku": "PROD-050-GRI-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-051",
+    "name": "Falda Clásico",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 106,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-051-A",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 9,
+            "sku": "PROD-051-AMA-XL"
+          },
+          {
+            "size": "M",
+            "stock": 17,
+            "sku": "PROD-051-AMA-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-052",
+    "name": "Chompa Urbano",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 142,
+    "discountPrice": 120,
+    "categoryIds": [
+      "chompas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-052-A",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 2,
+            "sku": "PROD-052-GRI-L"
+          },
+          {
+            "size": "M",
+            "stock": 9,
+            "sku": "PROD-052-GRI-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-053",
+    "name": "Short Urbano",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 124,
+    "discountPrice": null,
+    "categoryIds": [
+      "shorts",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-053-A",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 3,
+            "sku": "PROD-053-GRI-38"
+          },
+          {
+            "size": "32",
+            "stock": 10,
+            "sku": "PROD-053-GRI-32"
+          }
+        ]
+      },
+      {
+        "id": "DES-053-B",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 19,
+            "sku": "PROD-053-ROS-34"
+          },
+          {
+            "size": "32",
+            "stock": 3,
+            "sku": "PROD-053-ROS-32"
+          },
+          {
+            "size": "38",
+            "stock": 16,
+            "sku": "PROD-053-ROS-38"
+          },
+          {
+            "size": "36",
+            "stock": 0,
+            "sku": "PROD-053-ROS-36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-054",
+    "name": "Abrigo Urbano",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 225,
+    "discountPrice": 189,
+    "categoryIds": [
+      "abrigos",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-054-A",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 9,
+            "sku": "PROD-054-AZU-36"
+          },
+          {
+            "size": "38",
+            "stock": 3,
+            "sku": "PROD-054-AZU-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-054-B",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 4,
+            "sku": "PROD-054-AMA-34"
+          },
+          {
+            "size": "32",
+            "stock": 18,
+            "sku": "PROD-054-AMA-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-055",
+    "name": "Pantalón Premium",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 167,
+    "discountPrice": null,
+    "categoryIds": [
+      "pantalones",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-055-A",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 9,
+            "sku": "PROD-055-AMA-M"
+          },
+          {
+            "size": "S",
+            "stock": 11,
+            "sku": "PROD-055-AMA-S"
+          },
+          {
+            "size": "XL",
+            "stock": 12,
+            "sku": "PROD-055-AMA-XL"
+          }
+        ]
+      },
+      {
+        "id": "DES-055-B",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 14,
+            "sku": "PROD-055-NEG-M"
+          },
+          {
+            "size": "L",
+            "stock": 2,
+            "sku": "PROD-055-NEG-L"
+          },
+          {
+            "size": "S",
+            "stock": 12,
+            "sku": "PROD-055-NEG-S"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-056",
+    "name": "Blusa Básico",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 70,
+    "discountPrice": null,
+    "categoryIds": [
+      "blusas",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-056-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 2,
+            "sku": "PROD-056-MOR-L"
+          },
+          {
+            "size": "M",
+            "stock": 3,
+            "sku": "PROD-056-MOR-M"
+          },
+          {
+            "size": "XL",
+            "stock": 6,
+            "sku": "PROD-056-MOR-XL"
+          },
+          {
+            "size": "S",
+            "stock": 10,
+            "sku": "PROD-056-MOR-S"
+          }
+        ]
+      },
+      {
+        "id": "DES-056-B",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 1,
+            "sku": "PROD-056-GRI-M"
+          },
+          {
+            "size": "L",
+            "stock": 17,
+            "sku": "PROD-056-GRI-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-057",
+    "name": "Vestido Básico",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 87,
+    "discountPrice": 76,
+    "categoryIds": [
+      "vestidos",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-057-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 16,
+            "sku": "PROD-057-MOR-36"
+          },
+          {
+            "size": "38",
+            "stock": 3,
+            "sku": "PROD-057-MOR-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-057-B",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 12,
+            "sku": "PROD-057-AMA-36"
+          },
+          {
+            "size": "32",
+            "stock": 4,
+            "sku": "PROD-057-AMA-32"
+          },
+          {
+            "size": "38",
+            "stock": 19,
+            "sku": "PROD-057-AMA-38"
+          },
+          {
+            "size": "34",
+            "stock": 2,
+            "sku": "PROD-057-AMA-34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-058",
+    "name": "Casaca Casual",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 297,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-058-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 1,
+            "sku": "PROD-058-VER-32"
+          },
+          {
+            "size": "34",
+            "stock": 5,
+            "sku": "PROD-058-VER-34"
+          },
+          {
+            "size": "36",
+            "stock": 10,
+            "sku": "PROD-058-VER-36"
+          },
+          {
+            "size": "38",
+            "stock": 8,
+            "sku": "PROD-058-VER-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-059",
+    "name": "Enterizo Vintage",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 145,
+    "discountPrice": null,
+    "categoryIds": [
+      "enterizos",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-059-A",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 6,
+            "sku": "PROD-059-BLA-38"
+          },
+          {
+            "size": "36",
+            "stock": 15,
+            "sku": "PROD-059-BLA-36"
+          },
+          {
+            "size": "32",
+            "stock": 16,
+            "sku": "PROD-059-BLA-32"
+          },
+          {
+            "size": "34",
+            "stock": 20,
+            "sku": "PROD-059-BLA-34"
+          }
+        ]
+      },
+      {
+        "id": "DES-059-B",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 19,
+            "sku": "PROD-059-NAR-36"
+          },
+          {
+            "size": "38",
+            "stock": 0,
+            "sku": "PROD-059-NAR-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-060",
+    "name": "Falda Básico",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 265,
+    "discountPrice": 231,
+    "categoryIds": [
+      "faldas",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-060-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 16,
+            "sku": "PROD-060-ROS-XL"
+          },
+          {
+            "size": "S",
+            "stock": 0,
+            "sku": "PROD-060-ROS-S"
+          },
+          {
+            "size": "L",
+            "stock": 14,
+            "sku": "PROD-060-ROS-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-061",
+    "name": "Chompa Vintage",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 191,
+    "discountPrice": null,
+    "categoryIds": [
+      "chompas",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-061-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 7,
+            "sku": "PROD-061-VER-XL"
+          },
+          {
+            "size": "S",
+            "stock": 6,
+            "sku": "PROD-061-VER-S"
+          }
+        ]
+      },
+      {
+        "id": "DES-061-B",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 2,
+            "sku": "PROD-061-BLA-S"
+          },
+          {
+            "size": "M",
+            "stock": 6,
+            "sku": "PROD-061-BLA-M"
+          },
+          {
+            "size": "L",
+            "stock": 9,
+            "sku": "PROD-061-BLA-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-062",
+    "name": "Short Vintage",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 160,
+    "discountPrice": null,
+    "categoryIds": [
+      "shorts",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-062-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 15,
+            "sku": "PROD-062-MOR-32"
+          },
+          {
+            "size": "36",
+            "stock": 19,
+            "sku": "PROD-062-MOR-36"
+          },
+          {
+            "size": "38",
+            "stock": 19,
+            "sku": "PROD-062-MOR-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-063",
+    "name": "Abrigo Casual",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 285,
+    "discountPrice": null,
+    "categoryIds": [
+      "abrigos",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-063-A",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 6,
+            "sku": "PROD-063-NAR-32"
+          },
+          {
+            "size": "34",
+            "stock": 3,
+            "sku": "PROD-063-NAR-34"
+          },
+          {
+            "size": "38",
+            "stock": 10,
+            "sku": "PROD-063-NAR-38"
+          },
+          {
+            "size": "36",
+            "stock": 0,
+            "sku": "PROD-063-NAR-36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-064",
+    "name": "Pantalón Premium",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 99,
+    "discountPrice": 77,
+    "categoryIds": [
+      "pantalones",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-064-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 18,
+            "sku": "PROD-064-ROS-38"
+          },
+          {
+            "size": "34",
+            "stock": 11,
+            "sku": "PROD-064-ROS-34"
+          },
+          {
+            "size": "36",
+            "stock": 11,
+            "sku": "PROD-064-ROS-36"
+          },
+          {
+            "size": "32",
+            "stock": 4,
+            "sku": "PROD-064-ROS-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-065",
+    "name": "Blusa Moderno",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 284,
+    "discountPrice": null,
+    "categoryIds": [
+      "blusas",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-065-A",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 3,
+            "sku": "PROD-065-ROJ-M"
+          },
+          {
+            "size": "S",
+            "stock": 4,
+            "sku": "PROD-065-ROJ-S"
+          },
+          {
+            "size": "L",
+            "stock": 15,
+            "sku": "PROD-065-ROJ-L"
+          },
+          {
+            "size": "XL",
+            "stock": 10,
+            "sku": "PROD-065-ROJ-XL"
+          }
+        ]
+      },
+      {
+        "id": "DES-065-B",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 16,
+            "sku": "PROD-065-AZU-L"
+          },
+          {
+            "size": "S",
+            "stock": 18,
+            "sku": "PROD-065-AZU-S"
+          },
+          {
+            "size": "XL",
+            "stock": 0,
+            "sku": "PROD-065-AZU-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-066",
+    "name": "Vestido Vintage",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 202,
+    "discountPrice": 167,
+    "categoryIds": [
+      "vestidos",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-066-A",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 10,
+            "sku": "PROD-066-BLA-M"
+          },
+          {
+            "size": "XL",
+            "stock": 11,
+            "sku": "PROD-066-BLA-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-067",
+    "name": "Casaca Elegante",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 173,
+    "discountPrice": 138,
+    "categoryIds": [
+      "casacas",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-067-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 0,
+            "sku": "PROD-067-MOR-38"
+          },
+          {
+            "size": "34",
+            "stock": 11,
+            "sku": "PROD-067-MOR-34"
+          }
+        ]
+      },
+      {
+        "id": "DES-067-B",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 18,
+            "sku": "PROD-067-MOR-34"
+          },
+          {
+            "size": "38",
+            "stock": 15,
+            "sku": "PROD-067-MOR-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-068",
+    "name": "Enterizo Urbano",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 204,
+    "discountPrice": null,
+    "categoryIds": [
+      "enterizos",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-068-A",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 2,
+            "sku": "PROD-068-GRI-S"
+          },
+          {
+            "size": "XL",
+            "stock": 4,
+            "sku": "PROD-068-GRI-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-069",
+    "name": "Falda Moderno",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 145,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-069-A",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 6,
+            "sku": "PROD-069-AMA-S"
+          },
+          {
+            "size": "M",
+            "stock": 5,
+            "sku": "PROD-069-AMA-M"
+          },
+          {
+            "size": "XL",
+            "stock": 12,
+            "sku": "PROD-069-AMA-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-070",
+    "name": "Chompa Básico",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 141,
+    "discountPrice": null,
+    "categoryIds": [
+      "chompas",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-070-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 20,
+            "sku": "PROD-070-VER-M"
+          },
+          {
+            "size": "XL",
+            "stock": 7,
+            "sku": "PROD-070-VER-XL"
+          },
+          {
+            "size": "L",
+            "stock": 1,
+            "sku": "PROD-070-VER-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-071",
+    "name": "Short Elegante",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 267,
+    "discountPrice": 211,
+    "categoryIds": [
+      "shorts",
+      "oficina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-071-A",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 14,
+            "sku": "PROD-071-BLA-S"
+          },
+          {
+            "size": "L",
+            "stock": 4,
+            "sku": "PROD-071-BLA-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-072",
+    "name": "Abrigo Moderno",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 260,
+    "discountPrice": null,
+    "categoryIds": [
+      "abrigos",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-072-A",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 18,
+            "sku": "PROD-072-AZU-32"
+          },
+          {
+            "size": "38",
+            "stock": 11,
+            "sku": "PROD-072-AZU-38"
+          },
+          {
+            "size": "34",
+            "stock": 11,
+            "sku": "PROD-072-AZU-34"
+          }
+        ]
+      },
+      {
+        "id": "DES-072-B",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 11,
+            "sku": "PROD-072-BLA-38"
+          },
+          {
+            "size": "34",
+            "stock": 14,
+            "sku": "PROD-072-BLA-34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-073",
+    "name": "Pantalón Moderno",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 71,
+    "discountPrice": null,
+    "categoryIds": [
+      "pantalones",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-073-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 17,
+            "sku": "PROD-073-VER-L"
+          },
+          {
+            "size": "M",
+            "stock": 12,
+            "sku": "PROD-073-VER-M"
+          },
+          {
+            "size": "XL",
+            "stock": 14,
+            "sku": "PROD-073-VER-XL"
+          },
+          {
+            "size": "S",
+            "stock": 12,
+            "sku": "PROD-073-VER-S"
+          }
+        ]
+      },
+      {
+        "id": "DES-073-B",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 14,
+            "sku": "PROD-073-ROJ-L"
+          },
+          {
+            "size": "S",
+            "stock": 17,
+            "sku": "PROD-073-ROJ-S"
+          },
+          {
+            "size": "XL",
+            "stock": 14,
+            "sku": "PROD-073-ROJ-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-074",
+    "name": "Blusa Clásico",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 259,
+    "discountPrice": null,
+    "categoryIds": [
+      "blusas",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-074-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "XL",
+            "stock": 0,
+            "sku": "PROD-074-VER-XL"
+          },
+          {
+            "size": "L",
+            "stock": 13,
+            "sku": "PROD-074-VER-L"
+          },
+          {
+            "size": "M",
+            "stock": 18,
+            "sku": "PROD-074-VER-M"
+          }
+        ]
+      },
+      {
+        "id": "DES-074-B",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 3,
+            "sku": "PROD-074-MOR-M"
+          },
+          {
+            "size": "XL",
+            "stock": 3,
+            "sku": "PROD-074-MOR-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-075",
+    "name": "Vestido Casual",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 95,
+    "discountPrice": null,
+    "categoryIds": [
+      "vestidos",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-075-A",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 18,
+            "sku": "PROD-075-NAR-38"
+          },
+          {
+            "size": "36",
+            "stock": 15,
+            "sku": "PROD-075-NAR-36"
+          }
+        ]
+      },
+      {
+        "id": "DES-075-B",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 7,
+            "sku": "PROD-075-MOR-34"
+          },
+          {
+            "size": "38",
+            "stock": 20,
+            "sku": "PROD-075-MOR-38"
+          },
+          {
+            "size": "36",
+            "stock": 2,
+            "sku": "PROD-075-MOR-36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-076",
+    "name": "Casaca Casual",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 58,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-076-A",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 13,
+            "sku": "PROD-076-GRI-L"
+          },
+          {
+            "size": "S",
+            "stock": 0,
+            "sku": "PROD-076-GRI-S"
+          },
+          {
+            "size": "M",
+            "stock": 1,
+            "sku": "PROD-076-GRI-M"
+          }
+        ]
+      },
+      {
+        "id": "DES-076-B",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "M",
+            "stock": 19,
+            "sku": "PROD-076-MOR-M"
+          },
+          {
+            "size": "XL",
+            "stock": 14,
+            "sku": "PROD-076-MOR-XL"
+          },
+          {
+            "size": "L",
+            "stock": 7,
+            "sku": "PROD-076-MOR-L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-077",
+    "name": "Enterizo Clásico",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 78,
+    "discountPrice": null,
+    "categoryIds": [
+      "enterizos",
+      "verano"
+    ],
+    "isVisible": false,
+    "designs": [
+      {
+        "id": "DES-077-A",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 11,
+            "sku": "PROD-077-ROJ-38"
+          },
+          {
+            "size": "32",
+            "stock": 13,
+            "sku": "PROD-077-ROJ-32"
+          }
+        ]
+      },
+      {
+        "id": "DES-077-B",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 16,
+            "sku": "PROD-077-GRI-36"
+          },
+          {
+            "size": "34",
+            "stock": 6,
+            "sku": "PROD-077-GRI-34"
+          },
+          {
+            "size": "32",
+            "stock": 14,
+            "sku": "PROD-077-GRI-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-078",
+    "name": "Falda Premium",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 293,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-078-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 15,
+            "sku": "PROD-078-MOR-36"
+          },
+          {
+            "size": "34",
+            "stock": 8,
+            "sku": "PROD-078-MOR-34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-079",
+    "name": "Chompa Básico",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 203,
+    "discountPrice": 168,
+    "categoryIds": [
+      "chompas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-079-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 5,
+            "sku": "PROD-079-VER-L"
+          },
+          {
+            "size": "S",
+            "stock": 0,
+            "sku": "PROD-079-VER-S"
+          },
+          {
+            "size": "XL",
+            "stock": 6,
+            "sku": "PROD-079-VER-XL"
+          },
+          {
+            "size": "M",
+            "stock": 13,
+            "sku": "PROD-079-VER-M"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-080",
+    "name": "Short Urbano",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 119,
+    "discountPrice": 84,
+    "categoryIds": [
+      "shorts",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-080-A",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 19,
+            "sku": "PROD-080-AMA-32"
+          },
+          {
+            "size": "36",
+            "stock": 20,
+            "sku": "PROD-080-AMA-36"
+          },
+          {
+            "size": "34",
+            "stock": 17,
+            "sku": "PROD-080-AMA-34"
+          }
+        ]
+      },
+      {
+        "id": "DES-080-B",
+        "name": "Negro",
+        "hexCode": "#000000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 13,
+            "sku": "PROD-080-NEG-38"
+          },
+          {
+            "size": "32",
+            "stock": 10,
+            "sku": "PROD-080-NEG-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-081",
+    "name": "Abrigo Elegante",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 57,
+    "discountPrice": null,
+    "categoryIds": [
+      "abrigos",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-081-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 5,
+            "sku": "PROD-081-VER-32"
+          },
+          {
+            "size": "34",
+            "stock": 3,
+            "sku": "PROD-081-VER-34"
+          },
+          {
+            "size": "38",
+            "stock": 20,
+            "sku": "PROD-081-VER-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-081-B",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 13,
+            "sku": "PROD-081-NAR-34"
+          },
+          {
+            "size": "32",
+            "stock": 4,
+            "sku": "PROD-081-NAR-32"
+          },
+          {
+            "size": "38",
+            "stock": 20,
+            "sku": "PROD-081-NAR-38"
+          },
+          {
+            "size": "36",
+            "stock": 17,
+            "sku": "PROD-081-NAR-36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-082",
+    "name": "Pantalón Vintage",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 84,
+    "discountPrice": null,
+    "categoryIds": [
+      "pantalones",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-082-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "32",
+            "stock": 12,
+            "sku": "PROD-082-ROS-32"
+          },
+          {
+            "size": "34",
+            "stock": 18,
+            "sku": "PROD-082-ROS-34"
+          },
+          {
+            "size": "36",
+            "stock": 2,
+            "sku": "PROD-082-ROS-36"
+          }
+        ]
+      },
+      {
+        "id": "DES-082-B",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 3,
+            "sku": "PROD-082-ROJ-36"
+          },
+          {
+            "size": "32",
+            "stock": 1,
+            "sku": "PROD-082-ROJ-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-083",
+    "name": "Blusa Urbano",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 101,
+    "discountPrice": null,
+    "categoryIds": [
+      "blusas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-083-A",
+        "name": "Naranja",
+        "hexCode": "#FFA500",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_2.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 14,
+            "sku": "PROD-083-NAR-36"
+          },
+          {
+            "size": "34",
+            "stock": 20,
+            "sku": "PROD-083-NAR-34"
+          }
+        ]
+      },
+      {
+        "id": "DES-083-B",
+        "name": "Blanco",
+        "hexCode": "#FFFFFF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "34",
+            "stock": 15,
+            "sku": "PROD-083-BLA-34"
+          },
+          {
+            "size": "38",
+            "stock": 7,
+            "sku": "PROD-083-BLA-38"
+          },
+          {
+            "size": "36",
+            "stock": 1,
+            "sku": "PROD-083-BLA-36"
+          },
+          {
+            "size": "32",
+            "stock": 10,
+            "sku": "PROD-083-BLA-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-084",
+    "name": "Vestido Vintage",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 209,
+    "discountPrice": null,
+    "categoryIds": [
+      "vestidos",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-084-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 7,
+            "sku": "PROD-084-VER-36"
+          },
+          {
+            "size": "32",
+            "stock": 5,
+            "sku": "PROD-084-VER-32"
+          },
+          {
+            "size": "34",
+            "stock": 15,
+            "sku": "PROD-084-VER-34"
+          },
+          {
+            "size": "38",
+            "stock": 11,
+            "sku": "PROD-084-VER-38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-085",
+    "name": "Casaca Clásico",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 293,
+    "discountPrice": null,
+    "categoryIds": [
+      "casacas",
+      "verano"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-085-A",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 17,
+            "sku": "PROD-085-VER-L"
+          },
+          {
+            "size": "S",
+            "stock": 11,
+            "sku": "PROD-085-VER-S"
+          },
+          {
+            "size": "M",
+            "stock": 9,
+            "sku": "PROD-085-VER-M"
+          },
+          {
+            "size": "XL",
+            "stock": 9,
+            "sku": "PROD-085-VER-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-086",
+    "name": "Enterizo Clásico",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 171,
+    "discountPrice": 139,
+    "categoryIds": [
+      "enterizos",
+      "casual"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-086-A",
+        "name": "Amarillo",
+        "hexCode": "#FFFF00",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 19,
+            "sku": "PROD-086-AMA-S"
+          },
+          {
+            "size": "L",
+            "stock": 17,
+            "sku": "PROD-086-AMA-L"
+          },
+          {
+            "size": "XL",
+            "stock": 14,
+            "sku": "PROD-086-AMA-XL"
+          },
+          {
+            "size": "M",
+            "stock": 11,
+            "sku": "PROD-086-AMA-M"
+          }
+        ]
+      },
+      {
+        "id": "DES-086-B",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_5.png"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 11,
+            "sku": "PROD-086-GRI-S"
+          },
+          {
+            "size": "L",
+            "stock": 8,
+            "sku": "PROD-086-GRI-L"
+          },
+          {
+            "size": "XL",
+            "stock": 16,
+            "sku": "PROD-086-GRI-XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-087",
+    "name": "Falda Vintage",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 259,
+    "discountPrice": null,
+    "categoryIds": [
+      "faldas",
+      "invierno"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-087-A",
+        "name": "Azul",
+        "hexCode": "#0000FF",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 2,
+            "sku": "PROD-087-AZU-36"
+          },
+          {
+            "size": "32",
+            "stock": 0,
+            "sku": "PROD-087-AZU-32"
+          },
+          {
+            "size": "34",
+            "stock": 5,
+            "sku": "PROD-087-AZU-34"
+          },
+          {
+            "size": "38",
+            "stock": 15,
+            "sku": "PROD-087-AZU-38"
+          }
+        ]
+      },
+      {
+        "id": "DES-087-B",
+        "name": "Verde",
+        "hexCode": "#008000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "38",
+            "stock": 11,
+            "sku": "PROD-087-VER-38"
+          },
+          {
+            "size": "36",
+            "stock": 14,
+            "sku": "PROD-087-VER-36"
+          },
+          {
+            "size": "32",
+            "stock": 18,
+            "sku": "PROD-087-VER-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-088",
+    "name": "Chompa Básico",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 53,
+    "discountPrice": 47,
+    "categoryIds": [
+      "chompas",
+      "denim"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-088-A",
+        "name": "Morado",
+        "hexCode": "#800080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "S",
+            "stock": 6,
+            "sku": "PROD-088-MOR-S"
+          },
+          {
+            "size": "XL",
+            "stock": 7,
+            "sku": "PROD-088-MOR-XL"
+          },
+          {
+            "size": "L",
+            "stock": 19,
+            "sku": "PROD-088-MOR-L"
+          },
+          {
+            "size": "M",
+            "stock": 0,
+            "sku": "PROD-088-MOR-M"
+          }
+        ]
+      },
+      {
+        "id": "DES-088-B",
+        "name": "Gris",
+        "hexCode": "#808080",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "L",
+            "stock": 20,
+            "sku": "PROD-088-GRI-L"
+          },
+          {
+            "size": "S",
+            "stock": 15,
+            "sku": "PROD-088-GRI-S"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-089",
+    "name": "Short Premium",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 266,
+    "discountPrice": null,
+    "categoryIds": [
+      "shorts",
+      "cuerina"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-089-A",
+        "name": "Rojo",
+        "hexCode": "#FF0000",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_3.png",
+          "assets/images/products/mock_product.jpg"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 17,
+            "sku": "PROD-089-ROJ-36"
+          },
+          {
+            "size": "34",
+            "stock": 1,
+            "sku": "PROD-089-ROJ-34"
+          },
+          {
+            "size": "38",
+            "stock": 8,
+            "sku": "PROD-089-ROJ-38"
+          },
+          {
+            "size": "32",
+            "stock": 9,
+            "sku": "PROD-089-ROJ-32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PROD-090",
+    "name": "Abrigo Básico",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "basePrice": 177,
+    "discountPrice": null,
+    "categoryIds": [
+      "abrigos",
+      "fiesta"
+    ],
+    "isVisible": true,
+    "designs": [
+      {
+        "id": "DES-090-A",
+        "name": "Rosa",
+        "hexCode": "#FFC0CB",
+        "swatchImageUrl": null,
+        "imageUrls": [
+          "assets/images/products/mock_product_4.png",
+          "assets/images/products/mock_product_3.png"
+        ],
+        "sizes": [
+          {
+            "size": "36",
+            "stock": 8,
+            "sku": "PROD-090-ROS-36"
+          },
+          {
+            "size": "34",
+            "stock": 8,
+            "sku": "PROD-090-ROS-34"
+          },
+          {
+            "size": "38",
+            "stock": 1,
+            "sku": "PROD-090-ROS-38"
+          },
+          {
+            "size": "32",
+            "stock": 1,
+            "sku": "PROD-090-ROS-32"
           }
         ]
       }

@@ -19,6 +19,7 @@ class SearchScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final currentQuery = GoRouterState.of(context).uri.queryParameters['q'] ?? '';
     final style = Theme.of(
       context,
     ).textTheme.labelMedium?.copyWith(fontSize: 15);
@@ -53,7 +54,7 @@ class SearchScreen extends ConsumerWidget {
         SliverPadding(
           padding: EdgeInsetsGeometry.symmetric(horizontal: 20),
           sliver: SliverMainAxisGroup(
-            slivers: [SliverToBoxAdapter(child: const SearchHeadBar())],
+            slivers: [SliverToBoxAdapter(child: SearchHeadBar(initialQuery: currentQuery))],
           ),
         ),
         SliverGap(20),

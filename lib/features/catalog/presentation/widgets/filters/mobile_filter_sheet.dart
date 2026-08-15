@@ -48,7 +48,8 @@ class _MobileFilterSheetState extends ConsumerState<MobileFilterSheet> {
     } else {
       queryParams[key] = value;
     }
-    final newUri = uri.replace(
+    final newUri = Uri(
+      path: uri.path,
       queryParameters: queryParams.isEmpty ? null : queryParams,
     );
     context.replace(newUri.toString());
@@ -77,6 +78,7 @@ class _MobileFilterSheetState extends ConsumerState<MobileFilterSheet> {
             Text('Filtros', style: titleStyle),
             SearchHeadBar(
               progress: 1.0,
+              initialQuery: filterState.query,
               onSubmittedOverride: (query) => updatePath('q', query),
             ),
             Text('Disponibilidad', style: titleStyle),

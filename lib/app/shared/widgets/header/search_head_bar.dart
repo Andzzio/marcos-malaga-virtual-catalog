@@ -4,8 +4,14 @@ import 'package:go_router/go_router.dart';
 
 class SearchHeadBar extends StatefulWidget {
   final double progress;
+  final String? initialQuery;
   final void Function(String)? onSubmittedOverride;
-  const SearchHeadBar({super.key, this.progress = 1.0, this.onSubmittedOverride});
+  const SearchHeadBar({
+    super.key,
+    this.progress = 1.0,
+    this.initialQuery,
+    this.onSubmittedOverride,
+  });
 
   @override
   State<SearchHeadBar> createState() => _SearchHeadBarState();
@@ -15,6 +21,24 @@ class _SearchHeadBarState extends State<SearchHeadBar> {
   final _searchController = TextEditingController();
 
   @override
+  void initState() {
+    super.initState();
+    _searchController.text = widget.initialQuery ?? '';
+  }
+
+  @override
+  void didUpdateWidget(covariant SearchHeadBar oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.initialQuery != widget.initialQuery) {
+      if (_searchController.text != (widget.initialQuery ?? '')) {
+        Future.microtask(() {
+          _searchController.text = widget.initialQuery ?? '';
+        });
+      }
+    }
+  }
+
+  @override
   void dispose() {
     _searchController.dispose();
     super.dispose();
@@ -22,22 +46,34 @@ class _SearchHeadBarState extends State<SearchHeadBar> {
 
   void _onSubmit() {
     final query = _searchController.text.trim();
-    if (query.isEmpty) return;
-    
+
     if (widget.onSubmittedOverride != null) {
       widget.onSubmittedOverride!(query);
       return;
     }
-    
-    final currentPath = GoRouterState.of(context).uri.path;
 
-    if (currentPath.contains('xl-sizes')) {
-       context.go('/search/xl-sizes?q=$query');
-    } else if (currentPath.contains('new-arrivals')) {
-       context.go('/search/new-arrivals?q=$query');
+    final uri = GoRouterState.of(context).uri;
+    final Map<String, dynamic> queryParams = Map.of(uri.queryParameters);
+
+    if (query.isEmpty) {
+      queryParams.remove('q');
     } else {
-       context.go('/search/catalog?q=$query');
+      queryParams['q'] = query;
     }
+
+    final currentPath = uri.path;
+    String newPath = '/search/catalog';
+    if (currentPath.contains('xl-sizes')) {
+      newPath = '/search/xl-sizes';
+    } else if (currentPath.contains('new-arrivals')) {
+      newPath = '/search/new-arrivals';
+    }
+
+    final newUri = Uri(
+      path: newPath,
+      queryParameters: queryParams.isEmpty ? null : queryParams,
+    );
+    context.go(newUri.toString());
   }
 
   @override

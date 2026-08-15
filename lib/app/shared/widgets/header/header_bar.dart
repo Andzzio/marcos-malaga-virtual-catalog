@@ -10,16 +10,18 @@ class HeaderBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final currentQuery = GoRouterState.of(context).uri.queryParameters['q'] ?? '';
     return SliverPersistentHeader(
       pinned: true,
-      delegate: HeaderBarDelegate(colorLerp: colorLerp),
+      delegate: HeaderBarDelegate(colorLerp: colorLerp, currentQuery: currentQuery),
     );
   }
 }
 
 class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
   final bool colorLerp;
-  const HeaderBarDelegate({required this.colorLerp});
+  final String currentQuery;
+  const HeaderBarDelegate({required this.colorLerp, this.currentQuery = ''});
   @override
   Widget build(
     BuildContext context,
@@ -128,7 +130,7 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                           size: 18,
                         ),
                       )
-                    : SearchHeadBar(progress: progress),
+                    : SearchHeadBar(progress: progress, initialQuery: currentQuery),
                 IconButton(
                   onPressed: () {
                     context.go('/login');

@@ -119,13 +119,20 @@ class _ProductCardState extends State<ProductCard> {
                   children: [
                     Text(
                       widget.product.name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.labelMedium?.copyWith(
                         fontSize: ResponsiveTheme.isMobile(context) ? 12 : 14,
                       ),
                     ),
-                    ProductPrice(
-                      product: widget.product,
-                      isMobile: widget.isMobile,
+                    Flexible(
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: ProductPrice(
+                          product: widget.product,
+                          isMobile: widget.isMobile,
+                        ),
+                      ),
                     ),
                   ],
                 ),
