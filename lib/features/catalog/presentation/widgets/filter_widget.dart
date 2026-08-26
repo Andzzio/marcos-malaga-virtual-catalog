@@ -102,7 +102,7 @@ class _FilterWidgetState extends ConsumerState<FilterWidget> {
   @override
   void didUpdateWidget(covariant FilterWidget oldWidget) {
     super.didUpdateWidget(oldWidget);
-    
+
     if (oldWidget.minPrice != widget.minPrice) {
       _minContoller.text = widget.minPrice ?? '';
     }
@@ -111,7 +111,9 @@ class _FilterWidgetState extends ConsumerState<FilterWidget> {
     }
 
     Future.microtask(() {
-      final notifier = ref.read(productFiltersProvider(widget.category).notifier);
+      final notifier = ref.read(
+        productFiltersProvider(widget.category).notifier,
+      );
 
       if (oldWidget.query != widget.query) {
         notifier.updateQuery(widget.query ?? '');
@@ -121,7 +123,8 @@ class _FilterWidgetState extends ConsumerState<FilterWidget> {
         notifier.updateCategory(widget.categoryName);
       }
 
-      if (oldWidget.minPrice != widget.minPrice || oldWidget.maxPrice != widget.maxPrice) {
+      if (oldWidget.minPrice != widget.minPrice ||
+          oldWidget.maxPrice != widget.maxPrice) {
         notifier.setPriceRange(
           widget.minPrice != null ? double.tryParse(widget.minPrice!) : null,
           widget.maxPrice != null ? double.tryParse(widget.maxPrice!) : null,
@@ -131,14 +134,16 @@ class _FilterWidgetState extends ConsumerState<FilterWidget> {
       if (oldWidget.showInStock != widget.showInStock) {
         final showInStock = widget.showInStock == null
             ? true
-            : (bool.tryParse(widget.showInStock!, caseSensitive: false) ?? false);
+            : (bool.tryParse(widget.showInStock!, caseSensitive: false) ??
+                  false);
         notifier.setAvailability(showInStock: showInStock);
       }
 
       if (oldWidget.showOutOfStock != widget.showOutOfStock) {
         final showOutStock = widget.showOutOfStock == null
             ? true
-            : (bool.tryParse(widget.showOutOfStock!, caseSensitive: false) ?? false);
+            : (bool.tryParse(widget.showOutOfStock!, caseSensitive: false) ??
+                  false);
         notifier.setAvailability(showOutOfStock: showOutStock);
       }
 
@@ -167,7 +172,9 @@ class _FilterWidgetState extends ConsumerState<FilterWidget> {
       isScrollControlled: true,
       useRootNavigator: true,
       useSafeArea: true,
-      constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.85),
+      constraints: BoxConstraints(
+        maxHeight: MediaQuery.of(context).size.height * 0.85,
+      ),
       backgroundColor: Theme.of(context).colorScheme.surface,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadiusGeometry.circular(8),

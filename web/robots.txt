@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /checkout
+Disallow: /orders
+
+Sitemap: https://marcos-malaga-app.web.app/sitemap.xml

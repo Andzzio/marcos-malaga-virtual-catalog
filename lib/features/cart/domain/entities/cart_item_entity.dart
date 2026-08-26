@@ -1,44 +1,36 @@
 import 'package:equatable/equatable.dart';
-import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
-import 'package:marcos_malaga_app/app/shared/domain/entities/product_design_entity.dart';
-import 'package:marcos_malaga_app/app/shared/domain/entities/product_size_entity.dart';
 
 class CartItemEntity extends Equatable {
-  final String id;
-  final ProductEntity product;
-  final ProductDesignEntity selectedDesign;
-  final ProductSizeEntity selectedSize;
+  final String id; // Composite key: "${productId}_${designId}_${sizeName}"
+  final String productId;
+  final String designId;
+  final String sizeName;
   final int quantity;
 
   const CartItemEntity({
     required this.id,
-    required this.product,
-    required this.selectedDesign,
-    required this.selectedSize,
+    required this.productId,
+    required this.designId,
+    required this.sizeName,
     required this.quantity,
   });
 
-  double get totalPrice {
-    final price = product.discountPrice ?? product.basePrice;
-    return price * quantity;
-  }
-
   CartItemEntity copyWith({
     String? id,
-    ProductEntity? product,
-    ProductDesignEntity? selectedDesign,
-    ProductSizeEntity? selectedSize,
+    String? productId,
+    String? designId,
+    String? sizeName,
     int? quantity,
   }) {
     return CartItemEntity(
       id: id ?? this.id,
-      product: product ?? this.product,
-      selectedDesign: selectedDesign ?? this.selectedDesign,
-      selectedSize: selectedSize ?? this.selectedSize,
+      productId: productId ?? this.productId,
+      designId: designId ?? this.designId,
+      sizeName: sizeName ?? this.sizeName,
       quantity: quantity ?? this.quantity,
     );
   }
 
   @override
-  List<Object?> get props => [id, product, selectedDesign, selectedSize, quantity];
+  List<Object?> get props => [id, productId, designId, sizeName, quantity];
 }

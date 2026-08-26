@@ -27,6 +27,7 @@
   <meta name="description" content="Descubre prendas exclusivas diseñadas para realzar tu belleza en todas las tallas. Compra online en nuestra boutique con envíos a todo el Perú.">
   <meta name="keywords" content="moda femenina peru, ropa de mujer, tallas reales, boutique lima, vestidos plus size, la victoria, ropa boutique">
   <meta name="author" content="Marcos Málaga">
+  <meta name="google-site-verification" content="gGPaQI4O7Xf2pwnr4E2yxNvm7mLoeqffzYDSMo3d_Zc" />
 
   <!-- Color de barra de navegador móvil -->
   <meta name="theme-color" content="#7A2E3B">
@@ -57,8 +58,29 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Schema.org JSON-LD para Tienda Online -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    "name": "Marcos Málaga",
+    "url": "https://marcos-malaga-app.web.app/",
+    "description": "Tienda virtual de moda femenina y prendas de vestir con tallas reales en Perú.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://marcos-malaga-app.web.app/search/catalog?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
+  <noscript>
+    <h1>Marcos Málaga - Moda Femenina & Tallas Reales</h1>
+    <p>Tienda virtual de ropa para mujer en Perú. Descubre vestidos, blusas, pantalones y prendas exclusivas en todas las tallas.</p>
+  </noscript>
+
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader

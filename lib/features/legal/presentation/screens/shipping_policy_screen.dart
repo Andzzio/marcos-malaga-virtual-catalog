@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/footer/footer_bar.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/header_bar.dart';
-import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
+import 'package:marcos_malaga_app/app/shared/widgets/header/home_label.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/mobile_header_bar.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/header/tablet_header_bar.dart';
-import 'package:marcos_malaga_app/app/shared/widgets/header/home_label.dart';
+import 'package:marcos_malaga_app/features/legal/presentation/widgets/legal_document_view.dart';
 
 class ShippingPolicyScreen extends StatelessWidget {
   const ShippingPolicyScreen({super.key});
@@ -16,20 +17,13 @@ class ShippingPolicyScreen extends StatelessWidget {
       slivers: [
         const HomeLabel(label: 'INAUGURACIÓN MARCOSMALAGA.COM'),
         ResponsiveTheme.isMobile(context)
-            ? MobileHeaderBar(colorLerp: false)
+            ? const MobileHeaderBar(colorLerp: false)
             : ResponsiveTheme.isTablet(context)
                 ? const TabletHeaderBar(colorLerp: false)
                 : const HeaderBar(colorLerp: false),
-        SliverFillRemaining(
-          child: Center(
-            child: Text(
-              'ShippingPolicy Screen',
-              style: const TextStyle(fontSize: 24),
-            ),
-          ),
-        ),
-        SliverGap(50),
-        FooterBar(),
+        const LegalDocumentView(documentId: 'shipping_policy'),
+        const SliverGap(50),
+        const FooterBar(),
       ],
     );
   }

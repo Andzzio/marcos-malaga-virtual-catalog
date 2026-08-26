@@ -1,29 +1,49 @@
-import '../entities/cart_item_entity.dart';
-import '../repositories/cart_repository.dart';
+import 'package:marcos_malaga_app/features/cart/domain/entities/add_to_cart_result.dart';
+import 'package:marcos_malaga_app/features/cart/domain/entities/cart_item_entity.dart';
+import 'package:marcos_malaga_app/features/cart/domain/repositories/cart_repository.dart';
 
 class AddCartItemUsecase {
   final CartRepository repository;
 
   AddCartItemUsecase(this.repository);
 
-  Future<void> call(CartItemEntity newItem) async {
+  Future<AddToCartResult> call(
+    CartItemEntity newItem, {
+    required int maxStock,
+  }) async {
+    if (maxStock <= 0) {
+      return AddToCartResult.alreadyAtMax;
+    }
+
     final cart = await repository.getCart();
     final items = List<CartItemEntity>.from(cart.items);
-
-    final existingIndex = items.indexWhere((item) =>
-        item.product.id == newItem.product.id &&
-        item.selectedDesign.id == newItem.selectedDesign.id &&
-        item.selectedSize.size == newItem.selectedSize.size);
+    final existingIndex = items.indexWhere((item) => item.id == newItem.id);
 
     if (existingIndex >= 0) {
       final existingItem = items[existingIndex];
-      items[existingIndex] = existingItem.copyWith(
-        quantity: existingItem.quantity + newItem.quantity,
-      );
-    } else {
-      items.add(newItem);
+      if (existingItem.quantity >= maxStock) {
+        return AddToCartResult.alreadyAtMax;
+      }
+
+      final totalQuantity = existingItem.quantity + newItem.quantity;
+      if (totalQuantity > maxStock) {
+        final newQuantity = totalQuantity.clamp(1, maxStock);
+        items[existingIndex] = existingItem.copyWith(quantity: newQuantity);
+        await repository.saveCart(cart.copyWith(items: items));
+        return AddToCartResult.cappedToMax;
+      }
+
+      items[existingIndex] = existingItem.copyWith(quantity: totalQuantity);
+      await repository.saveCart(cart.copyWith(items: items));
+      return AddToCartResult.added;
     }
 
+    final newQuantity = newItem.quantity.clamp(1, maxStock);
+    items.add(newItem.copyWith(quantity: newQuantity));
     await repository.saveCart(cart.copyWith(items: items));
+
+    return newQuantity < newItem.quantity
+        ? AddToCartResult.cappedToMax
+        : AddToCartResult.added;
   }
 }

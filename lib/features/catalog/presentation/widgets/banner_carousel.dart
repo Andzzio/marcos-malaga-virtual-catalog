@@ -32,7 +32,7 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
                 itemCount: banners.length,
                 options: CarouselOptions(
                   height: ResponsiveTheme.isMobile(context)
-                      ? size.height * 0.95 - 65
+                      ? size.height * 0.95 - 15
                       : size.height * 0.95,
                   viewportFraction: 1.0,
                   autoPlay: true,

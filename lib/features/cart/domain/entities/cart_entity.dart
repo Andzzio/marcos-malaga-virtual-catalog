@@ -6,18 +6,12 @@ class CartEntity extends Equatable {
 
   const CartEntity({this.items = const []});
 
-  double get totalAmount {
-    return items.fold(0.0, (sum, item) => sum + item.totalPrice);
-  }
-
   int get totalItemsCount {
     return items.fold(0, (sum, item) => sum + item.quantity);
   }
 
   CartEntity copyWith({List<CartItemEntity>? items}) {
-    return CartEntity(
-      items: items ?? this.items,
-    );
+    return CartEntity(items: items ?? this.items);
   }
 
   @override

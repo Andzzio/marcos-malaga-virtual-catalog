@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
-import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_cart_button.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/image/custom_image.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_price.dart';
 
@@ -29,14 +28,18 @@ class _ProductCardState extends State<ProductCard> {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       onHover: (event) {
-        setState(() {
-          _isCardHovered = true;
-        });
+        if (!ResponsiveTheme.isMobile(context)) {
+          setState(() {
+            _isCardHovered = true;
+          });
+        }
       },
       onExit: (event) {
-        setState(() {
-          _isCardHovered = false;
-        });
+        if (!ResponsiveTheme.isMobile(context)) {
+          setState(() {
+            _isCardHovered = false;
+          });
+        }
       },
       child: GestureDetector(
         onTap: () {
@@ -100,12 +103,6 @@ class _ProductCardState extends State<ProductCard> {
                           ),
                         ),
                       ),
-                    ),
-                  if (_isCardHovered)
-                    Positioned(
-                      bottom: 10,
-                      left: 10,
-                      child: ProductCartButton(),
                     ),
                 ],
               ),

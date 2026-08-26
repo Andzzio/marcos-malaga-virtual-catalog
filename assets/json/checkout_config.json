@@ -1,0 +1,97 @@
+{
+  "shippingZones": [
+    {
+      "id": "zone-lima",
+      "name": "Lima Metropolitana",
+      "departmentCodes": [
+        "15"
+      ]
+    },
+    {
+      "id": "zone-provincia",
+      "name": "Provincias (Nacional)",
+      "departmentCodes": [
+        "04",
+        "13",
+        "08"
+      ]
+    }
+  ],
+  "shippingMethods": [
+    {
+      "id": "regular",
+      "label": "Envío Estándar",
+      "enabled": true,
+      "availableZones": [
+        "zone-lima"
+      ],
+      "prices": {
+        "zone-lima": 10.0
+      },
+      "estimatedDays": "2 a 4 días hábiles",
+      "description": "Recibe tu pedido en la puerta de tu domicilio de forma regular."
+    },
+    {
+      "id": "express",
+      "label": "Envío Express",
+      "enabled": true,
+      "availableZones": [
+        "zone-lima"
+      ],
+      "prices": {
+        "zone-lima": 20.0
+      },
+      "estimatedDays": "24 horas",
+      "description": "Envío rápido con prioridad para zonas seleccionadas."
+    },
+    {
+      "id": "courier",
+      "label": "Envío Courier",
+      "enabled": true,
+      "availableZones": [
+        "zone-provincia"
+      ],
+      "prices": {
+        "zone-provincia": 12.0
+      },
+      "estimatedDays": "1 semana",
+      "description": "Envío seguro a través de agencias courier autorizadas a nivel nacional."
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": "yape-plin",
+      "label": "Yape / Plin",
+      "enabled": true,
+      "type": "digital_wallet",
+      "instructions": "Transfiere al número 987654321 a nombre de Marcos Málaga y adjunta tu comprobante.",
+      "details": {
+        "phone": "987654321",
+        "owner": "Marcos Málaga"
+      }
+    },
+    {
+      "id": "bcp-transfer",
+      "label": "Transferencia BCP",
+      "enabled": true,
+      "type": "bank_transfer",
+      "instructions": "Transfiere a la cuenta corriente BCP 193-98765432-0-12 y envía la constancia por WhatsApp.",
+      "details": {
+        "bank": "BCP",
+        "accountNumber": "193-98765432-0-12",
+        "cci": "002-193-009876543201-12",
+        "owner": "Marcos Málaga EIRL"
+      }
+    },
+    {
+      "id": "cash-on-delivery",
+      "label": "Contra Entrega",
+      "enabled": true,
+      "type": "cash",
+      "instructions": "Paga en efectivo o con tarjeta al recibir tu pedido.",
+      "details": {
+        "coverage": "Lima Metropolitana"
+      }
+    }
+  ]
+}

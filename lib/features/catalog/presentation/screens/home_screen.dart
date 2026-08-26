@@ -31,7 +31,10 @@ class HomeScreen extends StatelessWidget {
             SliverMainAxisGroup(
               slivers: [
                 BannerCarousel(),
-                HomeLabel(label: "DESCUENTOS 2 X 1 POR INAUGURACIÓN"),
+                HomeLabel(
+                  label: "DESCUENTOS 2 X 1 POR INAUGURACIÓN",
+                  hideOnMobile: false,
+                ),
                 SliverGap(50),
                 ProductGrid(
                   itemCount: 8,
