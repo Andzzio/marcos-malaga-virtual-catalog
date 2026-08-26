@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:gap/gap.dart';
 import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/footer/business_info_section.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/footer/legal_section.dart';
@@ -116,7 +115,6 @@ class FooterBar extends StatelessWidget {
             ),
           ),
         ),
-        if (ResponsiveTheme.isMobile(context)) const SliverGap(60),
       ],
     );
   }

@@ -3,10 +3,20 @@ import 'package:marcos_malaga_app/app/config/theme/responsive_theme.dart';
 
 class HomeLabel extends StatelessWidget {
   final String label;
-  const HomeLabel({super.key, required this.label});
+  final bool hideOnMobile;
+
+  const HomeLabel({
+    super.key,
+    required this.label,
+    this.hideOnMobile = true,
+  });
 
   @override
   Widget build(BuildContext context) {
+    if (hideOnMobile && ResponsiveTheme.isMobile(context)) {
+      return const SliverToBoxAdapter(child: SizedBox.shrink());
+    }
+
     return SliverToBoxAdapter(
       child: Container(
         width: double.infinity,

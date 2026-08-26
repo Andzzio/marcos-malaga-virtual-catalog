@@ -9,6 +9,7 @@ import 'package:marcos_malaga_app/features/catalog/presentation/states/product_f
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/catalog_screen.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/screens/search_screen.dart';
 import 'package:marcos_malaga_app/features/account/presentation/screens/login_screen.dart';
+import 'package:marcos_malaga_app/features/orders/presentation/screens/orders_screen.dart';
 import 'package:marcos_malaga_app/features/checkout/presentation/screens/checkout_screen.dart';
 import 'package:marcos_malaga_app/features/legal/presentation/screens/privacy_policy_screen.dart';
 import 'package:marcos_malaga_app/features/legal/presentation/screens/refund_policy_screen.dart';
@@ -22,7 +23,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
     routes: [
       StatefulShellRoute.indexedStack(
         builder: (context, state, navigationShell) {
-          return AppShell(navigationShell: navigationShell);
+          final isCheckout = state.uri.path.contains('checkout');
+          return AppShell(
+            navigationShell: navigationShell,
+            hideBottomElements: isCheckout,
+          );
         },
         branches: [
           StatefulShellBranch(
@@ -32,11 +37,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 name: 'home',
                 builder: (context, state) => const HomeScreen(),
                 routes: [
-                  GoRoute(
-                    path: 'checkout',
-                    name: 'checkout',
-                    builder: (context, state) => const CheckoutScreen(),
-                  ),
                   GoRoute(
                     path: 'legal',
                     name: 'legal',
@@ -78,6 +78,14 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                     ],
                   ),
                   productRoute,
+                  GoRoute(
+                    path: 'checkout/:sessionId',
+                    name: 'checkout',
+                    builder: (context, state) {
+                      final sessionId = state.pathParameters['sessionId'] ?? '';
+                      return CheckoutScreen(sessionId: sessionId);
+                    },
+                  ),
                 ],
               ),
             ],
@@ -109,6 +117,15 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                     title: 'Tallas XL',
                   ),
                 ],
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/orders',
+                name: 'orders',
+                builder: (context, state) => const OrdersScreen(),
               ),
             ],
           ),

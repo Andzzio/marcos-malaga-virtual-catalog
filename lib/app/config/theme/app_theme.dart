@@ -9,6 +9,7 @@ class AppTheme {
   static const Color accentColor = Color(0xffaf8026); // Dorado Clásico
   static const Color textColor = Color(0xFF0C0A09);
   static const Color mutedColor = Color(0xFFE8ECF0);
+  static const Color deadColor = Color(0xFFEBEBEB);
 
   static const Color success = Color(0xFF3ED660);
   static const Color error = Color(0xFFDC2626);
@@ -41,8 +42,16 @@ class AppTheme {
           backgroundColor: primaryColor,
           foregroundColor: Colors.white,
           elevation: 0,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          textStyle: GoogleFonts.instrumentSans(fontWeight: FontWeight.w500),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(8),
+            side: BorderSide(color: Colors.black.withValues(alpha: 0.3)),
           ),
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
           textStyle: GoogleFonts.instrumentSans(fontWeight: FontWeight.w500),
@@ -60,41 +69,33 @@ class AppTheme {
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
-        filled: true,
-        fillColor: Colors.white,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-        hintStyle: GoogleFonts.instrumentSans(
-          color: Colors.grey,
-          fontWeight: FontWeight.w400,
-          fontSize: 14,
-        ),
-        labelStyle: GoogleFonts.instrumentSans(
-          color: primaryColor,
-          fontWeight: FontWeight.w500,
-        ),
-        errorStyle: GoogleFonts.instrumentSans(
-          color: error,
+        filled: false,
+        hintStyle: TextStyle(
+          color: Colors.black.withValues(alpha: 0.4),
+          fontSize: 13,
           fontWeight: FontWeight.w400,
         ),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: mutedColor),
+          borderRadius: BorderRadius.circular(6),
+          borderSide: BorderSide(
+            color: Colors.black.withValues(alpha: 0.3),
+            width: 1,
+          ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: mutedColor),
+          borderSide: BorderSide(
+            color: Colors.black.withValues(alpha: 0.3),
+            width: 1,
+          ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: const BorderSide(color: primaryColor, width: 1.5),
         ),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: error),
-        ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-          borderSide: const BorderSide(color: error, width: 1.5),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 10,
         ),
       ),
     );

@@ -74,7 +74,19 @@ class TabletHeaderBarDelegate extends SliverPersistentHeaderDelegate {
               icon: FaIcon(FontAwesomeIcons.user, color: textColor, size: 18),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                context.go('/orders');
+              },
+              icon: FaIcon(
+                FontAwesomeIcons.bagShopping,
+                color: textColor,
+                size: 18,
+              ),
+            ),
+            IconButton(
+              onPressed: () {
+                Scaffold.of(context).openEndDrawer();
+              },
               icon: FaIcon(
                 FontAwesomeIcons.cartShopping,
                 color: textColor,

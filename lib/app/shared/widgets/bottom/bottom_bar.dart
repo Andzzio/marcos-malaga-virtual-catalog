@@ -8,31 +8,11 @@ class BottomBar extends StatelessWidget {
 
   const BottomBar({super.key, required this.navigationShell});
 
-  int get _currentIndex {
-    if (navigationShell.currentIndex == 0) {
-      return 0;
-    }
-    if (navigationShell.currentIndex == 1) {
-      return 1;
-    }
-    if (navigationShell.currentIndex == 2) {
-      return 3;
-    }
-    return 0;
-  }
+  int get _currentIndex => navigationShell.currentIndex;
 
-  void _onTap(BuildContext context, int newIndex) {
-    if (newIndex == 2) {
-      return;
-    }
-
-    int branchIndex = newIndex;
-    if (newIndex == 3) {
-      branchIndex = 2;
-    }
-
+  void _onTap(int newIndex) {
     navigationShell.goBranch(
-      branchIndex,
+      newIndex,
       initialLocation: newIndex == _currentIndex,
     );
   }
@@ -59,9 +39,9 @@ class BottomBar extends StatelessWidget {
         title: 'Buscar',
       ),
       _BottomBarItemData(
-        icon: FontAwesomeIcons.whatsapp,
+        icon: FontAwesomeIcons.bagShopping,
         selectedColor: Colors.white,
-        title: 'Whatsapp',
+        title: 'Pedidos',
       ),
       _BottomBarItemData(
         icon: FontAwesomeIcons.user,
@@ -73,7 +53,7 @@ class BottomBar extends StatelessWidget {
 
     return StylishBottomBar(
       currentIndex: _currentIndex,
-      onTap: (newIndex) => _onTap(context, newIndex),
+      onTap: _onTap,
       fabLocation: StylishBarFabLocation.center,
       hasNotch: true,
       notchStyle: NotchStyle.circle,

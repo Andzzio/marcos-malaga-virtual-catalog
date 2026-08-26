@@ -10,10 +10,14 @@ class HeaderBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final currentQuery = GoRouterState.of(context).uri.queryParameters['q'] ?? '';
+    final currentQuery =
+        GoRouterState.of(context).uri.queryParameters['q'] ?? '';
     return SliverPersistentHeader(
       pinned: true,
-      delegate: HeaderBarDelegate(colorLerp: colorLerp, currentQuery: currentQuery),
+      delegate: HeaderBarDelegate(
+        colorLerp: colorLerp,
+        currentQuery: currentQuery,
+      ),
     );
   }
 }
@@ -130,7 +134,10 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                           size: 18,
                         ),
                       )
-                    : SearchHeadBar(progress: progress, initialQuery: currentQuery),
+                    : SearchHeadBar(
+                        progress: progress,
+                        initialQuery: currentQuery,
+                      ),
                 IconButton(
                   onPressed: () {
                     context.go('/login');
@@ -142,7 +149,19 @@ class HeaderBarDelegate extends SliverPersistentHeaderDelegate {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.go('/orders');
+                  },
+                  icon: FaIcon(
+                    FontAwesomeIcons.bagShopping,
+                    color: textColor,
+                    size: 18,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {
+                    Scaffold.of(context).openEndDrawer();
+                  },
                   icon: FaIcon(
                     FontAwesomeIcons.cartShopping,
                     color: textColor,
