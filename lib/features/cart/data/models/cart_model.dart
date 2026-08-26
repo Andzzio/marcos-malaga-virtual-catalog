@@ -1,8 +1,9 @@
-import '../../domain/entities/cart_entity.dart';
 import 'cart_item_model.dart';
 
-class CartModel extends CartEntity {
-  const CartModel({super.items = const []});
+class CartModel {
+  final List<CartItemModel> items;
+
+  const CartModel({this.items = const []});
 
   factory CartModel.fromJson(Map<String, dynamic> json) {
     final itemsList = json['items'] as List<dynamic>? ?? [];
@@ -14,13 +15,7 @@ class CartModel extends CartEntity {
 
   Map<String, dynamic> toJson() {
     return {
-      'items': items.map((item) => CartItemModel.fromEntity(item).toJson()).toList(),
+      'items': items.map((item) => item.toJson()).toList(),
     };
-  }
-
-  factory CartModel.fromEntity(CartEntity entity) {
-    return CartModel(
-      items: entity.items,
-    );
   }
 }

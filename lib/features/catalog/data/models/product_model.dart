@@ -12,6 +12,7 @@ class ProductModel {
   final bool isVisible;
   final String? sizeChartImageUrl;
   final DateTime createdAt;
+  final DateTime? deletedAt;
 
   const ProductModel({
     required this.id,
@@ -24,6 +25,7 @@ class ProductModel {
     required this.isVisible,
     this.sizeChartImageUrl,
     required this.createdAt,
+    this.deletedAt,
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
@@ -50,6 +52,7 @@ class ProductModel {
       createdAt: DateTime.parse(
         json['createdAt'] as String? ?? DateTime.now().toIso8601String(),
       ),
+      deletedAt: json['deletedAt'] != null ? DateTime.parse(json['deletedAt'] as String) : null,
     );
   }
 
@@ -65,6 +68,7 @@ class ProductModel {
       'isVisible': isVisible,
       'sizeChartImageUrl': sizeChartImageUrl,
       'createdAt': createdAt.toIso8601String(),
+      'deletedAt': deletedAt?.toIso8601String(),
     };
   }
 
@@ -80,6 +84,7 @@ class ProductModel {
       isVisible: isVisible,
       sizeChartImageUrl: sizeChartImageUrl,
       createdAt: createdAt,
+      deletedAt: deletedAt,
     );
   }
 
@@ -97,6 +102,7 @@ class ProductModel {
       isVisible: entity.isVisible,
       sizeChartImageUrl: entity.sizeChartImageUrl,
       createdAt: entity.createdAt,
+      deletedAt: entity.deletedAt,
     );
   }
 }
