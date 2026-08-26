@@ -25,6 +25,7 @@ void main() {
       designs: [],
       isVisible: true,
       createdAt: DateTime.parse('2024-01-01T00:00:00Z'),
+      deletedAt: null,
     );
 
     test('should get a product from the repository by ID', () async {

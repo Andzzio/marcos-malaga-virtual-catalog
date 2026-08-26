@@ -33,6 +33,7 @@ void main() {
     isVisible: true,
     sizeChartImageUrl: null,
     createdAt: DateTime.parse('2024-01-01T00:00:00Z'),
+    deletedAt: null,
   );
 
   const tProductSizeEntity = ProductSizeEntity(
@@ -61,6 +62,7 @@ void main() {
     isVisible: true,
     sizeChartImageUrl: null,
     createdAt: DateTime.parse('2024-01-01T00:00:00Z'),
+    deletedAt: null,
   );
 
   final tJson = {
@@ -85,6 +87,7 @@ void main() {
     'isVisible': true,
     'sizeChartImageUrl': null,
     'createdAt': '2024-01-01T00:00:00.000Z',
+    'deletedAt': null,
   };
 
   group('ProductModel Tests', () {
@@ -112,6 +115,19 @@ void main() {
       expect(result.id, tProductModel.id);
       expect(result.basePrice, tProductModel.basePrice);
       expect(result.designs.first.id, tProductModel.designs.first.id);
+    });
+
+    test('fromJson without deletedAt key returns null deletedAt', () {
+      final jsonSinDeletedAt = Map<String, dynamic>.from(tJson)..remove('deletedAt');
+      final result = ProductModel.fromJson(jsonSinDeletedAt);
+      expect(result.deletedAt, isNull);
+    });
+
+    test('fromJson with deletedAt parses correctly', () {
+      final jsonConDeletedAt = Map<String, dynamic>.from(tJson)
+        ..['deletedAt'] = '2025-06-01T00:00:00.000Z';
+      final result = ProductModel.fromJson(jsonConDeletedAt);
+      expect(result.deletedAt, equals(DateTime.parse('2025-06-01T00:00:00.000Z')));
     });
   });
 }

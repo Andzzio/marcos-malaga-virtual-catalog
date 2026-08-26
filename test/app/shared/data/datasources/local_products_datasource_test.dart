@@ -102,4 +102,120 @@ void main() {
       },
     );
   });
+
+  group('LocalProductsDatasource Write Tests', () {
+    // Helper para inyectar el mock del asset con 1 producto
+    void mockAsset(String jsonString) {
+      TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+          .setMockMessageHandler('flutter/assets', (ByteData? message) async {
+        return ByteData.view(utf8.encoder.convert(jsonString).buffer);
+      });
+    }
+
+    final tProductJson = jsonEncode([
+      {
+        'id': 'PROD-001',
+        'name': 'Pantalón Palazzo',
+        'description': 'Bello pantalón',
+        'basePrice': 120.0,
+        'categoryIds': ['pantalones'],
+        'designs': [
+          {
+            'id': 'DES-001',
+            'name': 'Vino',
+            'hexCode': '#800020',
+            'swatchImageUrl': null,
+            'imageUrls': [],
+            'sizes': [
+              {'size': 'M', 'stock': 5, 'sku': null},
+            ],
+          }
+        ],
+        'isVisible': true,
+        'deletedAt': null,
+      },
+    ]);
+
+    test('createProduct adds a new product to the cache', () async {
+      mockAsset(tProductJson);
+      await datasource.fetchProducts(); // poblar cache
+
+      final newProduct = ProductModel(
+        id: 'PROD-NEW',
+        name: 'Vestido Nuevo',
+        description: 'Desc',
+        basePrice: 80.0,
+        categoryIds: [],
+        designs: [],
+        isVisible: true,
+        createdAt: DateTime.parse('2025-01-01T00:00:00Z'),
+      );
+
+      await datasource.createProduct(newProduct);
+      final result = await datasource.fetchProducts();
+
+      expect(result.length, 2);
+      expect(result.any((p) => p.id == 'PROD-NEW'), isTrue);
+    });
+
+    test('updateProduct replaces the existing product in cache', () async {
+      mockAsset(tProductJson);
+      await datasource.fetchProducts();
+
+      final updated = ProductModel(
+        id: 'PROD-001',
+        name: 'Palazzo Actualizado',
+        description: 'Desc',
+        basePrice: 999.0,
+        categoryIds: [],
+        designs: [],
+        isVisible: true,
+        createdAt: DateTime.parse('2025-01-01T00:00:00Z'),
+      );
+
+      await datasource.updateProduct(updated);
+      final result = await datasource.fetchProducts();
+
+      expect(result.length, 1);
+      expect(result.first.name, 'Palazzo Actualizado');
+      expect(result.first.basePrice, 999.0);
+    });
+
+    test('softDeleteProduct sets deletedAt on the target product', () async {
+      mockAsset(tProductJson);
+      await datasource.fetchProducts();
+
+      await datasource.softDeleteProduct('PROD-001');
+      final result = await datasource.fetchProducts();
+
+      expect(result.first.deletedAt, isNotNull);
+    });
+
+    test('restoreProduct sets deletedAt to null on the target product', () async {
+      mockAsset(tProductJson);
+      await datasource.fetchProducts();
+
+      await datasource.softDeleteProduct('PROD-001');
+      await datasource.restoreProduct('PROD-001');
+      final result = await datasource.fetchProducts();
+
+      expect(result.first.deletedAt, isNull);
+    });
+
+    test('updateStock modifies the stock of the correct size', () async {
+      mockAsset(tProductJson);
+      await datasource.fetchProducts();
+
+      await datasource.updateStock(
+        productId: 'PROD-001',
+        designId: 'DES-001',
+        sizeName: 'M',
+        newStock: 99,
+      );
+      final result = await datasource.fetchProducts();
+      final size = result.first.designs.first.sizes.first;
+
+      expect(size.stock, 99);
+    });
+  });
 }

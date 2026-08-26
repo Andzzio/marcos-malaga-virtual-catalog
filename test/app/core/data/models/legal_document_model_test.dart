@@ -14,10 +14,12 @@ void main() {
       final documents = jsonList.map((e) => LegalDocumentModel.fromJson(e)).toList();
 
       expect(documents, isNotEmpty);
-      expect(documents.length, 3);
+      expect(documents.length, 4);
       expect(documents[0].id, 'privacy_policy');
       expect(documents[0].title, 'Política de Privacidad');
       expect(documents[0].content, contains('Marcos Malaga'));
+      expect(documents[3].id, 'terms');
+      expect(documents[3].title, 'Términos y Condiciones');
     });
   });
 }

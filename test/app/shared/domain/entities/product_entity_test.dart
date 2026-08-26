@@ -21,6 +21,7 @@ void main() {
       designs: [tDesignEntity],
       isVisible: true,
       createdAt: DateTime.parse('2024-01-01T00:00:00Z'),
+      deletedAt: null,
     );
 
     test('ProductSizeEntity supports value equality', () {
@@ -69,6 +70,7 @@ void main() {
         designs: [tDesignEntity],
         isVisible: true,
         createdAt: DateTime.parse('2024-01-01T00:00:00Z'),
+        deletedAt: null,
       );
       final prod2 = ProductEntity(
         id: 'P-1',
@@ -79,6 +81,7 @@ void main() {
         designs: [tDesignEntity],
         isVisible: true,
         createdAt: DateTime.parse('2024-01-01T00:00:00Z'),
+        deletedAt: null,
       );
       expect(prod1, equals(prod2));
     });
@@ -88,6 +91,28 @@ void main() {
       expect(updated.basePrice, 80);
       expect(updated.name, 'Palazzo');
       expect(updated, isNot(equals(tProductEntity)));
+    });
+
+    test('ProductEntity isDeleted is false when deletedAt is null', () {
+      expect(tProductEntity.isDeleted, isFalse);
+    });
+
+    test('ProductEntity isDeleted is true when deletedAt is set', () {
+      final deleted = tProductEntity.copyWith(deletedAt: DateTime(2025, 1, 1));
+      expect(deleted.isDeleted, isTrue);
+    });
+
+    test('ProductEntity copyWith can set deletedAt back to null using sentinel', () {
+      final withDeleted = tProductEntity.copyWith(deletedAt: DateTime(2025, 1, 1));
+      final restored = withDeleted.copyWith(deletedAt: null);
+      expect(restored.isDeleted, isFalse);
+    });
+
+    test('ProductEntity copyWith preserves deletedAt when not passed', () {
+      final withDeleted = tProductEntity.copyWith(deletedAt: DateTime(2025, 1, 1));
+      final updated = withDeleted.copyWith(basePrice: 90);
+      expect(updated.deletedAt, isNotNull);
+      expect(updated.basePrice, 90);
     });
   });
 }
