@@ -15,6 +15,16 @@ import 'package:marcos_malaga_app/app/shared/data/repositories/local_products_re
 import 'package:marcos_malaga_app/app/shared/domain/repositories/products_repository.dart';
 import 'package:marcos_malaga_app/app/shared/domain/usecases/get_products_usecase.dart';
 import 'package:marcos_malaga_app/app/shared/domain/usecases/get_product_by_id_usecase.dart';
+import 'package:marcos_malaga_app/app/shared/domain/usecases/get_product_design_by_id_usecase.dart';
+import 'package:marcos_malaga_app/app/shared/domain/usecases/get_product_size_by_name_usecase.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/create_product_usecase.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/update_product_usecase.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/soft_delete_product_usecase.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/restore_product_usecase.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/update_stock_usecase.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/create_products_usecase.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/soft_delete_products_usecase.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/restore_products_usecase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final sharedPreferencesProvider = Provider<SharedPreferences>((ref) => throw UnimplementedError());
@@ -60,4 +70,36 @@ final getProductsUsecaseProvider = Provider<GetProductsUsecase>(
 final getProductByIdUsecaseProvider = Provider<GetProductByIdUsecase>(
   (ref) =>
       GetProductByIdUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final getProductDesignByIdUseCaseProvider = Provider<GetProductDesignByIdUseCase>(
+  (ref) => GetProductDesignByIdUseCase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final getProductSizeByNameUseCaseProvider = Provider<GetProductSizeByNameUseCase>(
+  (ref) => GetProductSizeByNameUseCase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+
+// --- CRM Inventory: Write Use Cases ---
+final createProductUsecaseProvider = Provider<CreateProductUsecase>(
+  (ref) => CreateProductUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final updateProductUsecaseProvider = Provider<UpdateProductUsecase>(
+  (ref) => UpdateProductUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final softDeleteProductUsecaseProvider = Provider<SoftDeleteProductUsecase>(
+  (ref) => SoftDeleteProductUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final restoreProductUsecaseProvider = Provider<RestoreProductUsecase>(
+  (ref) => RestoreProductUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final updateStockUsecaseProvider = Provider<UpdateStockUsecase>(
+  (ref) => UpdateStockUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final createProductsUsecaseProvider = Provider<CreateProductsUsecase>(
+  (ref) => CreateProductsUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final softDeleteProductsUsecaseProvider = Provider<SoftDeleteProductsUsecase>(
+  (ref) => SoftDeleteProductsUsecase(repo: ref.watch(localProductsRepositoryProvider)),
+);
+final restoreProductsUsecaseProvider = Provider<RestoreProductsUsecase>(
+  (ref) => RestoreProductsUsecase(repo: ref.watch(localProductsRepositoryProvider)),
 );
