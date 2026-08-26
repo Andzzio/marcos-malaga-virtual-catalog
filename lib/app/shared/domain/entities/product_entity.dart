@@ -13,6 +13,7 @@ class ProductEntity extends Equatable {
   final bool isVisible;
   final String? sizeChartImageUrl;
   final DateTime createdAt;
+  final DateTime? deletedAt;
 
   const ProductEntity({
     required this.id,
@@ -25,6 +26,7 @@ class ProductEntity extends Equatable {
     required this.isVisible,
     this.sizeChartImageUrl,
     required this.createdAt,
+    this.deletedAt,
   });
   int get totalStock => designs.fold(
     0,
@@ -38,6 +40,10 @@ class ProductEntity extends Equatable {
     return StockAvailability.inStock;
   }
 
+  bool get isDeleted => deletedAt != null;
+
+  static const _sentinel = Object();
+
   ProductEntity copyWith({
     String? id,
     String? name,
@@ -49,6 +55,7 @@ class ProductEntity extends Equatable {
     bool? isVisible,
     String? sizeChartImageUrl,
     DateTime? createdAt,
+    Object? deletedAt = _sentinel,
   }) {
     return ProductEntity(
       id: id ?? this.id,
@@ -61,6 +68,7 @@ class ProductEntity extends Equatable {
       isVisible: isVisible ?? this.isVisible,
       sizeChartImageUrl: sizeChartImageUrl ?? this.sizeChartImageUrl,
       createdAt: createdAt ?? this.createdAt,
+      deletedAt: deletedAt == _sentinel ? this.deletedAt : deletedAt as DateTime?,
     );
   }
 
@@ -76,5 +84,6 @@ class ProductEntity extends Equatable {
     isVisible,
     sizeChartImageUrl,
     createdAt,
+    deletedAt,
   ];
 }
