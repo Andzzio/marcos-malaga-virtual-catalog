@@ -9,10 +9,7 @@ import 'package:marcos_malaga_app/app/shared/widgets/placeholders/sliver_empty_p
 class LegalDocumentView extends ConsumerWidget {
   final String documentId;
 
-  const LegalDocumentView({
-    super.key,
-    required this.documentId,
-  });
+  const LegalDocumentView({super.key, required this.documentId});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -20,8 +17,9 @@ class LegalDocumentView extends ConsumerWidget {
 
     return documentsAsync.when(
       data: (documents) {
-        final LegalDocumentEntity? document =
-            documents.where((d) => d.id == documentId).firstOrNull;
+        final LegalDocumentEntity? document = documents
+            .where((d) => d.id == documentId)
+            .firstOrNull;
 
         if (document == null) {
           return const SliverEmptyPlaceholder(
@@ -32,7 +30,8 @@ class LegalDocumentView extends ConsumerWidget {
         return SliverToBoxAdapter(
           child: Center(
             child: Padding(
-              padding: ResponsiveTheme.isMobile(context) ||
+              padding:
+                  ResponsiveTheme.isMobile(context) ||
                       ResponsiveTheme.isTablet(context)
                   ? const EdgeInsets.symmetric(horizontal: 20, vertical: 50)
                   : const EdgeInsets.symmetric(horizontal: 200, vertical: 50),
@@ -44,7 +43,8 @@ class LegalDocumentView extends ConsumerWidget {
                     Center(
                       child: Text(
                         document.title.toUpperCase(),
-                        style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                        style: Theme.of(context).textTheme.labelMedium
+                            ?.copyWith(
                               fontWeight: FontWeight.bold,
                               fontSize: 18,
                             ),
@@ -55,9 +55,9 @@ class LegalDocumentView extends ConsumerWidget {
                     Text(
                       document.content,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            fontSize: 14,
-                            height: 1.8,
-                          ),
+                        fontSize: 14,
+                        height: 1.8,
+                      ),
                     ),
                   ],
                 ),
@@ -67,13 +67,10 @@ class LegalDocumentView extends ConsumerWidget {
         );
       },
       loading: () => const SliverFillRemaining(
-        child: Center(
-          child: CircularProgressIndicator(),
-        ),
+        child: Center(child: CircularProgressIndicator()),
       ),
-      error: (_, _) => const SliverEmptyPlaceholder(
-        message: 'Error al cargar el documento',
-      ),
+      error: (_, _) =>
+          const SliverEmptyPlaceholder(message: 'Error al cargar el documento'),
     );
   }
 }

@@ -1,11 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_status.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_status.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/repositories/order_repository.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/usecases/create_order_usecase.dart';
+import 'package:marcos_malaga_app/app/shared/domain/repositories/order_repository.dart';
+import 'package:marcos_malaga_app/app/shared/domain/usecases/order/create_order_usecase.dart';
 
 class MockOrderRepository extends Mock implements OrderRepository {}
 
@@ -23,7 +23,7 @@ void main() {
       lastName: 'López',
       dni: '12345678',
       phone: '987654321',
-          ),
+    ),
     shipping: const ShippingAddress(
       department: 'Lima',
       province: 'Lima',
@@ -42,7 +42,7 @@ void main() {
     paymentMethodId: 'yape',
     shippingMethodId: 'express',
     status: OrderStatus.pending,
-      deliveryType: DeliveryType.shipping,
+    deliveryType: DeliveryType.shipping,
     createdAt: DateTime(2026, 1, 1),
   );
 

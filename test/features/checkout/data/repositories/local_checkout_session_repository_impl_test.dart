@@ -2,10 +2,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:marcos_malaga_app/features/checkout/data/datasources/local_checkout_session_datasource.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/checkout_session_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_item_model.dart';
+
 import 'package:marcos_malaga_app/features/checkout/data/repositories/local_checkout_session_repository_impl.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 class MockLocalCheckoutSessionDatasource extends Mock
     implements LocalCheckoutSessionDatasource {}
@@ -25,20 +25,9 @@ void main() {
     unitPrice: 120.0,
   );
 
-  const tOrderItemModel = OrderItemModel(
-    productId: 'prod-001',
-    designId: 'des-001',
-    sizeName: 'M',
-    quantity: 1,
-    productName: 'Vestido Floreado',
-    designName: 'Floral',
-    imageUrl: 'https://example.com/img.png',
-    unitPrice: 120.0,
-  );
-
   final tSessionModel = CheckoutSessionModel(
     id: 'cs_001',
-    items: const [tOrderItemModel],
+    items: const [tOrderItem],
     clearCartOnSuccess: true,
     createdAt: DateTime(2026, 8, 19, 20, 0, 0),
   );
@@ -81,8 +70,9 @@ void main() {
     test(
       'getSession should return CheckoutSession entity when datasource returns model',
       () async {
-        when(() => mockDatasource.getSession('cs_001'))
-            .thenAnswer((_) async => tSessionModel);
+        when(
+          () => mockDatasource.getSession('cs_001'),
+        ).thenAnswer((_) async => tSessionModel);
 
         final result = await repository.getSession('cs_001');
 
@@ -97,8 +87,9 @@ void main() {
     test(
       'getSession should return null when datasource returns null',
       () async {
-        when(() => mockDatasource.getSession('cs_not_found'))
-            .thenAnswer((_) async => null);
+        when(
+          () => mockDatasource.getSession('cs_not_found'),
+        ).thenAnswer((_) async => null);
 
         final result = await repository.getSession('cs_not_found');
 
@@ -109,8 +100,9 @@ void main() {
     );
 
     test('deleteSession should delegate to datasource', () async {
-      when(() => mockDatasource.deleteSession('cs_001'))
-          .thenAnswer((_) async {});
+      when(
+        () => mockDatasource.deleteSession('cs_001'),
+      ).thenAnswer((_) async {});
 
       await repository.deleteSession('cs_001');
 

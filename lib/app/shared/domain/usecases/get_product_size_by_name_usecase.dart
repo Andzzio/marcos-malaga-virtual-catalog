@@ -6,7 +6,11 @@ class GetProductSizeByNameUseCase {
 
   GetProductSizeByNameUseCase({required this.repo});
 
-  Future<ProductSizeEntity?> call(String productId, String designId, String sizeName) {
+  Future<ProductSizeEntity?> call(
+    String productId,
+    String designId,
+    String sizeName,
+  ) {
     return repo.getSizeByName(productId, designId, sizeName);
   }
 }

@@ -29,10 +29,7 @@ void main() {
     });
 
     test('copyWith creates a new instance with updated properties', () {
-      final updated = tCustomer.copyWith(
-        firstName: 'Lucía',
-        lastName: 'Gómez',
-      );
+      final updated = tCustomer.copyWith(firstName: 'Lucía', lastName: 'Gómez');
 
       expect(updated.firstName, 'Lucía');
       expect(updated.lastName, 'Gómez');
@@ -41,10 +38,13 @@ void main() {
       expect(updated, isNot(equals(tCustomer)));
     });
 
-    test('copyWith returns identical instance when no arguments are passed', () {
-      final updated = tCustomer.copyWith();
+    test(
+      'copyWith returns identical instance when no arguments are passed',
+      () {
+        final updated = tCustomer.copyWith();
 
-      expect(updated, equals(tCustomer));
-    });
+        expect(updated, equals(tCustomer));
+      },
+    );
   });
 }

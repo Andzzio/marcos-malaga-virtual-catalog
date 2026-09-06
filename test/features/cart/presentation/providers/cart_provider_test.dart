@@ -11,7 +11,7 @@ import 'package:marcos_malaga_app/features/cart/domain/entities/cart_item_entity
 import 'package:marcos_malaga_app/features/cart/domain/usecases/get_cart_usecase.dart';
 import 'package:marcos_malaga_app/features/cart/presentation/providers/cart_provider.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/create_checkout_session_usecase.dart';
 import 'package:marcos_malaga_app/providers/core/core_providers.dart';
 import 'package:marcos_malaga_app/providers/features/cart/cart_providers.dart';
@@ -44,9 +44,7 @@ void main() {
         id: 'des-1',
         name: 'Rojo Floral',
         imageUrls: ['https://example.com/img.jpg'],
-        sizes: [
-          ProductSizeEntity(size: 'M', stock: 5),
-        ],
+        sizes: [ProductSizeEntity(size: 'M', stock: 5)],
       ),
     ],
     deletedAt: null,
@@ -75,9 +73,8 @@ void main() {
       routes: [
         GoRoute(
           path: '/',
-          builder: (context, state) => Consumer(
-            builder: (ctx, ref, _) => builder(ctx, ref),
-          ),
+          builder: (context, state) =>
+              Consumer(builder: (ctx, ref, _) => builder(ctx, ref)),
         ),
         GoRoute(
           path: '/checkout/:sessionId',
@@ -88,25 +85,19 @@ void main() {
     );
 
     return ProviderScope(
-      overrides: [
-        for (final o in overrides) o as dynamic,
-      ],
-      child: MaterialApp.router(
-        routerConfig: router,
-      ),
+      overrides: [for (final o in overrides) o as dynamic],
+      child: MaterialApp.router(routerConfig: router),
     );
   }
 
   group('CartProvider proceedToCheckout', () {
-    testWidgets(
-        'creates checkout session and navigates when cart has items',
-        (tester) async {
-      when(() => mockGetCartUseCase()).thenAnswer(
-        (_) async => const CartEntity(items: [tCartItem]),
-      );
-      when(() => mockGetProductsUseCase()).thenAnswer(
-        (_) async => [tProduct],
-      );
+    testWidgets('creates checkout session and navigates when cart has items', (
+      tester,
+    ) async {
+      when(
+        () => mockGetCartUseCase(),
+      ).thenAnswer((_) async => const CartEntity(items: [tCartItem]));
+      when(() => mockGetProductsUseCase()).thenAnswer((_) async => [tProduct]);
 
       final tSession = CheckoutSession(
         id: 'session-xyz',
@@ -127,19 +118,23 @@ void main() {
         createdAt: DateTime.now(),
       );
 
-      when(() => mockCreateCheckoutSessionUseCase.call(
-            items: any(named: 'items'),
-            clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
-          )).thenAnswer((_) async => tSession);
+      when(
+        () => mockCreateCheckoutSessionUseCase.call(
+          items: any(named: 'items'),
+          clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
+        ),
+      ).thenAnswer((_) async => tSession);
 
       await tester.pumpWidget(
         buildTestWidget(
           overrides: [
             getCartUsecaseProvider.overrideWithValue(mockGetCartUseCase),
-            getProductsUsecaseProvider
-                .overrideWithValue(mockGetProductsUseCase),
-            createCheckoutSessionUseCaseProvider
-                .overrideWithValue(mockCreateCheckoutSessionUseCase),
+            getProductsUsecaseProvider.overrideWithValue(
+              mockGetProductsUseCase,
+            ),
+            createCheckoutSessionUseCaseProvider.overrideWithValue(
+              mockCreateCheckoutSessionUseCase,
+            ),
           ],
           builder: (context, ref) {
             final cartAsync = ref.watch(cartProvider);
@@ -164,30 +159,32 @@ void main() {
       await tester.tap(find.text('Checkout Button'));
       await tester.pumpAndSettle();
 
-      verify(() => mockCreateCheckoutSessionUseCase.call(
-            items: any(named: 'items', that: isNotEmpty),
-            clearCartOnSuccess: true,
-          )).called(1);
+      verify(
+        () => mockCreateCheckoutSessionUseCase.call(
+          items: any(named: 'items', that: isNotEmpty),
+          clearCartOnSuccess: true,
+        ),
+      ).called(1);
 
       expect(find.text('Checkout session-xyz'), findsOneWidget);
     });
 
     testWidgets('does nothing when cart is empty', (tester) async {
-      when(() => mockGetCartUseCase()).thenAnswer(
-        (_) async => const CartEntity(items: []),
-      );
-      when(() => mockGetProductsUseCase()).thenAnswer(
-        (_) async => [tProduct],
-      );
+      when(
+        () => mockGetCartUseCase(),
+      ).thenAnswer((_) async => const CartEntity(items: []));
+      when(() => mockGetProductsUseCase()).thenAnswer((_) async => [tProduct]);
 
       await tester.pumpWidget(
         buildTestWidget(
           overrides: [
             getCartUsecaseProvider.overrideWithValue(mockGetCartUseCase),
-            getProductsUsecaseProvider
-                .overrideWithValue(mockGetProductsUseCase),
-            createCheckoutSessionUseCaseProvider
-                .overrideWithValue(mockCreateCheckoutSessionUseCase),
+            getProductsUsecaseProvider.overrideWithValue(
+              mockGetProductsUseCase,
+            ),
+            createCheckoutSessionUseCaseProvider.overrideWithValue(
+              mockCreateCheckoutSessionUseCase,
+            ),
           ],
           builder: (context, ref) {
             final cartAsync = ref.watch(cartProvider);
@@ -210,10 +207,12 @@ void main() {
       await tester.tap(find.text('Checkout Button'));
       await tester.pumpAndSettle();
 
-      verifyNever(() => mockCreateCheckoutSessionUseCase.call(
-            items: any(named: 'items'),
-            clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
-          ));
+      verifyNever(
+        () => mockCreateCheckoutSessionUseCase.call(
+          items: any(named: 'items'),
+          clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
+        ),
+      );
 
       expect(find.text('Checkout Button'), findsOneWidget);
     });

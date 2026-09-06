@@ -62,10 +62,13 @@ void main() {
       expect(updated, isNot(equals(tShippingAddress)));
     });
 
-    test('copyWith returns identical instance when no arguments are passed', () {
-      final updated = tShippingAddress.copyWith();
+    test(
+      'copyWith returns identical instance when no arguments are passed',
+      () {
+        final updated = tShippingAddress.copyWith();
 
-      expect(updated, equals(tShippingAddress));
-    });
+        expect(updated, equals(tShippingAddress));
+      },
+    );
   });
 }

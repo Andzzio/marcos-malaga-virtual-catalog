@@ -15,13 +15,24 @@ import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/update_
 import 'package:marcos_malaga_app/providers/core/core_providers.dart';
 
 class MockGetProductsUsecase extends Mock implements GetProductsUsecase {}
+
 class MockCreateProductUsecase extends Mock implements CreateProductUsecase {}
+
 class MockCreateProductsUsecase extends Mock implements CreateProductsUsecase {}
+
 class MockUpdateProductUsecase extends Mock implements UpdateProductUsecase {}
-class MockSoftDeleteProductUsecase extends Mock implements SoftDeleteProductUsecase {}
-class MockSoftDeleteProductsUsecase extends Mock implements SoftDeleteProductsUsecase {}
+
+class MockSoftDeleteProductUsecase extends Mock
+    implements SoftDeleteProductUsecase {}
+
+class MockSoftDeleteProductsUsecase extends Mock
+    implements SoftDeleteProductsUsecase {}
+
 class MockRestoreProductUsecase extends Mock implements RestoreProductUsecase {}
-class MockRestoreProductsUsecase extends Mock implements RestoreProductsUsecase {}
+
+class MockRestoreProductsUsecase extends Mock
+    implements RestoreProductsUsecase {}
+
 class MockUpdateStockUsecase extends Mock implements UpdateStockUsecase {}
 
 void main() {
@@ -36,9 +47,15 @@ void main() {
   late MockUpdateStockUsecase mockUpdateStock;
 
   final tProduct = ProductEntity(
-    id: 'PROD-001', name: 'Vestido Test', description: 'Desc',
-    basePrice: 100.0, categoryIds: const [], designs: const [],
-    isVisible: true, createdAt: DateTime.parse('2025-01-01T00:00:00Z'), deletedAt: null,
+    id: 'PROD-001',
+    name: 'Vestido Test',
+    description: 'Desc',
+    basePrice: 100.0,
+    categoryIds: const [],
+    designs: const [],
+    isVisible: true,
+    createdAt: DateTime.parse('2025-01-01T00:00:00Z'),
+    deletedAt: null,
   );
 
   setUp(() {
@@ -58,17 +75,19 @@ void main() {
     registerFallbackValue(<String>[]);
   });
 
-  ProviderContainer makeContainer() => ProviderContainer(overrides: [
-    getProductsUsecaseProvider.overrideWithValue(mockGetProducts),
-    createProductUsecaseProvider.overrideWithValue(mockCreate),
-    createProductsUsecaseProvider.overrideWithValue(mockCreateMany),
-    updateProductUsecaseProvider.overrideWithValue(mockUpdate),
-    softDeleteProductUsecaseProvider.overrideWithValue(mockSoftDelete),
-    softDeleteProductsUsecaseProvider.overrideWithValue(mockSoftDeleteMany),
-    restoreProductUsecaseProvider.overrideWithValue(mockRestore),
-    restoreProductsUsecaseProvider.overrideWithValue(mockRestoreMany),
-    updateStockUsecaseProvider.overrideWithValue(mockUpdateStock),
-  ]);
+  ProviderContainer makeContainer() => ProviderContainer(
+    overrides: [
+      getProductsUsecaseProvider.overrideWithValue(mockGetProducts),
+      createProductUsecaseProvider.overrideWithValue(mockCreate),
+      createProductsUsecaseProvider.overrideWithValue(mockCreateMany),
+      updateProductUsecaseProvider.overrideWithValue(mockUpdate),
+      softDeleteProductUsecaseProvider.overrideWithValue(mockSoftDelete),
+      softDeleteProductsUsecaseProvider.overrideWithValue(mockSoftDeleteMany),
+      restoreProductUsecaseProvider.overrideWithValue(mockRestore),
+      restoreProductsUsecaseProvider.overrideWithValue(mockRestoreMany),
+      updateStockUsecaseProvider.overrideWithValue(mockUpdateStock),
+    ],
+  );
 
   group('ProductsProvider Write Methods', () {
     test('createProduct calls usecase with product', () async {
@@ -112,7 +131,10 @@ void main() {
       final container = makeContainer();
       addTearDown(container.dispose);
       await container.read(productsProvider.future);
-      await container.read(productsProvider.notifier).softDeleteMany(['PROD-001', 'PROD-002']);
+      await container.read(productsProvider.notifier).softDeleteMany([
+        'PROD-001',
+        'PROD-002',
+      ]);
       verify(() => mockSoftDeleteMany.call(['PROD-001', 'PROD-002'])).called(1);
     });
 
@@ -130,26 +152,41 @@ void main() {
       final container = makeContainer();
       addTearDown(container.dispose);
       await container.read(productsProvider.future);
-      await container.read(productsProvider.notifier).restoreMany(['PROD-001', 'PROD-002']);
+      await container.read(productsProvider.notifier).restoreMany([
+        'PROD-001',
+        'PROD-002',
+      ]);
       verify(() => mockRestoreMany.call(['PROD-001', 'PROD-002'])).called(1);
     });
 
     test('updateStock calls usecase with correct params', () async {
-      when(() => mockUpdateStock.call(
-        productId: any(named: 'productId'),
-        designId: any(named: 'designId'),
-        sizeName: any(named: 'sizeName'),
-        newStock: any(named: 'newStock'),
-      )).thenAnswer((_) async {});
+      when(
+        () => mockUpdateStock.call(
+          productId: any(named: 'productId'),
+          designId: any(named: 'designId'),
+          sizeName: any(named: 'sizeName'),
+          newStock: any(named: 'newStock'),
+        ),
+      ).thenAnswer((_) async {});
       final container = makeContainer();
       addTearDown(container.dispose);
       await container.read(productsProvider.future);
-      await container.read(productsProvider.notifier).updateStock(
-        productId: 'PROD-001', designId: 'DES-001', sizeName: 'M', newStock: 10,
-      );
-      verify(() => mockUpdateStock.call(
-        productId: 'PROD-001', designId: 'DES-001', sizeName: 'M', newStock: 10,
-      )).called(1);
+      await container
+          .read(productsProvider.notifier)
+          .updateStock(
+            productId: 'PROD-001',
+            designId: 'DES-001',
+            sizeName: 'M',
+            newStock: 10,
+          );
+      verify(
+        () => mockUpdateStock.call(
+          productId: 'PROD-001',
+          designId: 'DES-001',
+          sizeName: 'M',
+          newStock: 10,
+        ),
+      ).called(1);
     });
   });
 }

@@ -39,7 +39,7 @@ class ProductFiltersNotifier extends Notifier<ProductFiltersState> {
   }
 }
 
-final productFiltersProvider =
-    NotifierProvider.autoDispose.family<ProductFiltersNotifier, ProductFiltersState, CatalogCategory>(
+final productFiltersProvider = NotifierProvider.autoDispose
+    .family<ProductFiltersNotifier, ProductFiltersState, CatalogCategory>(
       ProductFiltersNotifier.new,
     );

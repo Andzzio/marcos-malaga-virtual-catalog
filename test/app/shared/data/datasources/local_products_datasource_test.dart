@@ -108,8 +108,8 @@ void main() {
     void mockAsset(String jsonString) {
       TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
           .setMockMessageHandler('flutter/assets', (ByteData? message) async {
-        return ByteData.view(utf8.encoder.convert(jsonString).buffer);
-      });
+            return ByteData.view(utf8.encoder.convert(jsonString).buffer);
+          });
     }
 
     final tProductJson = jsonEncode([
@@ -129,7 +129,7 @@ void main() {
             'sizes': [
               {'size': 'M', 'stock': 5, 'sku': null},
             ],
-          }
+          },
         ],
         'isVisible': true,
         'deletedAt': null,
@@ -191,16 +191,19 @@ void main() {
       expect(result.first.deletedAt, isNotNull);
     });
 
-    test('restoreProduct sets deletedAt to null on the target product', () async {
-      mockAsset(tProductJson);
-      await datasource.fetchProducts();
+    test(
+      'restoreProduct sets deletedAt to null on the target product',
+      () async {
+        mockAsset(tProductJson);
+        await datasource.fetchProducts();
 
-      await datasource.softDeleteProduct('PROD-001');
-      await datasource.restoreProduct('PROD-001');
-      final result = await datasource.fetchProducts();
+        await datasource.softDeleteProduct('PROD-001');
+        await datasource.restoreProduct('PROD-001');
+        final result = await datasource.fetchProducts();
 
-      expect(result.first.deletedAt, isNull);
-    });
+        expect(result.first.deletedAt, isNull);
+      },
+    );
 
     test('updateStock modifies the stock of the correct size', () async {
       mockAsset(tProductJson);

@@ -1,12 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/customer_info_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_item_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_model.dart';
+import 'package:marcos_malaga_app/app/shared/data/models/order/order_item_model.dart';
+import 'package:marcos_malaga_app/app/shared/data/models/order/order_model.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/shipping_address_model.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_status.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_status.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/billing_address_model.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/billing_address.dart';
@@ -14,10 +14,10 @@ import 'package:marcos_malaga_app/features/checkout/domain/entities/billing_addr
 void main() {
   const tCustomerModel = CustomerInfoModel(
     firstName: 'Ana',
-      lastName: 'Pérez',
+    lastName: 'Pérez',
     dni: '12345678',
     phone: '987654321',
-      );
+  );
 
   const tShippingModel = ShippingAddressModel(
     department: 'Lima',
@@ -69,7 +69,7 @@ void main() {
     paymentMethodId: 'yape',
     shippingMethodId: 'olva',
     status: OrderStatus.pending,
-      deliveryType: DeliveryType.shipping,
+    deliveryType: DeliveryType.shipping,
     createdAt: tCreatedAt,
     notes: 'Entregar por la tarde',
   );
@@ -82,7 +82,7 @@ void main() {
       lastName: 'Pérez',
       dni: '12345678',
       phone: '987654321',
-          ),
+    ),
     shipping: const ShippingAddress(
       department: 'Lima',
       province: 'Lima',
@@ -123,7 +123,7 @@ void main() {
     paymentMethodId: 'yape',
     shippingMethodId: 'olva',
     status: OrderStatus.pending,
-      deliveryType: DeliveryType.shipping,
+    deliveryType: DeliveryType.shipping,
     createdAt: tCreatedAt,
     notes: 'Entregar por la tarde',
   );
@@ -170,7 +170,7 @@ void main() {
         'imageUrl': 'https://example.com/img.jpg',
         'unitPrice': 89.90,
         'discountPrice': null,
-      }
+      },
     ],
     'subtotal': 179.80,
     'shippingCost': 10.00,
@@ -184,10 +184,6 @@ void main() {
   };
 
   group('OrderModel', () {
-    test('is a subclass of OrderEntity', () {
-      expect(tOrderModel, isA<OrderEntity>());
-    });
-
     test('fromJson returns a valid model from JSON map', () {
       final result = OrderModel.fromJson(tJson);
       expect(result, equals(tOrderModel));

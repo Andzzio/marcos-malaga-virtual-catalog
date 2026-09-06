@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 void main() {
   group('CheckoutSession', () {
@@ -42,9 +42,7 @@ void main() {
     });
 
     test('copyWith creates a new instance with updated properties', () {
-      final updated = tSession.copyWith(
-        clearCartOnSuccess: false,
-      );
+      final updated = tSession.copyWith(clearCartOnSuccess: false);
 
       expect(updated.id, 'cs_123456');
       expect(updated.items, tSession.items);
@@ -53,10 +51,13 @@ void main() {
       expect(updated, isNot(equals(tSession)));
     });
 
-    test('copyWith returns identical instance when no arguments are passed', () {
-      final updated = tSession.copyWith();
+    test(
+      'copyWith returns identical instance when no arguments are passed',
+      () {
+        final updated = tSession.copyWith();
 
-      expect(updated, equals(tSession));
-    });
+        expect(updated, equals(tSession));
+      },
+    );
   });
 }

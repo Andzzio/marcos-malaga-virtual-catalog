@@ -15,13 +15,18 @@ void main() {
   });
 
   group('SoftDeleteProductUsecase Tests', () {
-    test('should call repository.softDeleteProduct with the given id', () async {
-      when(() => mockRepository.softDeleteProduct('PROD-001')).thenAnswer((_) async {});
+    test(
+      'should call repository.softDeleteProduct with the given id',
+      () async {
+        when(
+          () => mockRepository.softDeleteProduct('PROD-001'),
+        ).thenAnswer((_) async {});
 
-      await usecase('PROD-001');
+        await usecase('PROD-001');
 
-      verify(() => mockRepository.softDeleteProduct('PROD-001')).called(1);
-      verifyNoMoreInteractions(mockRepository);
-    });
+        verify(() => mockRepository.softDeleteProduct('PROD-001')).called(1);
+        verifyNoMoreInteractions(mockRepository);
+      },
+    );
   });
 }

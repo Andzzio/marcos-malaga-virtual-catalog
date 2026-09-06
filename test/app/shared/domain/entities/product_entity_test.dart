@@ -102,14 +102,21 @@ void main() {
       expect(deleted.isDeleted, isTrue);
     });
 
-    test('ProductEntity copyWith can set deletedAt back to null using sentinel', () {
-      final withDeleted = tProductEntity.copyWith(deletedAt: DateTime(2025, 1, 1));
-      final restored = withDeleted.copyWith(deletedAt: null);
-      expect(restored.isDeleted, isFalse);
-    });
+    test(
+      'ProductEntity copyWith can set deletedAt back to null using sentinel',
+      () {
+        final withDeleted = tProductEntity.copyWith(
+          deletedAt: DateTime(2025, 1, 1),
+        );
+        final restored = withDeleted.copyWith(deletedAt: null);
+        expect(restored.isDeleted, isFalse);
+      },
+    );
 
     test('ProductEntity copyWith preserves deletedAt when not passed', () {
-      final withDeleted = tProductEntity.copyWith(deletedAt: DateTime(2025, 1, 1));
+      final withDeleted = tProductEntity.copyWith(
+        deletedAt: DateTime(2025, 1, 1),
+      );
       final updated = withDeleted.copyWith(basePrice: 90);
       expect(updated.deletedAt, isNotNull);
       expect(updated.basePrice, 90);

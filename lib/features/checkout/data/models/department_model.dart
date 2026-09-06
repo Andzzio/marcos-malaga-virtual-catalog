@@ -5,10 +5,7 @@ class DepartmentModel extends Equatable {
   final String code;
   final String name;
 
-  const DepartmentModel({
-    required this.code,
-    required this.name,
-  });
+  const DepartmentModel({required this.code, required this.name});
 
   factory DepartmentModel.fromJson(Map<String, dynamic> json) {
     return DepartmentModel(
@@ -18,27 +15,15 @@ class DepartmentModel extends Equatable {
   }
 
   Map<String, dynamic> toJson() {
-    return {
-      'code': code,
-      'name': name,
-    };
+    return {'code': code, 'name': name};
   }
 
-  DepartmentModel copyWith({
-    String? code,
-    String? name,
-  }) {
-    return DepartmentModel(
-      code: code ?? this.code,
-      name: name ?? this.name,
-    );
+  DepartmentModel copyWith({String? code, String? name}) {
+    return DepartmentModel(code: code ?? this.code, name: name ?? this.name);
   }
 
   DepartmentEntity toEntity() {
-    return DepartmentEntity(
-      code: code,
-      name: name,
-    );
+    return DepartmentEntity(code: code, name: name);
   }
 
   @override

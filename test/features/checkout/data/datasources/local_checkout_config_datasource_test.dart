@@ -22,13 +22,13 @@ void main() {
     group('getUbigeo', () {
       final tUbigeoJson = {
         'departments': [
-          {'code': '15', 'name': 'Lima'}
+          {'code': '15', 'name': 'Lima'},
         ],
         'provinces': [
-          {'code': '1501', 'name': 'Lima', 'departmentCode': '15'}
+          {'code': '1501', 'name': 'Lima', 'departmentCode': '15'},
         ],
         'districts': [
-          {'code': '150101', 'name': 'Lima', 'provinceCode': '1501'}
+          {'code': '150101', 'name': 'Lima', 'provinceCode': '1501'},
         ],
       };
 
@@ -70,7 +70,7 @@ void main() {
             'name': 'Lima Metropolitana',
             'departmentCodes': ['15'],
             'freeShippingThreshold': 200.0,
-          }
+          },
         ],
         'shippingMethods': [
           {
@@ -80,7 +80,7 @@ void main() {
             'availableZones': ['zone-lima'],
             'prices': {'zone-lima': 10.0},
             'estimatedDays': '2 a 4 días',
-          }
+          },
         ],
         'paymentMethods': [
           {
@@ -90,7 +90,7 @@ void main() {
             'type': 'digital_wallet',
             'instructions': 'Instrucciones...',
             'details': {'phone': '987654321'},
-          }
+          },
         ],
       };
 
@@ -98,7 +98,8 @@ void main() {
         'should return valid CheckoutConfigModel when asset loading succeeds',
         () async {
           when(
-            () => mockAssetBundle.loadString('assets/json/checkout_config.json'),
+            () =>
+                mockAssetBundle.loadString('assets/json/checkout_config.json'),
           ).thenAnswer((_) async => jsonEncode(tConfigJson));
 
           final result = await datasource.getCheckoutConfig();
@@ -114,7 +115,8 @@ void main() {
         'should return empty CheckoutConfigModel when asset loading throws exception',
         () async {
           when(
-            () => mockAssetBundle.loadString('assets/json/checkout_config.json'),
+            () =>
+                mockAssetBundle.loadString('assets/json/checkout_config.json'),
           ).thenThrow(Exception('Asset not found'));
 
           final result = await datasource.getCheckoutConfig();

@@ -70,12 +70,5 @@ class PaymentMethodModel extends Equatable {
   }
 
   @override
-  List<Object?> get props => [
-        id,
-        label,
-        enabled,
-        type,
-        instructions,
-        details,
-      ];
+  List<Object?> get props => [id, label, enabled, type, instructions, details];
 }

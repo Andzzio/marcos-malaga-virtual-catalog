@@ -18,8 +18,8 @@ class ComplaintsBookScreen extends StatelessWidget {
         ResponsiveTheme.isMobile(context)
             ? MobileHeaderBar(colorLerp: false)
             : ResponsiveTheme.isTablet(context)
-                ? const TabletHeaderBar(colorLerp: false)
-                : const HeaderBar(colorLerp: false),
+            ? const TabletHeaderBar(colorLerp: false)
+            : const HeaderBar(colorLerp: false),
         SliverFillRemaining(
           child: Center(
             child: Text(

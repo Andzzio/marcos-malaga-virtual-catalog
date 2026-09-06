@@ -37,10 +37,13 @@ class LocalProductsDatasource {
     }
   }
 
-  Future<ProductDesignModel?> fetchDesignById(String productId, String designId) async {
+  Future<ProductDesignModel?> fetchDesignById(
+    String productId,
+    String designId,
+  ) async {
     final product = await fetchProductById(productId);
     if (product == null) return null;
-    
+
     try {
       return product.designs.firstWhere((d) => d.id == designId);
     } catch (_) {
@@ -48,7 +51,11 @@ class LocalProductsDatasource {
     }
   }
 
-  Future<ProductSizeModel?> fetchSizeByName(String productId, String designId, String sizeName) async {
+  Future<ProductSizeModel?> fetchSizeByName(
+    String productId,
+    String designId,
+    String sizeName,
+  ) async {
     final design = await fetchDesignById(productId, designId);
     if (design == null) return null;
 

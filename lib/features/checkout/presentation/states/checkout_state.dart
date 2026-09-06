@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/billing_address.dart';
 
@@ -57,7 +57,8 @@ class CheckoutState extends Equatable {
       customerInfo: customerInfo ?? this.customerInfo,
       shippingAddress: shippingAddress ?? this.shippingAddress,
       billingAddress: billingAddress ?? this.billingAddress,
-      billingSameAsShipping: billingSameAsShipping ?? this.billingSameAsShipping,
+      billingSameAsShipping:
+          billingSameAsShipping ?? this.billingSameAsShipping,
       paymentMethodId: paymentMethodId ?? this.paymentMethodId,
       session: session ?? this.session,
       deliveryType: deliveryType ?? this.deliveryType,

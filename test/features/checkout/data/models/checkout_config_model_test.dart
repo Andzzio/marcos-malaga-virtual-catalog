@@ -44,7 +44,7 @@ void main() {
         'name': 'Lima Metropolitana',
         'departmentCodes': ['15'],
         'freeShippingThreshold': 150.0,
-      }
+      },
     ],
     'shippingMethods': [
       {
@@ -55,7 +55,7 @@ void main() {
         'prices': {'zone-lima': 10.0},
         'estimatedDays': '2-3 días hábiles',
         'description': 'Envío por Olva Courier',
-      }
+      },
     ],
     'paymentMethods': [
       {
@@ -65,7 +65,7 @@ void main() {
         'type': 'manual',
         'instructions': 'Transfiere al 987654321',
         'details': {'phoneNumber': '987654321'},
-      }
+      },
     ],
   };
 
@@ -96,9 +96,7 @@ void main() {
     });
 
     test('copyWith creates a new instance with updated properties', () {
-      final updated = tModel.copyWith(
-        shippingZones: const [],
-      );
+      final updated = tModel.copyWith(shippingZones: const []);
       expect(updated.shippingZones, isEmpty);
       expect(updated.shippingMethods, [tShippingMethod]);
       expect(updated.paymentMethods, [tPaymentMethod]);

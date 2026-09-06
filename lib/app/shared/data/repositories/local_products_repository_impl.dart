@@ -22,15 +22,26 @@ class LocalProductsRepositoryImpl implements ProductsRepository {
   }
 
   @override
-  Future<ProductDesignEntity?> getDesignById(String productId, String designId) async {
+  Future<ProductDesignEntity?> getDesignById(
+    String productId,
+    String designId,
+  ) async {
     final designModel = await datasource.fetchDesignById(productId, designId);
     if (designModel == null) return null;
     return designModel.toEntity();
   }
 
   @override
-  Future<ProductSizeEntity?> getSizeByName(String productId, String designId, String sizeName) async {
-    final sizeModel = await datasource.fetchSizeByName(productId, designId, sizeName);
+  Future<ProductSizeEntity?> getSizeByName(
+    String productId,
+    String designId,
+    String sizeName,
+  ) async {
+    final sizeModel = await datasource.fetchSizeByName(
+      productId,
+      designId,
+      sizeName,
+    );
     if (sizeModel == null) return null;
     return sizeModel.toEntity();
   }

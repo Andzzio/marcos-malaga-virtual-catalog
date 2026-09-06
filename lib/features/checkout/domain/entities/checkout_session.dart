@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 class CheckoutSession extends Equatable {
   final String id;
@@ -29,10 +29,5 @@ class CheckoutSession extends Equatable {
   }
 
   @override
-  List<Object?> get props => [
-        id,
-        items,
-        clearCartOnSuccess,
-        createdAt,
-      ];
+  List<Object?> get props => [id, items, clearCartOnSuccess, createdAt];
 }

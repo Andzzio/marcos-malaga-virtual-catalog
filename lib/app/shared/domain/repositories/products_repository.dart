@@ -6,7 +6,11 @@ abstract class ProductsRepository {
   Future<List<ProductEntity>> getProducts();
   Future<ProductEntity?> getProductById(String id);
   Future<ProductDesignEntity?> getDesignById(String productId, String designId);
-  Future<ProductSizeEntity?> getSizeByName(String productId, String designId, String sizeName);
+  Future<ProductSizeEntity?> getSizeByName(
+    String productId,
+    String designId,
+    String sizeName,
+  );
 
   // --- Escritura ---
   Future<void> createProduct(ProductEntity product);

@@ -16,7 +16,9 @@ void main() {
 
   group('SoftDeleteProductsUsecase Tests', () {
     test('should call softDeleteProduct for each id in the list', () async {
-      when(() => mockRepository.softDeleteProduct(any())).thenAnswer((_) async {});
+      when(
+        () => mockRepository.softDeleteProduct(any()),
+      ).thenAnswer((_) async {});
 
       await usecase(['PROD-001', 'PROD-002', 'PROD-003']);
 

@@ -40,16 +40,21 @@ void main() {
       verifyNoMoreInteractions(mockRepository);
     });
 
-    test('should return null when the repository does not find the product', () async {
-      when(
-        () => mockRepository.getProductById(any()),
-      ).thenAnswer((_) async => null);
+    test(
+      'should return null when the repository does not find the product',
+      () async {
+        when(
+          () => mockRepository.getProductById(any()),
+        ).thenAnswer((_) async => null);
 
-      final result = await usecase('NON-EXISTENT-ID');
+        final result = await usecase('NON-EXISTENT-ID');
 
-      expect(result, isNull);
-      verify(() => mockRepository.getProductById('NON-EXISTENT-ID')).called(1);
-      verifyNoMoreInteractions(mockRepository);
-    });
+        expect(result, isNull);
+        verify(
+          () => mockRepository.getProductById('NON-EXISTENT-ID'),
+        ).called(1);
+        verifyNoMoreInteractions(mockRepository);
+      },
+    );
   });
 }

@@ -68,7 +68,9 @@ class ProductEntity extends Equatable {
       isVisible: isVisible ?? this.isVisible,
       sizeChartImageUrl: sizeChartImageUrl ?? this.sizeChartImageUrl,
       createdAt: createdAt ?? this.createdAt,
-      deletedAt: deletedAt == _sentinel ? this.deletedAt : deletedAt as DateTime?,
+      deletedAt: deletedAt == _sentinel
+          ? this.deletedAt
+          : deletedAt as DateTime?,
     );
   }
 

@@ -16,12 +16,14 @@ void main() {
 
   group('UpdateStockUsecase Tests', () {
     test('should call repository.updateStock with correct params', () async {
-      when(() => mockRepository.updateStock(
-        productId: 'PROD-001',
-        designId: 'DES-001',
-        sizeName: 'M',
-        newStock: 10,
-      )).thenAnswer((_) async {});
+      when(
+        () => mockRepository.updateStock(
+          productId: 'PROD-001',
+          designId: 'DES-001',
+          sizeName: 'M',
+          newStock: 10,
+        ),
+      ).thenAnswer((_) async {});
 
       await usecase(
         productId: 'PROD-001',
@@ -30,12 +32,14 @@ void main() {
         newStock: 10,
       );
 
-      verify(() => mockRepository.updateStock(
-        productId: 'PROD-001',
-        designId: 'DES-001',
-        sizeName: 'M',
-        newStock: 10,
-      )).called(1);
+      verify(
+        () => mockRepository.updateStock(
+          productId: 'PROD-001',
+          designId: 'DES-001',
+          sizeName: 'M',
+          newStock: 10,
+        ),
+      ).called(1);
       verifyNoMoreInteractions(mockRepository);
     });
   });

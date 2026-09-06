@@ -24,8 +24,9 @@ void main() {
   });
 
   test('should call repository.getSession with correct id', () async {
-    when(() => mockRepository.getSession('cs_123'))
-        .thenAnswer((_) async => tSession);
+    when(
+      () => mockRepository.getSession('cs_123'),
+    ).thenAnswer((_) async => tSession);
 
     final result = await useCase('cs_123');
 
@@ -35,8 +36,9 @@ void main() {
   });
 
   test('should return null when repository returns null', () async {
-    when(() => mockRepository.getSession('cs_not_found'))
-        .thenAnswer((_) async => null);
+    when(
+      () => mockRepository.getSession('cs_not_found'),
+    ).thenAnswer((_) async => null);
 
     final result = await useCase('cs_not_found');
 

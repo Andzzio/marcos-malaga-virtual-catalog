@@ -7,7 +7,7 @@ import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart
 import 'package:marcos_malaga_app/app/shared/domain/entities/product_size_entity.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/providers/product_detail_provider.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/create_checkout_session_usecase.dart';
 import 'package:marcos_malaga_app/providers/features/checkout/checkout_providers.dart';
 import 'package:mocktail/mocktail.dart';
@@ -41,9 +41,7 @@ void main() {
         id: 'des-red',
         name: 'Rojo Pasión',
         imageUrls: ['https://example.com/red.jpg'],
-        sizes: [
-          ProductSizeEntity(size: 'L', stock: 0),
-        ],
+        sizes: [ProductSizeEntity(size: 'L', stock: 0)],
       ),
     ],
     deletedAt: null,
@@ -62,9 +60,8 @@ void main() {
       routes: [
         GoRoute(
           path: '/',
-          builder: (context, state) => Consumer(
-            builder: (ctx, ref, _) => builder(ctx, ref),
-          ),
+          builder: (context, state) =>
+              Consumer(builder: (ctx, ref, _) => builder(ctx, ref)),
         ),
         GoRoute(
           path: '/checkout/:sessionId',
@@ -75,12 +72,8 @@ void main() {
     );
 
     return ProviderScope(
-      overrides: [
-        for (final o in overrides) o as dynamic,
-      ],
-      child: MaterialApp.router(
-        routerConfig: router,
-      ),
+      overrides: [for (final o in overrides) o as dynamic],
+      child: MaterialApp.router(routerConfig: router),
     );
   }
 
@@ -95,11 +88,12 @@ void main() {
       expect(state.selectedDesignIndex, equals(0));
       expect(state.selectedSizeIndex, equals(0));
 
-      final notifier =
-          container.read(productDetailProvider(tProduct).notifier);
+      final notifier = container.read(productDetailProvider(tProduct).notifier);
       notifier.selectSize(1);
       expect(
-          container.read(productDetailProvider(tProduct)).selectedSizeIndex, 1);
+        container.read(productDetailProvider(tProduct)).selectedSizeIndex,
+        1,
+      );
 
       notifier.selectQuantity(4);
       expect(container.read(productDetailProvider(tProduct)).quantity, 4);
@@ -109,8 +103,9 @@ void main() {
       expect(container.read(productDetailProvider(tProduct)).quantity, 0);
     });
 
-    testWidgets('buyNow creates session and navigates to checkout',
-        (tester) async {
+    testWidgets('buyNow creates session and navigates to checkout', (
+      tester,
+    ) async {
       final tSession = CheckoutSession(
         id: 'session-buy-now',
         items: const [
@@ -130,21 +125,23 @@ void main() {
         createdAt: DateTime.now(),
       );
 
-      when(() => mockCreateCheckoutSessionUseCase.call(
-            items: any(named: 'items'),
-            clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
-          )).thenAnswer((_) async => tSession);
+      when(
+        () => mockCreateCheckoutSessionUseCase.call(
+          items: any(named: 'items'),
+          clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
+        ),
+      ).thenAnswer((_) async => tSession);
 
       await tester.pumpWidget(
         buildTestWidget(
           overrides: [
-            createCheckoutSessionUseCaseProvider
-                .overrideWithValue(mockCreateCheckoutSessionUseCase),
+            createCheckoutSessionUseCaseProvider.overrideWithValue(
+              mockCreateCheckoutSessionUseCase,
+            ),
           ],
           builder: (context, ref) {
             final state = ref.watch(productDetailProvider(tProduct));
-            final notifier =
-                ref.read(productDetailProvider(tProduct).notifier);
+            final notifier = ref.read(productDetailProvider(tProduct).notifier);
             return Column(
               children: [
                 Text('Qty: ${state.quantity}'),
@@ -174,17 +171,19 @@ void main() {
       await tester.tap(find.text('Buy Now Button'));
       await tester.pumpAndSettle();
 
-      verify(() => mockCreateCheckoutSessionUseCase.call(
-            items: any(
-              named: 'items',
-              that: isA<List<OrderItem>>().having(
-                (l) => l.first.productId,
-                'productId',
-                'prod-2',
-              ),
+      verify(
+        () => mockCreateCheckoutSessionUseCase.call(
+          items: any(
+            named: 'items',
+            that: isA<List<OrderItem>>().having(
+              (l) => l.first.productId,
+              'productId',
+              'prod-2',
             ),
-            clearCartOnSuccess: false,
-          )).called(1);
+          ),
+          clearCartOnSuccess: false,
+        ),
+      ).called(1);
 
       expect(find.text('Checkout session-buy-now'), findsOneWidget);
     });
@@ -193,13 +192,13 @@ void main() {
       await tester.pumpWidget(
         buildTestWidget(
           overrides: [
-            createCheckoutSessionUseCaseProvider
-                .overrideWithValue(mockCreateCheckoutSessionUseCase),
+            createCheckoutSessionUseCaseProvider.overrideWithValue(
+              mockCreateCheckoutSessionUseCase,
+            ),
           ],
           builder: (context, ref) {
             final state = ref.watch(productDetailProvider(tProduct));
-            final notifier =
-                ref.read(productDetailProvider(tProduct).notifier);
+            final notifier = ref.read(productDetailProvider(tProduct).notifier);
             return Column(
               children: [
                 Text('Stock: ${state.selectedSize.stock}'),
@@ -229,10 +228,12 @@ void main() {
       await tester.tap(find.text('Buy Now Button'));
       await tester.pumpAndSettle();
 
-      verifyNever(() => mockCreateCheckoutSessionUseCase.call(
-            items: any(named: 'items'),
-            clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
-          ));
+      verifyNever(
+        () => mockCreateCheckoutSessionUseCase.call(
+          items: any(named: 'items'),
+          clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
+        ),
+      );
 
       expect(find.text('Buy Now Button'), findsOneWidget);
     });

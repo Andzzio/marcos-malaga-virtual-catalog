@@ -21,18 +21,10 @@ class ProvinceModel extends Equatable {
   }
 
   Map<String, dynamic> toJson() {
-    return {
-      'code': code,
-      'name': name,
-      'departmentCode': departmentCode,
-    };
+    return {'code': code, 'name': name, 'departmentCode': departmentCode};
   }
 
-  ProvinceModel copyWith({
-    String? code,
-    String? name,
-    String? departmentCode,
-  }) {
+  ProvinceModel copyWith({String? code, String? name, String? departmentCode}) {
     return ProvinceModel(
       code: code ?? this.code,
       name: name ?? this.name,

@@ -11,14 +11,26 @@ void main() {
   late MockProductsRepository mockRepository;
 
   final tProduct1 = ProductEntity(
-    id: 'PROD-001', name: 'Vestido A', description: 'Desc',
-    basePrice: 100.0, categoryIds: const [], designs: const [],
-    isVisible: true, createdAt: DateTime.parse('2025-01-01T00:00:00Z'), deletedAt: null,
+    id: 'PROD-001',
+    name: 'Vestido A',
+    description: 'Desc',
+    basePrice: 100.0,
+    categoryIds: const [],
+    designs: const [],
+    isVisible: true,
+    createdAt: DateTime.parse('2025-01-01T00:00:00Z'),
+    deletedAt: null,
   );
   final tProduct2 = ProductEntity(
-    id: 'PROD-002', name: 'Vestido B', description: 'Desc',
-    basePrice: 120.0, categoryIds: const [], designs: const [],
-    isVisible: true, createdAt: DateTime.parse('2025-01-01T00:00:00Z'), deletedAt: null,
+    id: 'PROD-002',
+    name: 'Vestido B',
+    description: 'Desc',
+    basePrice: 120.0,
+    categoryIds: const [],
+    designs: const [],
+    isVisible: true,
+    createdAt: DateTime.parse('2025-01-01T00:00:00Z'),
+    deletedAt: null,
   );
 
   setUp(() {

@@ -1,10 +1,10 @@
 import 'package:marcos_malaga_app/features/checkout/domain/entities/billing_address.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_status.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_status.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/repositories/order_repository.dart';
+import 'package:marcos_malaga_app/app/shared/domain/repositories/order_repository.dart';
 
 class CreateOrderUseCase {
   final OrderRepository repository;

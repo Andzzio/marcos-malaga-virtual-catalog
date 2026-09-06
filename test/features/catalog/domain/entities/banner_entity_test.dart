@@ -28,11 +28,14 @@ void main() {
     });
 
     test('should return a new BannerEntity with copyWith', () {
-      final updatedBanner = tBanner.copyWith(isActive: false, title: 'Updated Title');
+      final updatedBanner = tBanner.copyWith(
+        isActive: false,
+        title: 'Updated Title',
+      );
 
       expect(updatedBanner.isActive, false);
       expect(updatedBanner.title, 'Updated Title');
-      expect(updatedBanner.id, 'BANNER-001'); 
+      expect(updatedBanner.id, 'BANNER-001');
     });
   });
 }

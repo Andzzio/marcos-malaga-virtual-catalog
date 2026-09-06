@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 void main() {
   group('OrderItem', () {
@@ -44,10 +44,7 @@ void main() {
     });
 
     test('copyWith creates a new instance with updated properties', () {
-      final updated = tOrderItem.copyWith(
-        quantity: 3,
-        discountPrice: 69.90,
-      );
+      final updated = tOrderItem.copyWith(quantity: 3, discountPrice: 69.90);
 
       expect(updated.productId, 'prod-001');
       expect(updated.designId, 'des-001');
@@ -61,10 +58,13 @@ void main() {
       expect(updated, isNot(equals(tOrderItem)));
     });
 
-    test('copyWith returns identical instance when no arguments are passed', () {
-      final updated = tOrderItem.copyWith();
+    test(
+      'copyWith returns identical instance when no arguments are passed',
+      () {
+        final updated = tOrderItem.copyWith();
 
-      expect(updated, equals(tOrderItem));
-    });
+        expect(updated, equals(tOrderItem));
+      },
+    );
   });
 }

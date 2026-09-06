@@ -24,15 +24,15 @@ class ShippingAddress extends Equatable {
   });
 
   const ShippingAddress.empty()
-      : department = '',
-        province = '',
-        district = '',
-        departmentCode = '',
-        provinceCode = '',
-        districtCode = '',
-        address = '',
-        reference = '',
-        shippingZone = '';
+    : department = '',
+      province = '',
+      district = '',
+      departmentCode = '',
+      provinceCode = '',
+      districtCode = '',
+      address = '',
+      reference = '',
+      shippingZone = '';
 
   ShippingAddress copyWith({
     String? department,
@@ -60,14 +60,14 @@ class ShippingAddress extends Equatable {
 
   @override
   List<Object?> get props => [
-        department,
-        province,
-        district,
-        departmentCode,
-        provinceCode,
-        districtCode,
-        address,
-        reference,
-        shippingZone,
-      ];
+    department,
+    province,
+    district,
+    departmentCode,
+    provinceCode,
+    districtCode,
+    address,
+    reference,
+    shippingZone,
+  ];
 }

@@ -47,8 +47,8 @@ Widget _buildUI(BuildContext context, {required ProductEntity product}) {
       ResponsiveTheme.isMobile(context)
           ? MobileHeaderBar(colorLerp: false)
           : ResponsiveTheme.isTablet(context)
-              ? const TabletHeaderBar(colorLerp: false)
-              : HeaderBar(colorLerp: false),
+          ? const TabletHeaderBar(colorLerp: false)
+          : HeaderBar(colorLerp: false),
       ProductView(product: product),
       SliverGap(30),
       RelatedProducts(),
@@ -65,8 +65,8 @@ Widget _buildLoadingUI(BuildContext context) {
       ResponsiveTheme.isMobile(context)
           ? MobileHeaderBar(colorLerp: false)
           : ResponsiveTheme.isTablet(context)
-              ? const TabletHeaderBar(colorLerp: false)
-              : HeaderBar(colorLerp: false),
+          ? const TabletHeaderBar(colorLerp: false)
+          : HeaderBar(colorLerp: false),
       ProductViewSkeleton(),
       SliverGap(30),
       RelatedProducts(),
@@ -83,8 +83,8 @@ Widget _buildProductNotFound(BuildContext context) {
       ResponsiveTheme.isMobile(context)
           ? MobileHeaderBar(colorLerp: false)
           : ResponsiveTheme.isTablet(context)
-              ? const TabletHeaderBar(colorLerp: false)
-              : HeaderBar(colorLerp: false),
+          ? const TabletHeaderBar(colorLerp: false)
+          : HeaderBar(colorLerp: false),
       SliverEmptyPlaceholder(message: 'Producto no encontrado'),
       SliverGap(50),
       FooterBar(),

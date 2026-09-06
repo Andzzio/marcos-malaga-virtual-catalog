@@ -2,13 +2,13 @@ import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:marcos_malaga_app/features/checkout/data/datasources/local_order_datasource.dart';
+import 'package:marcos_malaga_app/app/shared/data/datasources/order/local_order_datasource.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/customer_info_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_item_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_model.dart';
+import 'package:marcos_malaga_app/app/shared/data/models/order/order_item_model.dart';
+import 'package:marcos_malaga_app/app/shared/data/models/order/order_model.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/shipping_address_model.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_status.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_status.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
 
 void main() {
   late SharedPreferences prefs;
@@ -22,7 +22,7 @@ void main() {
       lastName: 'Pérez',
       dni: '12345678',
       phone: '987654321',
-          ),
+    ),
     shipping: const ShippingAddressModel(
       department: 'Lima',
       province: 'Lima',

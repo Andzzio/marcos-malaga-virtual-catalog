@@ -23,8 +23,9 @@ void main() {
   );
 
   test('should get checkout config from repository', () async {
-    when(() => mockRepository.getCheckoutConfig())
-        .thenAnswer((_) async => tConfig);
+    when(
+      () => mockRepository.getCheckoutConfig(),
+    ).thenAnswer((_) async => tConfig);
 
     final result = await useCase();
 

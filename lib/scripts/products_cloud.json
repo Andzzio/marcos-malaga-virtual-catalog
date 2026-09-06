@@ -1,0 +1,4941 @@
+[
+  {
+    "basePrice": 180,
+    "categoryIds": [
+      "abrigos",
+      "invierno",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Hermoso abrigo de tela gruesa ideal para el clima frío. Su diseño geométrico moderno, inspirado en las últimas tendencias de la colección de invierno, aporta un toque de elegancia a cualquier outfit. Confeccionado con material premium y un forro interno de alta calidad, garantiza no solo un estilo sofisticado sino también la máxima calidez y comodidad durante los días más gélidos de la temporada.",
+    "designs": [
+      {
+        "hexCode": "#CC5500",
+        "id": "DES-001-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Naranja Geométrico",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "ABR-NAR-S",
+            "stock": 13
+          },
+          {
+            "size": "M",
+            "sku": "ABR-NAR-M",
+            "stock": 6
+          },
+          {
+            "size": "L",
+            "sku": "ABR-NAR-L",
+            "stock": 10
+          },
+          {
+            "size": "XL",
+            "sku": "ABR-NAR-XL",
+            "stock": 13
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#808080",
+        "id": "DES-001-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Gris Clásico",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "ABR-GRI-M",
+            "stock": 15
+          },
+          {
+            "size": "XL",
+            "sku": "ABR-GRI-XL",
+            "stock": 5
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 150,
+    "id": "PROD-001",
+    "isVisible": true,
+    "name": "Abrigo Otoño a Cuadros",
+    "sizeChartImageUrl": "assets/images/size_charts/size_chart_basic.png"
+  },
+  {
+    "basePrice": 120,
+    "categoryIds": [
+      "oficina",
+      "pantalones"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Eleva tu estilo con nuestro Pantalón Palazzo Rígido, diseñado con un favorecedor tiro alto y una elegante caída suelta que estiliza la figura. Su estructura firme pero cómoda lo convierte en la prenda ideal tanto para jornadas exigentes en la oficina como para deslumbrar en salidas formales o eventos de noche. Combínalo con tacones o mocasines para un look impecable.",
+    "designs": [
+      {
+        "hexCode": "#800020",
+        "id": "DES-002-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Vino",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PAL-VIN-32",
+            "stock": 8
+          },
+          {
+            "size": "34",
+            "sku": "PAL-VIN-34",
+            "stock": 4
+          },
+          {
+            "size": "36",
+            "sku": "PAL-VIN-36",
+            "stock": 3
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#000000",
+        "id": "DES-002-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PAL-NEG-34",
+            "stock": 1
+          },
+          {
+            "size": "36",
+            "sku": "PAL-NEG-36",
+            "stock": 6
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-002",
+    "isVisible": true,
+    "name": "Pantalón Palazzo Rígido",
+    "sizeChartImageUrl": "assets/images/size_charts/size_chart_basic.png"
+  },
+  {
+    "basePrice": 85,
+    "categoryIds": [
+      "blusas",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Descubre la frescura y el romanticismo de la Blusa Florencia, una prenda esencial para los días soleados. Confeccionada en una tela sumamente ligera que permite a tu piel respirar, destaca por sus encantadoras mangas abullonadas y un delicado cuello cuadrado que enmarca el escote a la perfección. Es la elección perfecta para paseos de fin de semana o una cita casual al atardecer.",
+    "designs": [
+      {
+        "hexCode": null,
+        "id": "DES-003-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Animal Print",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "BLU-FLO-BLA-S",
+            "stock": 7
+          },
+          {
+            "size": "M",
+            "sku": "BLU-FLO-BLA-M",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": "assets/images/swatches/leopard.png"
+      }
+    ],
+    "discountPrice": 70,
+    "id": "PROD-003",
+    "isVisible": true,
+    "name": "Blusa Florencia"
+  },
+  {
+    "basePrice": 250,
+    "categoryIds": [
+      "fiesta",
+      "vestidos"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Acapara todas las miradas con este deslumbrante vestido largo confeccionado en satén de seda brillante, que acaricia suavemente la silueta. Su diseño minimalista y sofisticado se ve realzado por una atrevida abertura lateral en la pierna, brindando libertad de movimiento y un toque de sensualidad. Ideal para galas, bodas de noche o cualquier evento de etiqueta donde busques destacar.",
+    "designs": [
+      {
+        "hexCode": "#50C878",
+        "id": "DES-004-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Verde Esmeralda",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "VES-GAL-VER-M",
+            "stock": 5
+          },
+          {
+            "size": "L",
+            "sku": "VES-GAL-VER-L",
+            "stock": 12
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-004",
+    "isVisible": true,
+    "name": "Vestido Gala Noche"
+  },
+  {
+    "basePrice": 140,
+    "categoryIds": [
+      "casacas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Dale un giro urbano a tu guardarropa con nuestra Casaca Denim Vintage. Este básico atemporal presenta un corte oversized muy en tendencia, ofreciendo comodidad y un aire relajado a tus combinaciones diarias. Los rasgados ligeros y el desgaste sutil en la tela le otorgan un auténtico aspecto retro, convirtiéndola en la capa exterior perfecta para lucir sobre vestidos florales o tu conjunto de sudadera favorito.",
+    "designs": [
+      {
+        "hexCode": "#0F52BA",
+        "id": "DES-005-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Azul Clásico",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "DEN-AZU-S",
+            "stock": 10
+          },
+          {
+            "size": "M",
+            "sku": "DEN-AZU-M",
+            "stock": 0
+          },
+          {
+            "size": "L",
+            "sku": "DEN-AZU-L",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-005",
+    "isVisible": true,
+    "name": "Casaca Denim Vintage"
+  },
+  {
+    "basePrice": 160,
+    "categoryIds": [
+      "enterizos",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Siente la brisa del verano con nuestro Enterizo de Lino, una pieza única que combina practicidad y estilo sin esfuerzo. El tejido de lino natural asegura la máxima frescura durante los días más calurosos, mientras que su corte fluido favorece cualquier tipo de cuerpo. Incluye un cinturón ajustable del mismo material que entalla la cintura, creando una silueta armónica perfecta para paseos por la playa o un brunch dominical.",
+    "designs": [
+      {
+        "hexCode": "#D2B48C",
+        "id": "DES-006-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Beige Oscuro",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "ENT-LIN-BEI-M",
+            "stock": 5
+          },
+          {
+            "size": "XL",
+            "sku": "ENT-LIN-BEI-XL",
+            "stock": 0
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 130,
+    "id": "PROD-006",
+    "isVisible": true,
+    "name": "Enterizo de Lino"
+  },
+  {
+    "basePrice": 90,
+    "categoryIds": [
+      "faldas",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Añade un toque de movimiento y feminidad a tu día a día con esta versátil Falda Midi Plisada. Su diseño a media pierna presenta pliegues definidos que mantienen su forma tras cada uso y lavado, creando un efecto visual encantador al caminar. La cómoda cintura elástica se adapta a ti, ofreciendo confort sin sacrificar el estilo. Úsala con zapatillas para un look casual o con stilettos para una ocasión especial.",
+    "designs": [
+      {
+        "hexCode": "#FFB6C1",
+        "id": "DES-007-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rosa Palo",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "FAL-PLI-ROS-S",
+            "stock": 12
+          },
+          {
+            "size": "M",
+            "sku": "FAL-PLI-ROS-M",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-007",
+    "isVisible": true,
+    "name": "Falda Midi Plisada"
+  },
+  {
+    "basePrice": 110,
+    "categoryIds": [
+      "invierno",
+      "chompas"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Envuélvete en la calidez de nuestro Sweater Tejido Grueso, la prenda refugio que querrás usar todos los días. Tejida a mano con hilos premium súper suaves, este modelo de silueta holgada proporciona una sensación de confort inigualable y no pica en la piel. Su diseño grueso y abrigador te protegerá de las bajas temperaturas con mucho estilo, siendo el complemento ideal para jeans ajustados y botas altas de invierno.",
+    "designs": [
+      {
+        "hexCode": "#FFDB58",
+        "id": "DES-008-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Mostaza",
+        "sizes": [
+          {
+            "size": "Unitalla",
+            "sku": "SWE-MOS-UNI",
+            "stock": 7
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 99,
+    "id": "PROD-008",
+    "isVisible": false,
+    "name": "Sweater Tejido Grueso"
+  },
+  {
+    "basePrice": 75,
+    "categoryIds": [
+      "shorts",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Prepárate para la aventura o el relax con nuestro Short de Verano. Diseñado pensando en la máxima comodidad, está confeccionado en una tela ligera, transpirable y de secado rápido que te mantendrá fresca todo el día. Destaca por sus amplios bolsillos utilitarios laterales, perfectos para llevar tus esenciales sin necesidad de un bolso extra. Una pieza clave para tus vacaciones o escapadas de fin de semana.",
+    "designs": [
+      {
+        "hexCode": "#808000",
+        "id": "DES-009-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Verde Olivo",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "SHO-OLI-32",
+            "stock": 9
+          },
+          {
+            "size": "34",
+            "sku": "SHO-OLI-34",
+            "stock": 11
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-009",
+    "isVisible": true,
+    "name": "Short de Verano"
+  },
+  {
+    "basePrice": 190,
+    "categoryIds": [
+      "cuerina",
+      "casacas"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Despierta tu lado más rebelde y chic con esta icónica Chaqueta Biker. Confeccionada en cuero sintético premium de acabado mate, luce indistinguible del cuero real y es completamente amigable con los animales. Cuenta con detalles metálicos, cierres asimétricos y un corte entallado que estructura los hombros maravillosamente. Es la prenda de transición perfecta que le dará actitud instantánea hasta al vestido más romántico.",
+    "designs": [
+      {
+        "hexCode": "#000000",
+        "id": "DES-010-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "BIK-NEG-S",
+            "stock": 6
+          },
+          {
+            "size": "L",
+            "sku": "BIK-NEG-L",
+            "stock": 15
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-010",
+    "isVisible": true,
+    "name": "Chaqueta Biker Cuero"
+  },
+  {
+    "basePrice": 77,
+    "categoryIds": [
+      "blusas",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-011-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-011-ROS-34",
+            "stock": 16
+          },
+          {
+            "size": "36",
+            "sku": "PROD-011-ROS-36",
+            "stock": 4
+          },
+          {
+            "size": "38",
+            "sku": "PROD-011-ROS-38",
+            "stock": 4
+          },
+          {
+            "size": "32",
+            "sku": "PROD-011-ROS-32",
+            "stock": 7
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 50,
+    "id": "PROD-011",
+    "isVisible": true,
+    "name": "Blusa Vintage"
+  },
+  {
+    "basePrice": 105,
+    "categoryIds": [
+      "vestidos",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#000000",
+        "id": "DES-012-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-012-NEG-M",
+            "stock": 11
+          },
+          {
+            "size": "S",
+            "sku": "PROD-012-NEG-S",
+            "stock": 3
+          },
+          {
+            "size": "L",
+            "sku": "PROD-012-NEG-L",
+            "stock": 12
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-012-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-012-BLA-M",
+            "stock": 3
+          },
+          {
+            "size": "S",
+            "sku": "PROD-012-BLA-S",
+            "stock": 1
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-012-BLA-XL",
+            "stock": 11
+          },
+          {
+            "size": "L",
+            "sku": "PROD-012-BLA-L",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-012",
+    "isVisible": true,
+    "name": "Vestido Premium"
+  },
+  {
+    "basePrice": 126,
+    "categoryIds": [
+      "casacas",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#808080",
+        "id": "DES-013-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-013-GRI-L",
+            "stock": 20
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-013-GRI-XL",
+            "stock": 17
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-013-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-013-ROS-M",
+            "stock": 2
+          },
+          {
+            "size": "L",
+            "sku": "PROD-013-ROS-L",
+            "stock": 13
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-013-ROS-XL",
+            "stock": 4
+          },
+          {
+            "size": "S",
+            "sku": "PROD-013-ROS-S",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-013",
+    "isVisible": false,
+    "name": "Casaca Casual"
+  },
+  {
+    "basePrice": 111,
+    "categoryIds": [
+      "enterizos",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#000000",
+        "id": "DES-014-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-014-NEG-38",
+            "stock": 0
+          },
+          {
+            "size": "34",
+            "sku": "PROD-014-NEG-34",
+            "stock": 8
+          },
+          {
+            "size": "32",
+            "sku": "PROD-014-NEG-32",
+            "stock": 5
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-014-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-014-ROJ-38",
+            "stock": 8
+          },
+          {
+            "size": "34",
+            "sku": "PROD-014-ROJ-34",
+            "stock": 7
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-014",
+    "isVisible": true,
+    "name": "Enterizo Moderno"
+  },
+  {
+    "basePrice": 299,
+    "categoryIds": [
+      "faldas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-015-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-015-NAR-XL",
+            "stock": 15
+          },
+          {
+            "size": "S",
+            "sku": "PROD-015-NAR-S",
+            "stock": 15
+          },
+          {
+            "size": "L",
+            "sku": "PROD-015-NAR-L",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-015",
+    "isVisible": true,
+    "name": "Falda Clásico"
+  },
+  {
+    "basePrice": 120,
+    "categoryIds": [
+      "chompas",
+      "oficina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-016-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-016-NAR-S",
+            "stock": 3
+          },
+          {
+            "size": "M",
+            "sku": "PROD-016-NAR-M",
+            "stock": 15
+          },
+          {
+            "size": "L",
+            "sku": "PROD-016-NAR-L",
+            "stock": 3
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#000000",
+        "id": "DES-016-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-016-NEG-M",
+            "stock": 0
+          },
+          {
+            "size": "S",
+            "sku": "PROD-016-NEG-S",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-016",
+    "isVisible": true,
+    "name": "Chompa Casual"
+  },
+  {
+    "basePrice": 56,
+    "categoryIds": [
+      "shorts",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-017-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-017-ROS-M",
+            "stock": 19
+          },
+          {
+            "size": "S",
+            "sku": "PROD-017-ROS-S",
+            "stock": 13
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-017-ROS-XL",
+            "stock": 5
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-017-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-017-NAR-S",
+            "stock": 6
+          },
+          {
+            "size": "M",
+            "sku": "PROD-017-NAR-M",
+            "stock": 8
+          },
+          {
+            "size": "L",
+            "sku": "PROD-017-NAR-L",
+            "stock": 7
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-017-NAR-XL",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 43,
+    "id": "PROD-017",
+    "isVisible": true,
+    "name": "Short Vintage"
+  },
+  {
+    "basePrice": 79,
+    "categoryIds": [
+      "abrigos",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#000000",
+        "id": "DES-018-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-018-NEG-M",
+            "stock": 11
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-018-NEG-XL",
+            "stock": 1
+          },
+          {
+            "size": "S",
+            "sku": "PROD-018-NEG-S",
+            "stock": 3
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#000000",
+        "id": "DES-018-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-018-NEG-M",
+            "stock": 2
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-018-NEG-XL",
+            "stock": 19
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 59,
+    "id": "PROD-018",
+    "isVisible": true,
+    "name": "Abrigo Clásico"
+  },
+  {
+    "basePrice": 242,
+    "categoryIds": [
+      "pantalones",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#000000",
+        "id": "DES-019-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-019-NEG-M",
+            "stock": 10
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-019-NEG-XL",
+            "stock": 4
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-019",
+    "isVisible": true,
+    "name": "Pantalón Clásico"
+  },
+  {
+    "basePrice": 52,
+    "categoryIds": [
+      "blusas",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-020-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-020-MOR-32",
+            "stock": 18
+          },
+          {
+            "size": "36",
+            "sku": "PROD-020-MOR-36",
+            "stock": 16
+          },
+          {
+            "size": "34",
+            "sku": "PROD-020-MOR-34",
+            "stock": 17
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-020-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-020-NAR-32",
+            "stock": 16
+          },
+          {
+            "size": "34",
+            "sku": "PROD-020-NAR-34",
+            "stock": 7
+          },
+          {
+            "size": "36",
+            "sku": "PROD-020-NAR-36",
+            "stock": 20
+          },
+          {
+            "size": "38",
+            "sku": "PROD-020-NAR-38",
+            "stock": 7
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-020",
+    "isVisible": true,
+    "name": "Blusa Premium"
+  },
+  {
+    "basePrice": 295,
+    "categoryIds": [
+      "vestidos",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-021-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-021-ROS-34",
+            "stock": 1
+          },
+          {
+            "size": "32",
+            "sku": "PROD-021-ROS-32",
+            "stock": 20
+          },
+          {
+            "size": "36",
+            "sku": "PROD-021-ROS-36",
+            "stock": 11
+          },
+          {
+            "size": "38",
+            "sku": "PROD-021-ROS-38",
+            "stock": 2
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#800080",
+        "id": "DES-021-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-021-MOR-34",
+            "stock": 17
+          },
+          {
+            "size": "32",
+            "sku": "PROD-021-MOR-32",
+            "stock": 7
+          },
+          {
+            "size": "36",
+            "sku": "PROD-021-MOR-36",
+            "stock": 16
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-021",
+    "isVisible": true,
+    "name": "Vestido Moderno"
+  },
+  {
+    "basePrice": 91,
+    "categoryIds": [
+      "casacas",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-022-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-022-ROS-M",
+            "stock": 6
+          },
+          {
+            "size": "L",
+            "sku": "PROD-022-ROS-L",
+            "stock": 10
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-022-ROS-XL",
+            "stock": 18
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-022",
+    "isVisible": true,
+    "name": "Casaca Moderno"
+  },
+  {
+    "basePrice": 92,
+    "categoryIds": [
+      "enterizos",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-023-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-023-AMA-34",
+            "stock": 13
+          },
+          {
+            "size": "36",
+            "sku": "PROD-023-AMA-36",
+            "stock": 9
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 67,
+    "id": "PROD-023",
+    "isVisible": true,
+    "name": "Enterizo Casual"
+  },
+  {
+    "basePrice": 177,
+    "categoryIds": [
+      "faldas",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-024-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-024-MOR-XL",
+            "stock": 2
+          },
+          {
+            "size": "M",
+            "sku": "PROD-024-MOR-M",
+            "stock": 2
+          },
+          {
+            "size": "S",
+            "sku": "PROD-024-MOR-S",
+            "stock": 12
+          },
+          {
+            "size": "L",
+            "sku": "PROD-024-MOR-L",
+            "stock": 16
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#800080",
+        "id": "DES-024-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-024-MOR-S",
+            "stock": 4
+          },
+          {
+            "size": "L",
+            "sku": "PROD-024-MOR-L",
+            "stock": 17
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-024",
+    "isVisible": true,
+    "name": "Falda Clásico"
+  },
+  {
+    "basePrice": 130,
+    "categoryIds": [
+      "chompas",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-025-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-025-AMA-S",
+            "stock": 6
+          },
+          {
+            "size": "M",
+            "sku": "PROD-025-AMA-M",
+            "stock": 1
+          },
+          {
+            "size": "L",
+            "sku": "PROD-025-AMA-L",
+            "stock": 4
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-025-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-025-ROJ-XL",
+            "stock": 2
+          },
+          {
+            "size": "L",
+            "sku": "PROD-025-ROJ-L",
+            "stock": 16
+          },
+          {
+            "size": "S",
+            "sku": "PROD-025-ROJ-S",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-025",
+    "isVisible": true,
+    "name": "Chompa Moderno"
+  },
+  {
+    "basePrice": 96,
+    "categoryIds": [
+      "shorts",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-026-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-026-VER-34",
+            "stock": 6
+          },
+          {
+            "size": "36",
+            "sku": "PROD-026-VER-36",
+            "stock": 11
+          },
+          {
+            "size": "38",
+            "sku": "PROD-026-VER-38",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-026-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-026-AZU-36",
+            "stock": 17
+          },
+          {
+            "size": "32",
+            "sku": "PROD-026-AZU-32",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-026",
+    "isVisible": true,
+    "name": "Short Casual"
+  },
+  {
+    "basePrice": 143,
+    "categoryIds": [
+      "abrigos",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-027-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-027-ROS-32",
+            "stock": 3
+          },
+          {
+            "size": "38",
+            "sku": "PROD-027-ROS-38",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 97,
+    "id": "PROD-027",
+    "isVisible": true,
+    "name": "Abrigo Vintage"
+  },
+  {
+    "basePrice": 114,
+    "categoryIds": [
+      "pantalones",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-028-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-028-MOR-M",
+            "stock": 0
+          },
+          {
+            "size": "L",
+            "sku": "PROD-028-MOR-L",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#000000",
+        "id": "DES-028-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-028-NEG-M",
+            "stock": 0
+          },
+          {
+            "size": "L",
+            "sku": "PROD-028-NEG-L",
+            "stock": 18
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 71,
+    "id": "PROD-028",
+    "isVisible": true,
+    "name": "Pantalón Casual"
+  },
+  {
+    "basePrice": 112,
+    "categoryIds": [
+      "blusas",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-029-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-029-BLA-M",
+            "stock": 9
+          },
+          {
+            "size": "L",
+            "sku": "PROD-029-BLA-L",
+            "stock": 17
+          },
+          {
+            "size": "S",
+            "sku": "PROD-029-BLA-S",
+            "stock": 1
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-029-BLA-XL",
+            "stock": 4
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-029-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-029-ROS-S",
+            "stock": 7
+          },
+          {
+            "size": "L",
+            "sku": "PROD-029-ROS-L",
+            "stock": 5
+          },
+          {
+            "size": "M",
+            "sku": "PROD-029-ROS-M",
+            "stock": 5
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-029",
+    "isVisible": true,
+    "name": "Blusa Clásico"
+  },
+  {
+    "basePrice": 193,
+    "categoryIds": [
+      "vestidos",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-030-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-030-ROJ-32",
+            "stock": 15
+          },
+          {
+            "size": "36",
+            "sku": "PROD-030-ROJ-36",
+            "stock": 16
+          },
+          {
+            "size": "38",
+            "sku": "PROD-030-ROJ-38",
+            "stock": 11
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-030-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-030-NAR-32",
+            "stock": 9
+          },
+          {
+            "size": "34",
+            "sku": "PROD-030-NAR-34",
+            "stock": 18
+          },
+          {
+            "size": "38",
+            "sku": "PROD-030-NAR-38",
+            "stock": 1
+          },
+          {
+            "size": "36",
+            "sku": "PROD-030-NAR-36",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 167,
+    "id": "PROD-030",
+    "isVisible": true,
+    "name": "Vestido Vintage"
+  },
+  {
+    "basePrice": 225,
+    "categoryIds": [
+      "casacas",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-031-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-031-NAR-L",
+            "stock": 0
+          },
+          {
+            "size": "M",
+            "sku": "PROD-031-NAR-M",
+            "stock": 9
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-031-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-031-AMA-M",
+            "stock": 14
+          },
+          {
+            "size": "L",
+            "sku": "PROD-031-AMA-L",
+            "stock": 10
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-031-AMA-XL",
+            "stock": 16
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 177,
+    "id": "PROD-031",
+    "isVisible": true,
+    "name": "Casaca Elegante"
+  },
+  {
+    "basePrice": 109,
+    "categoryIds": [
+      "enterizos",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-032-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-032-ROJ-32",
+            "stock": 11
+          },
+          {
+            "size": "38",
+            "sku": "PROD-032-ROJ-38",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#008000",
+        "id": "DES-032-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-032-VER-32",
+            "stock": 14
+          },
+          {
+            "size": "34",
+            "sku": "PROD-032-VER-34",
+            "stock": 5
+          },
+          {
+            "size": "38",
+            "sku": "PROD-032-VER-38",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 74,
+    "id": "PROD-032",
+    "isVisible": true,
+    "name": "Enterizo Vintage"
+  },
+  {
+    "basePrice": 246,
+    "categoryIds": [
+      "faldas",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-033-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-033-VER-M",
+            "stock": 13
+          },
+          {
+            "size": "S",
+            "sku": "PROD-033-VER-S",
+            "stock": 13
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-033-VER-XL",
+            "stock": 1
+          },
+          {
+            "size": "L",
+            "sku": "PROD-033-VER-L",
+            "stock": 8
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#008000",
+        "id": "DES-033-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-033-VER-L",
+            "stock": 20
+          },
+          {
+            "size": "M",
+            "sku": "PROD-033-VER-M",
+            "stock": 16
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-033",
+    "isVisible": true,
+    "name": "Falda Vintage"
+  },
+  {
+    "basePrice": 62,
+    "categoryIds": [
+      "chompas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-034-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-034-ROJ-M",
+            "stock": 12
+          },
+          {
+            "size": "S",
+            "sku": "PROD-034-ROJ-S",
+            "stock": 9
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-034",
+    "isVisible": true,
+    "name": "Chompa Casual"
+  },
+  {
+    "basePrice": 55,
+    "categoryIds": [
+      "shorts",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-035-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-035-VER-M",
+            "stock": 0
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-035-VER-XL",
+            "stock": 7
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-035",
+    "isVisible": true,
+    "name": "Short Clásico"
+  },
+  {
+    "basePrice": 100,
+    "categoryIds": [
+      "abrigos",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-036-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-036-NAR-38",
+            "stock": 16
+          },
+          {
+            "size": "32",
+            "sku": "PROD-036-NAR-32",
+            "stock": 1
+          },
+          {
+            "size": "36",
+            "sku": "PROD-036-NAR-36",
+            "stock": 9
+          },
+          {
+            "size": "34",
+            "sku": "PROD-036-NAR-34",
+            "stock": 6
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-036",
+    "isVisible": true,
+    "name": "Abrigo Casual"
+  },
+  {
+    "basePrice": 297,
+    "categoryIds": [
+      "pantalones",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-037-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-037-VER-M",
+            "stock": 20
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-037-VER-XL",
+            "stock": 6
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#000000",
+        "id": "DES-037-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-037-NEG-S",
+            "stock": 17
+          },
+          {
+            "size": "M",
+            "sku": "PROD-037-NEG-M",
+            "stock": 3
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-037",
+    "isVisible": true,
+    "name": "Pantalón Moderno"
+  },
+  {
+    "basePrice": 75,
+    "categoryIds": [
+      "blusas",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-038-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-038-AZU-32",
+            "stock": 2
+          },
+          {
+            "size": "38",
+            "sku": "PROD-038-AZU-38",
+            "stock": 2
+          },
+          {
+            "size": "34",
+            "sku": "PROD-038-AZU-34",
+            "stock": 16
+          },
+          {
+            "size": "36",
+            "sku": "PROD-038-AZU-36",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-038-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-038-BLA-34",
+            "stock": 4
+          },
+          {
+            "size": "38",
+            "sku": "PROD-038-BLA-38",
+            "stock": 0
+          },
+          {
+            "size": "36",
+            "sku": "PROD-038-BLA-36",
+            "stock": 10
+          },
+          {
+            "size": "32",
+            "sku": "PROD-038-BLA-32",
+            "stock": 5
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-038",
+    "isVisible": true,
+    "name": "Blusa Urbano"
+  },
+  {
+    "basePrice": 173,
+    "categoryIds": [
+      "vestidos",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-039-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-039-BLA-34",
+            "stock": 8
+          },
+          {
+            "size": "36",
+            "sku": "PROD-039-BLA-36",
+            "stock": 11
+          },
+          {
+            "size": "38",
+            "sku": "PROD-039-BLA-38",
+            "stock": 17
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-039",
+    "isVisible": true,
+    "name": "Vestido Elegante"
+  },
+  {
+    "basePrice": 223,
+    "categoryIds": [
+      "casacas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-040-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-040-ROS-S",
+            "stock": 3
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-040-ROS-XL",
+            "stock": 0
+          },
+          {
+            "size": "L",
+            "sku": "PROD-040-ROS-L",
+            "stock": 6
+          },
+          {
+            "size": "M",
+            "sku": "PROD-040-ROS-M",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-040",
+    "isVisible": true,
+    "name": "Casaca Básico"
+  },
+  {
+    "basePrice": 211,
+    "categoryIds": [
+      "enterizos",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-041-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-041-AZU-XL",
+            "stock": 6
+          },
+          {
+            "size": "L",
+            "sku": "PROD-041-AZU-L",
+            "stock": 18
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-041",
+    "isVisible": true,
+    "name": "Enterizo Premium"
+  },
+  {
+    "basePrice": 119,
+    "categoryIds": [
+      "faldas",
+      "oficina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-042-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-042-VER-36",
+            "stock": 4
+          },
+          {
+            "size": "32",
+            "sku": "PROD-042-VER-32",
+            "stock": 6
+          },
+          {
+            "size": "38",
+            "sku": "PROD-042-VER-38",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#808080",
+        "id": "DES-042-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-042-GRI-34",
+            "stock": 5
+          },
+          {
+            "size": "32",
+            "sku": "PROD-042-GRI-32",
+            "stock": 14
+          },
+          {
+            "size": "38",
+            "sku": "PROD-042-GRI-38",
+            "stock": 6
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-042",
+    "isVisible": true,
+    "name": "Falda Moderno"
+  },
+  {
+    "basePrice": 210,
+    "categoryIds": [
+      "chompas",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-043-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-043-ROS-L",
+            "stock": 5
+          },
+          {
+            "size": "M",
+            "sku": "PROD-043-ROS-M",
+            "stock": 4
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-043",
+    "isVisible": true,
+    "name": "Chompa Vintage"
+  },
+  {
+    "basePrice": 92,
+    "categoryIds": [
+      "shorts",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-044-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-044-AMA-32",
+            "stock": 1
+          },
+          {
+            "size": "34",
+            "sku": "PROD-044-AMA-34",
+            "stock": 19
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 64,
+    "id": "PROD-044",
+    "isVisible": true,
+    "name": "Short Moderno"
+  },
+  {
+    "basePrice": 78,
+    "categoryIds": [
+      "abrigos",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-045-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-045-ROJ-36",
+            "stock": 7
+          },
+          {
+            "size": "32",
+            "sku": "PROD-045-ROJ-32",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-045-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-045-ROS-38",
+            "stock": 20
+          },
+          {
+            "size": "36",
+            "sku": "PROD-045-ROS-36",
+            "stock": 10
+          },
+          {
+            "size": "34",
+            "sku": "PROD-045-ROS-34",
+            "stock": 4
+          },
+          {
+            "size": "32",
+            "sku": "PROD-045-ROS-32",
+            "stock": 18
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-045",
+    "isVisible": true,
+    "name": "Abrigo Básico"
+  },
+  {
+    "basePrice": 179,
+    "categoryIds": [
+      "pantalones",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-046-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-046-NAR-M",
+            "stock": 9
+          },
+          {
+            "size": "S",
+            "sku": "PROD-046-NAR-S",
+            "stock": 17
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-046-NAR-XL",
+            "stock": 4
+          },
+          {
+            "size": "L",
+            "sku": "PROD-046-NAR-L",
+            "stock": 3
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-046-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-046-AZU-L",
+            "stock": 11
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-046-AZU-XL",
+            "stock": 10
+          },
+          {
+            "size": "S",
+            "sku": "PROD-046-AZU-S",
+            "stock": 6
+          },
+          {
+            "size": "M",
+            "sku": "PROD-046-AZU-M",
+            "stock": 13
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 143,
+    "id": "PROD-046",
+    "isVisible": true,
+    "name": "Pantalón Moderno"
+  },
+  {
+    "basePrice": 64,
+    "categoryIds": [
+      "blusas",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-047-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-047-MOR-M",
+            "stock": 5
+          },
+          {
+            "size": "L",
+            "sku": "PROD-047-MOR-L",
+            "stock": 20
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-047-MOR-XL",
+            "stock": 14
+          },
+          {
+            "size": "S",
+            "sku": "PROD-047-MOR-S",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-047-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-047-BLA-S",
+            "stock": 1
+          },
+          {
+            "size": "M",
+            "sku": "PROD-047-BLA-M",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-047",
+    "isVisible": true,
+    "name": "Blusa Urbano"
+  },
+  {
+    "basePrice": 134,
+    "categoryIds": [
+      "vestidos",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-048-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-048-AZU-XL",
+            "stock": 9
+          },
+          {
+            "size": "S",
+            "sku": "PROD-048-AZU-S",
+            "stock": 17
+          },
+          {
+            "size": "L",
+            "sku": "PROD-048-AZU-L",
+            "stock": 0
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-048",
+    "isVisible": true,
+    "name": "Vestido Premium"
+  },
+  {
+    "basePrice": 204,
+    "categoryIds": [
+      "casacas",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-049-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-049-BLA-38",
+            "stock": 4
+          },
+          {
+            "size": "34",
+            "sku": "PROD-049-BLA-34",
+            "stock": 10
+          },
+          {
+            "size": "36",
+            "sku": "PROD-049-BLA-36",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-049-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-049-ROJ-32",
+            "stock": 4
+          },
+          {
+            "size": "36",
+            "sku": "PROD-049-ROJ-36",
+            "stock": 0
+          },
+          {
+            "size": "38",
+            "sku": "PROD-049-ROJ-38",
+            "stock": 4
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-049",
+    "isVisible": true,
+    "name": "Casaca Básico"
+  },
+  {
+    "basePrice": 191,
+    "categoryIds": [
+      "enterizos",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-050-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-050-ROJ-32",
+            "stock": 14
+          },
+          {
+            "size": "38",
+            "sku": "PROD-050-ROJ-38",
+            "stock": 15
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#808080",
+        "id": "DES-050-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-050-GRI-32",
+            "stock": 18
+          },
+          {
+            "size": "36",
+            "sku": "PROD-050-GRI-36",
+            "stock": 19
+          },
+          {
+            "size": "38",
+            "sku": "PROD-050-GRI-38",
+            "stock": 6
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 146,
+    "id": "PROD-050",
+    "isVisible": true,
+    "name": "Enterizo Urbano"
+  },
+  {
+    "basePrice": 106,
+    "categoryIds": [
+      "faldas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-051-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-051-AMA-XL",
+            "stock": 9
+          },
+          {
+            "size": "M",
+            "sku": "PROD-051-AMA-M",
+            "stock": 17
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-051",
+    "isVisible": true,
+    "name": "Falda Clásico"
+  },
+  {
+    "basePrice": 142,
+    "categoryIds": [
+      "chompas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#808080",
+        "id": "DES-052-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-052-GRI-L",
+            "stock": 2
+          },
+          {
+            "size": "M",
+            "sku": "PROD-052-GRI-M",
+            "stock": 9
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 120,
+    "id": "PROD-052",
+    "isVisible": true,
+    "name": "Chompa Urbano"
+  },
+  {
+    "basePrice": 124,
+    "categoryIds": [
+      "shorts",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#808080",
+        "id": "DES-053-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-053-GRI-38",
+            "stock": 3
+          },
+          {
+            "size": "32",
+            "sku": "PROD-053-GRI-32",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-053-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-053-ROS-34",
+            "stock": 19
+          },
+          {
+            "size": "32",
+            "sku": "PROD-053-ROS-32",
+            "stock": 3
+          },
+          {
+            "size": "38",
+            "sku": "PROD-053-ROS-38",
+            "stock": 16
+          },
+          {
+            "size": "36",
+            "sku": "PROD-053-ROS-36",
+            "stock": 0
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-053",
+    "isVisible": true,
+    "name": "Short Urbano"
+  },
+  {
+    "basePrice": 225,
+    "categoryIds": [
+      "abrigos",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-054-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-054-AZU-36",
+            "stock": 9
+          },
+          {
+            "size": "38",
+            "sku": "PROD-054-AZU-38",
+            "stock": 3
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-054-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-054-AMA-34",
+            "stock": 4
+          },
+          {
+            "size": "32",
+            "sku": "PROD-054-AMA-32",
+            "stock": 18
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 189,
+    "id": "PROD-054",
+    "isVisible": true,
+    "name": "Abrigo Urbano"
+  },
+  {
+    "basePrice": 167,
+    "categoryIds": [
+      "pantalones",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-055-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-055-AMA-M",
+            "stock": 9
+          },
+          {
+            "size": "S",
+            "sku": "PROD-055-AMA-S",
+            "stock": 11
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-055-AMA-XL",
+            "stock": 12
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#000000",
+        "id": "DES-055-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-055-NEG-M",
+            "stock": 14
+          },
+          {
+            "size": "L",
+            "sku": "PROD-055-NEG-L",
+            "stock": 2
+          },
+          {
+            "size": "S",
+            "sku": "PROD-055-NEG-S",
+            "stock": 12
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-055",
+    "isVisible": true,
+    "name": "Pantalón Premium"
+  },
+  {
+    "basePrice": 70,
+    "categoryIds": [
+      "blusas",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-056-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-056-MOR-L",
+            "stock": 2
+          },
+          {
+            "size": "M",
+            "sku": "PROD-056-MOR-M",
+            "stock": 3
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-056-MOR-XL",
+            "stock": 6
+          },
+          {
+            "size": "S",
+            "sku": "PROD-056-MOR-S",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#808080",
+        "id": "DES-056-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-056-GRI-M",
+            "stock": 1
+          },
+          {
+            "size": "L",
+            "sku": "PROD-056-GRI-L",
+            "stock": 17
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-056",
+    "isVisible": true,
+    "name": "Blusa Básico"
+  },
+  {
+    "basePrice": 87,
+    "categoryIds": [
+      "vestidos",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-057-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-057-MOR-36",
+            "stock": 16
+          },
+          {
+            "size": "38",
+            "sku": "PROD-057-MOR-38",
+            "stock": 3
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-057-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-057-AMA-36",
+            "stock": 12
+          },
+          {
+            "size": "32",
+            "sku": "PROD-057-AMA-32",
+            "stock": 4
+          },
+          {
+            "size": "38",
+            "sku": "PROD-057-AMA-38",
+            "stock": 19
+          },
+          {
+            "size": "34",
+            "sku": "PROD-057-AMA-34",
+            "stock": 2
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 76,
+    "id": "PROD-057",
+    "isVisible": true,
+    "name": "Vestido Básico"
+  },
+  {
+    "basePrice": 297,
+    "categoryIds": [
+      "casacas",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-058-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-058-VER-32",
+            "stock": 1
+          },
+          {
+            "size": "34",
+            "sku": "PROD-058-VER-34",
+            "stock": 5
+          },
+          {
+            "size": "36",
+            "sku": "PROD-058-VER-36",
+            "stock": 10
+          },
+          {
+            "size": "38",
+            "sku": "PROD-058-VER-38",
+            "stock": 8
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-058",
+    "isVisible": true,
+    "name": "Casaca Casual"
+  },
+  {
+    "basePrice": 145,
+    "categoryIds": [
+      "enterizos",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-059-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-059-BLA-38",
+            "stock": 6
+          },
+          {
+            "size": "36",
+            "sku": "PROD-059-BLA-36",
+            "stock": 15
+          },
+          {
+            "size": "32",
+            "sku": "PROD-059-BLA-32",
+            "stock": 16
+          },
+          {
+            "size": "34",
+            "sku": "PROD-059-BLA-34",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-059-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-059-NAR-36",
+            "stock": 19
+          },
+          {
+            "size": "38",
+            "sku": "PROD-059-NAR-38",
+            "stock": 0
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-059",
+    "isVisible": true,
+    "name": "Enterizo Vintage"
+  },
+  {
+    "basePrice": 265,
+    "categoryIds": [
+      "faldas",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-060-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-060-ROS-XL",
+            "stock": 16
+          },
+          {
+            "size": "S",
+            "sku": "PROD-060-ROS-S",
+            "stock": 0
+          },
+          {
+            "size": "L",
+            "sku": "PROD-060-ROS-L",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 231,
+    "id": "PROD-060",
+    "isVisible": true,
+    "name": "Falda Básico"
+  },
+  {
+    "basePrice": 191,
+    "categoryIds": [
+      "chompas",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-061-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-061-VER-XL",
+            "stock": 7
+          },
+          {
+            "size": "S",
+            "sku": "PROD-061-VER-S",
+            "stock": 6
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-061-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-061-BLA-S",
+            "stock": 2
+          },
+          {
+            "size": "M",
+            "sku": "PROD-061-BLA-M",
+            "stock": 6
+          },
+          {
+            "size": "L",
+            "sku": "PROD-061-BLA-L",
+            "stock": 9
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-061",
+    "isVisible": true,
+    "name": "Chompa Vintage"
+  },
+  {
+    "basePrice": 160,
+    "categoryIds": [
+      "shorts",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-062-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-062-MOR-32",
+            "stock": 15
+          },
+          {
+            "size": "36",
+            "sku": "PROD-062-MOR-36",
+            "stock": 19
+          },
+          {
+            "size": "38",
+            "sku": "PROD-062-MOR-38",
+            "stock": 19
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-062",
+    "isVisible": true,
+    "name": "Short Vintage"
+  },
+  {
+    "basePrice": 285,
+    "categoryIds": [
+      "abrigos",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-063-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-063-NAR-32",
+            "stock": 6
+          },
+          {
+            "size": "34",
+            "sku": "PROD-063-NAR-34",
+            "stock": 3
+          },
+          {
+            "size": "38",
+            "sku": "PROD-063-NAR-38",
+            "stock": 10
+          },
+          {
+            "size": "36",
+            "sku": "PROD-063-NAR-36",
+            "stock": 0
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-063",
+    "isVisible": true,
+    "name": "Abrigo Casual"
+  },
+  {
+    "basePrice": 99,
+    "categoryIds": [
+      "pantalones",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-064-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-064-ROS-38",
+            "stock": 18
+          },
+          {
+            "size": "34",
+            "sku": "PROD-064-ROS-34",
+            "stock": 11
+          },
+          {
+            "size": "36",
+            "sku": "PROD-064-ROS-36",
+            "stock": 11
+          },
+          {
+            "size": "32",
+            "sku": "PROD-064-ROS-32",
+            "stock": 4
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 77,
+    "id": "PROD-064",
+    "isVisible": true,
+    "name": "Pantalón Premium"
+  },
+  {
+    "basePrice": 284,
+    "categoryIds": [
+      "blusas",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-065-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-065-ROJ-M",
+            "stock": 3
+          },
+          {
+            "size": "S",
+            "sku": "PROD-065-ROJ-S",
+            "stock": 4
+          },
+          {
+            "size": "L",
+            "sku": "PROD-065-ROJ-L",
+            "stock": 15
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-065-ROJ-XL",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-065-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-065-AZU-L",
+            "stock": 16
+          },
+          {
+            "size": "S",
+            "sku": "PROD-065-AZU-S",
+            "stock": 18
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-065-AZU-XL",
+            "stock": 0
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-065",
+    "isVisible": true,
+    "name": "Blusa Moderno"
+  },
+  {
+    "basePrice": 202,
+    "categoryIds": [
+      "vestidos",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-066-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-066-BLA-M",
+            "stock": 10
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-066-BLA-XL",
+            "stock": 11
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 167,
+    "id": "PROD-066",
+    "isVisible": true,
+    "name": "Vestido Vintage"
+  },
+  {
+    "basePrice": 173,
+    "categoryIds": [
+      "casacas",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-067-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-067-MOR-38",
+            "stock": 0
+          },
+          {
+            "size": "34",
+            "sku": "PROD-067-MOR-34",
+            "stock": 11
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#800080",
+        "id": "DES-067-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-067-MOR-34",
+            "stock": 18
+          },
+          {
+            "size": "38",
+            "sku": "PROD-067-MOR-38",
+            "stock": 15
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 138,
+    "id": "PROD-067",
+    "isVisible": true,
+    "name": "Casaca Elegante"
+  },
+  {
+    "basePrice": 204,
+    "categoryIds": [
+      "enterizos",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#808080",
+        "id": "DES-068-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-068-GRI-S",
+            "stock": 2
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-068-GRI-XL",
+            "stock": 4
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-068",
+    "isVisible": true,
+    "name": "Enterizo Urbano"
+  },
+  {
+    "basePrice": 145,
+    "categoryIds": [
+      "faldas",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-069-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-069-AMA-S",
+            "stock": 6
+          },
+          {
+            "size": "M",
+            "sku": "PROD-069-AMA-M",
+            "stock": 5
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-069-AMA-XL",
+            "stock": 12
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-069",
+    "isVisible": true,
+    "name": "Falda Moderno"
+  },
+  {
+    "basePrice": 141,
+    "categoryIds": [
+      "chompas",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-070-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-070-VER-M",
+            "stock": 20
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-070-VER-XL",
+            "stock": 7
+          },
+          {
+            "size": "L",
+            "sku": "PROD-070-VER-L",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-070",
+    "isVisible": true,
+    "name": "Chompa Básico"
+  },
+  {
+    "basePrice": 267,
+    "categoryIds": [
+      "shorts",
+      "oficina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-071-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-071-BLA-S",
+            "stock": 14
+          },
+          {
+            "size": "L",
+            "sku": "PROD-071-BLA-L",
+            "stock": 4
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 211,
+    "id": "PROD-071",
+    "isVisible": true,
+    "name": "Short Elegante"
+  },
+  {
+    "basePrice": 260,
+    "categoryIds": [
+      "abrigos",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-072-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-072-AZU-32",
+            "stock": 18
+          },
+          {
+            "size": "38",
+            "sku": "PROD-072-AZU-38",
+            "stock": 11
+          },
+          {
+            "size": "34",
+            "sku": "PROD-072-AZU-34",
+            "stock": 11
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-072-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-072-BLA-38",
+            "stock": 11
+          },
+          {
+            "size": "34",
+            "sku": "PROD-072-BLA-34",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-072",
+    "isVisible": true,
+    "name": "Abrigo Moderno"
+  },
+  {
+    "basePrice": 71,
+    "categoryIds": [
+      "pantalones",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-073-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-073-VER-L",
+            "stock": 17
+          },
+          {
+            "size": "M",
+            "sku": "PROD-073-VER-M",
+            "stock": 12
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-073-VER-XL",
+            "stock": 14
+          },
+          {
+            "size": "S",
+            "sku": "PROD-073-VER-S",
+            "stock": 12
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-073-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-073-ROJ-L",
+            "stock": 14
+          },
+          {
+            "size": "S",
+            "sku": "PROD-073-ROJ-S",
+            "stock": 17
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-073-ROJ-XL",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-073",
+    "isVisible": true,
+    "name": "Pantalón Moderno"
+  },
+  {
+    "basePrice": 259,
+    "categoryIds": [
+      "blusas",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-074-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "XL",
+            "sku": "PROD-074-VER-XL",
+            "stock": 0
+          },
+          {
+            "size": "L",
+            "sku": "PROD-074-VER-L",
+            "stock": 13
+          },
+          {
+            "size": "M",
+            "sku": "PROD-074-VER-M",
+            "stock": 18
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#800080",
+        "id": "DES-074-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-074-MOR-M",
+            "stock": 3
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-074-MOR-XL",
+            "stock": 3
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-074",
+    "isVisible": true,
+    "name": "Blusa Clásico"
+  },
+  {
+    "basePrice": 95,
+    "categoryIds": [
+      "vestidos",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-075-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-075-NAR-38",
+            "stock": 18
+          },
+          {
+            "size": "36",
+            "sku": "PROD-075-NAR-36",
+            "stock": 15
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#800080",
+        "id": "DES-075-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-075-MOR-34",
+            "stock": 7
+          },
+          {
+            "size": "38",
+            "sku": "PROD-075-MOR-38",
+            "stock": 20
+          },
+          {
+            "size": "36",
+            "sku": "PROD-075-MOR-36",
+            "stock": 2
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-075",
+    "isVisible": true,
+    "name": "Vestido Casual"
+  },
+  {
+    "basePrice": 58,
+    "categoryIds": [
+      "casacas",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#808080",
+        "id": "DES-076-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-076-GRI-L",
+            "stock": 13
+          },
+          {
+            "size": "S",
+            "sku": "PROD-076-GRI-S",
+            "stock": 0
+          },
+          {
+            "size": "M",
+            "sku": "PROD-076-GRI-M",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#800080",
+        "id": "DES-076-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "M",
+            "sku": "PROD-076-MOR-M",
+            "stock": 19
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-076-MOR-XL",
+            "stock": 14
+          },
+          {
+            "size": "L",
+            "sku": "PROD-076-MOR-L",
+            "stock": 7
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-076",
+    "isVisible": true,
+    "name": "Casaca Casual"
+  },
+  {
+    "basePrice": 78,
+    "categoryIds": [
+      "enterizos",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-077-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-077-ROJ-38",
+            "stock": 11
+          },
+          {
+            "size": "32",
+            "sku": "PROD-077-ROJ-32",
+            "stock": 13
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#808080",
+        "id": "DES-077-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-077-GRI-36",
+            "stock": 16
+          },
+          {
+            "size": "34",
+            "sku": "PROD-077-GRI-34",
+            "stock": 6
+          },
+          {
+            "size": "32",
+            "sku": "PROD-077-GRI-32",
+            "stock": 14
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-077",
+    "isVisible": false,
+    "name": "Enterizo Clásico"
+  },
+  {
+    "basePrice": 293,
+    "categoryIds": [
+      "faldas",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-078-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-078-MOR-36",
+            "stock": 15
+          },
+          {
+            "size": "34",
+            "sku": "PROD-078-MOR-34",
+            "stock": 8
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-078",
+    "isVisible": true,
+    "name": "Falda Premium"
+  },
+  {
+    "basePrice": 203,
+    "categoryIds": [
+      "chompas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-079-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-079-VER-L",
+            "stock": 5
+          },
+          {
+            "size": "S",
+            "sku": "PROD-079-VER-S",
+            "stock": 0
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-079-VER-XL",
+            "stock": 6
+          },
+          {
+            "size": "M",
+            "sku": "PROD-079-VER-M",
+            "stock": 13
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 168,
+    "id": "PROD-079",
+    "isVisible": true,
+    "name": "Chompa Básico"
+  },
+  {
+    "basePrice": 119,
+    "categoryIds": [
+      "shorts",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-080-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-080-AMA-32",
+            "stock": 19
+          },
+          {
+            "size": "36",
+            "sku": "PROD-080-AMA-36",
+            "stock": 20
+          },
+          {
+            "size": "34",
+            "sku": "PROD-080-AMA-34",
+            "stock": 17
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#000000",
+        "id": "DES-080-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Negro",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-080-NEG-38",
+            "stock": 13
+          },
+          {
+            "size": "32",
+            "sku": "PROD-080-NEG-32",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 84,
+    "id": "PROD-080",
+    "isVisible": true,
+    "name": "Short Urbano"
+  },
+  {
+    "basePrice": 57,
+    "categoryIds": [
+      "abrigos",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-081-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-081-VER-32",
+            "stock": 5
+          },
+          {
+            "size": "34",
+            "sku": "PROD-081-VER-34",
+            "stock": 3
+          },
+          {
+            "size": "38",
+            "sku": "PROD-081-VER-38",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-081-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-081-NAR-34",
+            "stock": 13
+          },
+          {
+            "size": "32",
+            "sku": "PROD-081-NAR-32",
+            "stock": 4
+          },
+          {
+            "size": "38",
+            "sku": "PROD-081-NAR-38",
+            "stock": 20
+          },
+          {
+            "size": "36",
+            "sku": "PROD-081-NAR-36",
+            "stock": 17
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-081",
+    "isVisible": true,
+    "name": "Abrigo Elegante"
+  },
+  {
+    "basePrice": 84,
+    "categoryIds": [
+      "pantalones",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente pantalón de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-082-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "32",
+            "sku": "PROD-082-ROS-32",
+            "stock": 12
+          },
+          {
+            "size": "34",
+            "sku": "PROD-082-ROS-34",
+            "stock": 18
+          },
+          {
+            "size": "36",
+            "sku": "PROD-082-ROS-36",
+            "stock": 2
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-082-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-082-ROJ-36",
+            "stock": 3
+          },
+          {
+            "size": "32",
+            "sku": "PROD-082-ROJ-32",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-082",
+    "isVisible": true,
+    "name": "Pantalón Vintage"
+  },
+  {
+    "basePrice": 101,
+    "categoryIds": [
+      "blusas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente blusa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFA500",
+        "id": "DES-083-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_2_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Naranja",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-083-NAR-36",
+            "stock": 14
+          },
+          {
+            "size": "34",
+            "sku": "PROD-083-NAR-34",
+            "stock": 20
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#FFFFFF",
+        "id": "DES-083-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Blanco",
+        "sizes": [
+          {
+            "size": "34",
+            "sku": "PROD-083-BLA-34",
+            "stock": 15
+          },
+          {
+            "size": "38",
+            "sku": "PROD-083-BLA-38",
+            "stock": 7
+          },
+          {
+            "size": "36",
+            "sku": "PROD-083-BLA-36",
+            "stock": 1
+          },
+          {
+            "size": "32",
+            "sku": "PROD-083-BLA-32",
+            "stock": 10
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-083",
+    "isVisible": true,
+    "name": "Blusa Urbano"
+  },
+  {
+    "basePrice": 209,
+    "categoryIds": [
+      "vestidos",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente vestido de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-084-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-084-VER-36",
+            "stock": 7
+          },
+          {
+            "size": "32",
+            "sku": "PROD-084-VER-32",
+            "stock": 5
+          },
+          {
+            "size": "34",
+            "sku": "PROD-084-VER-34",
+            "stock": 15
+          },
+          {
+            "size": "38",
+            "sku": "PROD-084-VER-38",
+            "stock": 11
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-084",
+    "isVisible": true,
+    "name": "Vestido Vintage"
+  },
+  {
+    "basePrice": 293,
+    "categoryIds": [
+      "casacas",
+      "verano"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente casaca de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#008000",
+        "id": "DES-085-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-085-VER-L",
+            "stock": 17
+          },
+          {
+            "size": "S",
+            "sku": "PROD-085-VER-S",
+            "stock": 11
+          },
+          {
+            "size": "M",
+            "sku": "PROD-085-VER-M",
+            "stock": 9
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-085-VER-XL",
+            "stock": 9
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-085",
+    "isVisible": true,
+    "name": "Casaca Clásico"
+  },
+  {
+    "basePrice": 171,
+    "categoryIds": [
+      "enterizos",
+      "casual"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente enterizo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFFF00",
+        "id": "DES-086-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media"
+        ],
+        "name": "Amarillo",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-086-AMA-S",
+            "stock": 19
+          },
+          {
+            "size": "L",
+            "sku": "PROD-086-AMA-L",
+            "stock": 17
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-086-AMA-XL",
+            "stock": 14
+          },
+          {
+            "size": "M",
+            "sku": "PROD-086-AMA-M",
+            "stock": 11
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#808080",
+        "id": "DES-086-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_5_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-086-GRI-S",
+            "stock": 11
+          },
+          {
+            "size": "L",
+            "sku": "PROD-086-GRI-L",
+            "stock": 8
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-086-GRI-XL",
+            "stock": 16
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 139,
+    "id": "PROD-086",
+    "isVisible": true,
+    "name": "Enterizo Clásico"
+  },
+  {
+    "basePrice": 259,
+    "categoryIds": [
+      "faldas",
+      "invierno"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente falda de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#0000FF",
+        "id": "DES-087-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Azul",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-087-AZU-36",
+            "stock": 2
+          },
+          {
+            "size": "32",
+            "sku": "PROD-087-AZU-32",
+            "stock": 0
+          },
+          {
+            "size": "34",
+            "sku": "PROD-087-AZU-34",
+            "stock": 5
+          },
+          {
+            "size": "38",
+            "sku": "PROD-087-AZU-38",
+            "stock": 15
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#008000",
+        "id": "DES-087-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Verde",
+        "sizes": [
+          {
+            "size": "38",
+            "sku": "PROD-087-VER-38",
+            "stock": 11
+          },
+          {
+            "size": "36",
+            "sku": "PROD-087-VER-36",
+            "stock": 14
+          },
+          {
+            "size": "32",
+            "sku": "PROD-087-VER-32",
+            "stock": 18
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-087",
+    "isVisible": true,
+    "name": "Falda Vintage"
+  },
+  {
+    "basePrice": 53,
+    "categoryIds": [
+      "chompas",
+      "denim"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente chompa de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#800080",
+        "id": "DES-088-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Morado",
+        "sizes": [
+          {
+            "size": "S",
+            "sku": "PROD-088-MOR-S",
+            "stock": 6
+          },
+          {
+            "size": "XL",
+            "sku": "PROD-088-MOR-XL",
+            "stock": 7
+          },
+          {
+            "size": "L",
+            "sku": "PROD-088-MOR-L",
+            "stock": 19
+          },
+          {
+            "size": "M",
+            "sku": "PROD-088-MOR-M",
+            "stock": 0
+          }
+        ],
+        "swatchImageUrl": null
+      },
+      {
+        "hexCode": "#808080",
+        "id": "DES-088-B",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Gris",
+        "sizes": [
+          {
+            "size": "L",
+            "sku": "PROD-088-GRI-L",
+            "stock": 20
+          },
+          {
+            "size": "S",
+            "sku": "PROD-088-GRI-S",
+            "stock": 15
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": 47,
+    "id": "PROD-088",
+    "isVisible": true,
+    "name": "Chompa Básico"
+  },
+  {
+    "basePrice": 266,
+    "categoryIds": [
+      "shorts",
+      "cuerina"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente short de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FF0000",
+        "id": "DES-089-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_800x800.webp?alt=media"
+        ],
+        "name": "Rojo",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-089-ROJ-36",
+            "stock": 17
+          },
+          {
+            "size": "34",
+            "sku": "PROD-089-ROJ-34",
+            "stock": 1
+          },
+          {
+            "size": "38",
+            "sku": "PROD-089-ROJ-38",
+            "stock": 8
+          },
+          {
+            "size": "32",
+            "sku": "PROD-089-ROJ-32",
+            "stock": 9
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-089",
+    "isVisible": true,
+    "name": "Short Premium"
+  },
+  {
+    "basePrice": 177,
+    "categoryIds": [
+      "abrigos",
+      "fiesta"
+    ],
+    "createdAt": "2026-09-02T18:52:53-05:00",
+    "description": "Excelente abrigo de estilo moderno. Perfecto para tu colección y combinable con múltiples outfits. Confeccionado con materiales premium para máxima durabilidad y confort.",
+    "designs": [
+      {
+        "hexCode": "#FFC0CB",
+        "id": "DES-090-A",
+        "imageUrls": [
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_4_800x800.webp?alt=media",
+          "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/products%2Fmock_product_3_800x800.webp?alt=media"
+        ],
+        "name": "Rosa",
+        "sizes": [
+          {
+            "size": "36",
+            "sku": "PROD-090-ROS-36",
+            "stock": 8
+          },
+          {
+            "size": "34",
+            "sku": "PROD-090-ROS-34",
+            "stock": 8
+          },
+          {
+            "size": "38",
+            "sku": "PROD-090-ROS-38",
+            "stock": 1
+          },
+          {
+            "size": "32",
+            "sku": "PROD-090-ROS-32",
+            "stock": 1
+          }
+        ],
+        "swatchImageUrl": null
+      }
+    ],
+    "discountPrice": null,
+    "id": "PROD-090",
+    "isVisible": true,
+    "name": "Abrigo Básico"
+  }
+]

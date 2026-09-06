@@ -19,8 +19,8 @@ class PrivacyPolicyScreen extends StatelessWidget {
         ResponsiveTheme.isMobile(context)
             ? const MobileHeaderBar(colorLerp: false)
             : ResponsiveTheme.isTablet(context)
-                ? const TabletHeaderBar(colorLerp: false)
-                : const HeaderBar(colorLerp: false),
+            ? const TabletHeaderBar(colorLerp: false)
+            : const HeaderBar(colorLerp: false),
         const LegalDocumentView(documentId: 'privacy_policy'),
         const SliverGap(50),
         const FooterBar(),

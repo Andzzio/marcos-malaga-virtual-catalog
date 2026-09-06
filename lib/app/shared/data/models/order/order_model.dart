@@ -1,32 +1,68 @@
 import 'package:marcos_malaga_app/features/checkout/data/models/customer_info_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_item_model.dart';
+import 'package:marcos_malaga_app/app/shared/data/models/order/order_item_model.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/shipping_address_model.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/billing_address_model.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_status.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_status.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/billing_address.dart';
 
-class OrderModel extends OrderEntity {
+import 'package:equatable/equatable.dart';
+
+class OrderModel extends Equatable {
+  final String id;
+  final String orderCode;
+  final CustomerInfo customer;
+  final ShippingAddress? shipping;
+  final BillingAddress? billing;
+  final List<OrderItemModel> items;
+  final double subtotal;
+  final double shippingCost;
+  final double total;
+  final String paymentMethodId;
+  final String? shippingMethodId;
+  final OrderStatus status;
+  final DeliveryType deliveryType;
+  final DateTime createdAt;
+  final String? notes;
+
   const OrderModel({
-    required super.id,
-    required super.orderCode,
-    required super.customer,
-    super.shipping,
-    super.billing,
-    required super.items,
-    required super.subtotal,
-    required super.shippingCost,
-    required super.total,
-    required super.paymentMethodId,
-    super.shippingMethodId,
-    required super.status,
-    required super.deliveryType,
-    required super.createdAt,
-    super.notes,
+    required this.id,
+    required this.orderCode,
+    required this.customer,
+    this.shipping,
+    this.billing,
+    required this.items,
+    required this.subtotal,
+    required this.shippingCost,
+    required this.total,
+    required this.paymentMethodId,
+    this.shippingMethodId,
+    required this.status,
+    required this.deliveryType,
+    required this.createdAt,
+    this.notes,
   });
+
+  @override
+  List<Object?> get props => [
+    id,
+    orderCode,
+    customer,
+    shipping,
+    billing,
+    items,
+    subtotal,
+    shippingCost,
+    total,
+    paymentMethodId,
+    shippingMethodId,
+    status,
+    deliveryType,
+    createdAt,
+    notes,
+  ];
 
   factory OrderModel.fromJson(Map<String, dynamic> json) {
     return OrderModel(
@@ -76,18 +112,14 @@ class OrderModel extends OrderEntity {
       shipping: entity.shipping == null
           ? null
           : (entity.shipping is ShippingAddressModel
-              ? entity.shipping as ShippingAddressModel
-              : ShippingAddressModel.fromEntity(entity.shipping!)),
+                ? entity.shipping as ShippingAddressModel
+                : ShippingAddressModel.fromEntity(entity.shipping!)),
       billing: entity.billing == null
           ? null
           : (entity.billing is BillingAddressModel
-              ? entity.billing as BillingAddressModel
-              : BillingAddressModel.fromEntity(entity.billing!)),
-      items: entity.items
-          .map(
-            (e) => e is OrderItemModel ? e : OrderItemModel.fromEntity(e),
-          )
-          .toList(),
+                ? entity.billing as BillingAddressModel
+                : BillingAddressModel.fromEntity(entity.billing!)),
+      items: entity.items.map((e) => OrderItemModel.fromEntity(e)).toList(),
       subtotal: entity.subtotal,
       shippingCost: entity.shippingCost,
       total: entity.total,
@@ -107,13 +139,13 @@ class OrderModel extends OrderEntity {
     final shippingModel = shipping == null
         ? null
         : (shipping is ShippingAddressModel
-            ? shipping as ShippingAddressModel
-            : ShippingAddressModel.fromEntity(shipping!));
+              ? shipping as ShippingAddressModel
+              : ShippingAddressModel.fromEntity(shipping!));
     final billingModel = billing == null
         ? null
         : (billing is BillingAddressModel
-            ? billing as BillingAddressModel
-            : BillingAddressModel.fromEntity(billing!));
+              ? billing as BillingAddressModel
+              : BillingAddressModel.fromEntity(billing!));
 
     return {
       'id': id,
@@ -121,14 +153,7 @@ class OrderModel extends OrderEntity {
       'customer': customerModel.toJson(),
       if (shippingModel != null) 'shipping': shippingModel.toJson(),
       if (billingModel != null) 'billing': billingModel.toJson(),
-      'items': items
-          .map(
-            (e) => (e is OrderItemModel
-                    ? e
-                    : OrderItemModel.fromEntity(e))
-                .toJson(),
-          )
-          .toList(),
+      'items': items.map((e) => e.toJson()).toList(),
       'subtotal': subtotal,
       'shippingCost': shippingCost,
       'total': total,
@@ -141,14 +166,13 @@ class OrderModel extends OrderEntity {
     };
   }
 
-  @override
   OrderModel copyWith({
     String? id,
     String? orderCode,
     CustomerInfo? customer,
     ShippingAddress? shipping,
     BillingAddress? billing,
-    List<OrderItem>? items,
+    List<OrderItemModel>? items,
     double? subtotal,
     double? shippingCost,
     double? total,
@@ -188,16 +212,14 @@ class OrderModel extends OrderEntity {
       shipping: shipping == null
           ? null
           : (shipping is ShippingAddressModel
-              ? (shipping as ShippingAddressModel).toEntity()
-              : shipping),
+                ? (shipping as ShippingAddressModel).toEntity()
+                : shipping),
       billing: billing == null
           ? null
           : (billing is BillingAddressModel
-              ? (billing as BillingAddressModel).toEntity()
-              : billing),
-      items: items
-          .map((e) => e is OrderItemModel ? e.toEntity() : e)
-          .toList(),
+                ? (billing as BillingAddressModel).toEntity()
+                : billing),
+      items: items.map((e) => e.toEntity()).toList(),
       subtotal: subtotal,
       shippingCost: shippingCost,
       total: total,

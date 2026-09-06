@@ -2,22 +2,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/department_model.dart';
 
 void main() {
-  const tModel = DepartmentModel(
-    code: '15',
-    name: 'Lima',
-  );
+  const tModel = DepartmentModel(code: '15', name: 'Lima');
 
-  final tJson = {
-    'code': '15',
-    'name': 'Lima',
-  };
+  final tJson = {'code': '15', 'name': 'Lima'};
 
   group('DepartmentModel', () {
     test('supports value equality', () {
-      const otherModel = DepartmentModel(
-        code: '15',
-        name: 'Lima',
-      );
+      const otherModel = DepartmentModel(code: '15', name: 'Lima');
       expect(tModel, equals(otherModel));
     });
 

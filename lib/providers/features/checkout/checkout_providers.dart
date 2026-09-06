@@ -2,16 +2,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
 import 'package:marcos_malaga_app/features/checkout/data/datasources/local_checkout_config_datasource.dart';
 import 'package:marcos_malaga_app/features/checkout/data/datasources/local_checkout_session_datasource.dart';
-import 'package:marcos_malaga_app/features/checkout/data/datasources/local_order_datasource.dart';
 import 'package:marcos_malaga_app/features/checkout/data/repositories/local_checkout_config_repository_impl.dart';
 import 'package:marcos_malaga_app/features/checkout/data/repositories/local_checkout_session_repository_impl.dart';
-import 'package:marcos_malaga_app/features/checkout/data/repositories/local_order_repository_impl.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/repositories/checkout_config_repository.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/repositories/checkout_session_repository.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/repositories/order_repository.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/calculate_shipping_cost_usecase.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/create_checkout_session_usecase.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/usecases/create_order_usecase.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/get_checkout_config_usecase.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/get_checkout_session_usecase.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/get_ubigeo_usecase.dart';
@@ -27,16 +23,6 @@ final checkoutConfigRepositoryProvider = Provider<CheckoutConfigRepository>((
 ) {
   final datasource = ref.watch(localCheckoutConfigDatasourceProvider);
   return LocalCheckoutConfigRepositoryImpl(datasource);
-});
-
-final localOrderDatasourceProvider = Provider<LocalOrderDatasource>((ref) {
-  final prefs = ref.watch(sharedPreferencesProvider);
-  return LocalOrderDatasource(prefs: prefs);
-});
-
-final orderRepositoryProvider = Provider<OrderRepository>((ref) {
-  final datasource = ref.watch(localOrderDatasourceProvider);
-  return LocalOrderRepositoryImpl(datasource);
 });
 
 final localCheckoutSessionDatasourceProvider =
@@ -62,11 +48,6 @@ final getCheckoutConfigUseCaseProvider = Provider<GetCheckoutConfigUseCase>((
 final getUbigeoUseCaseProvider = Provider<GetUbigeoUseCase>((ref) {
   final repository = ref.watch(checkoutConfigRepositoryProvider);
   return GetUbigeoUseCase(repository);
-});
-
-final createOrderUseCaseProvider = Provider<CreateOrderUseCase>((ref) {
-  final repository = ref.watch(orderRepositoryProvider);
-  return CreateOrderUseCase(repository);
 });
 
 final calculateShippingCostUseCaseProvider =

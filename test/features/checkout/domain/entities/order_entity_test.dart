@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_status.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_status.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
 
 void main() {
@@ -12,7 +12,7 @@ void main() {
       lastName: 'Pérez',
       dni: '12345678',
       phone: '987654321',
-          );
+    );
 
     const tShipping = ShippingAddress(
       department: 'Lima',
@@ -69,7 +69,7 @@ void main() {
         paymentMethodId: 'yape',
         shippingMethodId: 'olva',
         status: OrderStatus.pending,
-      deliveryType: DeliveryType.shipping,
+        deliveryType: DeliveryType.shipping,
         createdAt: tCreatedAt,
         notes: 'Entregar por la tarde',
       );
@@ -86,7 +86,7 @@ void main() {
         paymentMethodId: 'yape',
         shippingMethodId: 'olva',
         status: OrderStatus.pending,
-      deliveryType: DeliveryType.shipping,
+        deliveryType: DeliveryType.shipping,
         createdAt: tCreatedAt,
         notes: 'Entregar por la tarde',
       );
@@ -117,11 +117,14 @@ void main() {
       expect(updated, isNot(equals(tOrder)));
     });
 
-    test('copyWith returns identical instance when no arguments are passed', () {
-      final updated = tOrder.copyWith();
+    test(
+      'copyWith returns identical instance when no arguments are passed',
+      () {
+        final updated = tOrder.copyWith();
 
-      expect(updated, equals(tOrder));
-    });
+        expect(updated, equals(tOrder));
+      },
+    );
 
     test('OrderStatus enum has all required values', () {
       expect(

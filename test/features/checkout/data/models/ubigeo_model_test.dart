@@ -5,10 +5,7 @@ import 'package:marcos_malaga_app/features/checkout/data/models/province_model.d
 import 'package:marcos_malaga_app/features/checkout/data/models/ubigeo_model.dart';
 
 void main() {
-  const tDepartment = DepartmentModel(
-    code: '15',
-    name: 'Lima',
-  );
+  const tDepartment = DepartmentModel(code: '15', name: 'Lima');
 
   const tProvince = ProvinceModel(
     code: '1501',
@@ -30,13 +27,13 @@ void main() {
 
   final tJson = {
     'departments': [
-      {'code': '15', 'name': 'Lima'}
+      {'code': '15', 'name': 'Lima'},
     ],
     'provinces': [
-      {'code': '1501', 'name': 'Lima', 'departmentCode': '15'}
+      {'code': '1501', 'name': 'Lima', 'departmentCode': '15'},
     ],
     'districts': [
-      {'code': '150122', 'name': 'Miraflores', 'provinceCode': '1501'}
+      {'code': '150122', 'name': 'Miraflores', 'provinceCode': '1501'},
     ],
   };
 
@@ -67,9 +64,7 @@ void main() {
     });
 
     test('copyWith creates a new instance with updated properties', () {
-      final updated = tUbigeo.copyWith(
-        departments: const [],
-      );
+      final updated = tUbigeo.copyWith(departments: const []);
       expect(updated.departments, isEmpty);
       expect(updated.provinces, [tProvince]);
       expect(updated.districts, [tDistrict]);

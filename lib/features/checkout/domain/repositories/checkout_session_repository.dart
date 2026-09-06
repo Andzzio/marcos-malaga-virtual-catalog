@@ -1,5 +1,5 @@
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 abstract class CheckoutSessionRepository {
   Future<CheckoutSession> createSession({

@@ -53,3 +53,10 @@ ios/Runner/GoogleService-Info.plist
 
 # Architecture/Engram
 .architecture/
+
+# Scripts Secrets and Garbage
+lib/scripts/serviceAccountKey.json
+lib/scripts/output_processed_images/
+lib/scripts/*.exe
+lib/scripts/url_mapping.json
+lib/scripts/cwebp.exe

@@ -17,9 +17,17 @@ void main() {
   });
 
   test('should get lean cart entity', () async {
-    final tCartModel = CartModel(items: [
-      CartItemModel(id: 'i1', productId: 'p1', designId: 'd1', sizeName: 'M', quantity: 2)
-    ]);
+    final tCartModel = CartModel(
+      items: [
+        CartItemModel(
+          id: 'i1',
+          productId: 'p1',
+          designId: 'd1',
+          sizeName: 'M',
+          quantity: 2,
+        ),
+      ],
+    );
 
     when(() => mockDatasource.getCart()).thenAnswer((_) async => tCartModel);
 

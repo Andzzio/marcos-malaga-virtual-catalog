@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_item_model.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/data/models/order/order_item_model.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 void main() {
   const tModel = OrderItemModel(
@@ -40,10 +40,6 @@ void main() {
   };
 
   group('OrderItemModel', () {
-    test('is a subclass of OrderItem entity', () {
-      expect(tModel, isA<OrderItem>());
-    });
-
     test('fromJson returns a valid model from JSON map', () {
       final result = OrderItemModel.fromJson(tJson);
       expect(result, equals(tModel));

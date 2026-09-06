@@ -28,13 +28,18 @@ void main() {
       deletedAt: null,
     );
 
-    test('should call repository.createProduct with the given product', () async {
-      when(() => mockRepository.createProduct(tProduct)).thenAnswer((_) async {});
+    test(
+      'should call repository.createProduct with the given product',
+      () async {
+        when(
+          () => mockRepository.createProduct(tProduct),
+        ).thenAnswer((_) async {});
 
-      await usecase(tProduct);
+        await usecase(tProduct);
 
-      verify(() => mockRepository.createProduct(tProduct)).called(1);
-      verifyNoMoreInteractions(mockRepository);
-    });
+        verify(() => mockRepository.createProduct(tProduct)).called(1);
+        verifyNoMoreInteractions(mockRepository);
+      },
+    );
   });
 }

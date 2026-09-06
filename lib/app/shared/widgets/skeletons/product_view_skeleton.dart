@@ -5,16 +5,13 @@ import 'package:gap/gap.dart';
 
 class ProductViewSkeleton extends StatelessWidget {
   final double maxWidth;
-  
-  const ProductViewSkeleton({
-    super.key,
-    this.maxWidth = double.infinity,
-  });
+
+  const ProductViewSkeleton({super.key, this.maxWidth = double.infinity});
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    
+
     return SliverToBoxAdapter(
       child: Center(
         child: ConstrainedBox(
@@ -58,13 +55,11 @@ class ProductViewSkeleton extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final baseColor = isDark ? Colors.grey[800]! : Colors.grey[300]!;
     final highlightColor = isDark ? Colors.grey[700]! : Colors.grey[100]!;
-    
+
     return Shimmer.fromColors(
       baseColor: baseColor,
       highlightColor: highlightColor,
-      child: Container(
-        color: Colors.white,
-      ),
+      child: Container(color: Colors.white),
     );
   }
 
@@ -101,23 +96,23 @@ class ProductViewSkeleton extends StatelessWidget {
                 const Gap(10),
                 skeletonBox(height: 30, width: 200),
                 const Gap(30),
-                
+
                 // Price
                 skeletonBox(height: 25, width: 100),
                 const Gap(30),
-                
+
                 // Availability
                 skeletonBox(height: 20, width: 150),
                 const Gap(20),
-                
+
                 // Divider
                 skeletonBox(height: 1, width: double.infinity),
                 const Gap(20),
-                
+
                 // Button Tabla Medidas
                 skeletonBox(height: 40, width: 200),
                 const Gap(50),
-                
+
                 // Design Selector (Color/Size)
                 skeletonBox(height: 20, width: 120),
                 const Gap(10),
@@ -143,13 +138,13 @@ class ProductViewSkeleton extends StatelessWidget {
                   ],
                 ),
                 const Gap(50),
-                
+
                 // Add to Cart / Buy Now Buttons
                 skeletonBox(height: 50, width: double.infinity),
                 const Gap(10),
                 skeletonBox(height: 50, width: double.infinity),
                 const Gap(50),
-                
+
                 // Description Expansion Tile
                 skeletonBox(height: 50, width: double.infinity),
               ],

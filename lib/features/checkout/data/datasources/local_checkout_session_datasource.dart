@@ -3,8 +3,8 @@ import 'dart:math';
 
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/checkout_session_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_item_model.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 class LocalCheckoutSessionDatasource {
   final SharedPreferences prefs;
@@ -44,9 +44,7 @@ class LocalCheckoutSessionDatasource {
   }) async {
     final session = CheckoutSessionModel(
       id: _generateSessionId(),
-      items: items
-          .map((e) => e is OrderItemModel ? e : OrderItemModel.fromEntity(e))
-          .toList(),
+      items: items,
       clearCartOnSuccess: clearCartOnSuccess,
       createdAt: DateTime.now(),
     );

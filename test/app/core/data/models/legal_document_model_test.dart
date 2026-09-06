@@ -11,7 +11,9 @@ void main() {
       final jsonString = file.readAsStringSync();
       final jsonList = jsonDecode(jsonString) as List<dynamic>;
 
-      final documents = jsonList.map((e) => LegalDocumentModel.fromJson(e)).toList();
+      final documents = jsonList
+          .map((e) => LegalDocumentModel.fromJson(e))
+          .toList();
 
       expect(documents, isNotEmpty);
       expect(documents.length, 4);

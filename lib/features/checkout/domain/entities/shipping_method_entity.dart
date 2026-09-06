@@ -21,12 +21,12 @@ class ShippingMethodEntity extends Equatable {
 
   @override
   List<Object?> get props => [
-        id,
-        label,
-        enabled,
-        availableZones,
-        prices,
-        estimatedDays,
-        description,
-      ];
+    id,
+    label,
+    enabled,
+    availableZones,
+    prices,
+    estimatedDays,
+    description,
+  ];
 }

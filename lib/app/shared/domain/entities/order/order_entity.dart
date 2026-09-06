@@ -1,10 +1,10 @@
 import 'package:equatable/equatable.dart';
 
-import 'customer_info.dart';
+import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
 import 'order_item.dart';
 import 'order_status.dart';
-import 'shipping_address.dart';
-import 'billing_address.dart';
+import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
+import 'package:marcos_malaga_app/features/checkout/domain/entities/billing_address.dart';
 
 enum DeliveryType { shipping, pickup }
 
@@ -81,20 +81,20 @@ class OrderEntity extends Equatable {
 
   @override
   List<Object?> get props => [
-        id,
-        orderCode,
-        customer,
-        shipping,
-        billing,
-        items,
-        subtotal,
-        shippingCost,
-        total,
-        paymentMethodId,
-        shippingMethodId,
-        status,
-        deliveryType,
-        createdAt,
-        notes,
-      ];
+    id,
+    orderCode,
+    customer,
+    shipping,
+    billing,
+    items,
+    subtotal,
+    shippingCost,
+    total,
+    paymentMethodId,
+    shippingMethodId,
+    status,
+    deliveryType,
+    createdAt,
+    notes,
+  ];
 }

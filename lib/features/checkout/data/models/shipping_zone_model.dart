@@ -21,8 +21,8 @@ class ShippingZoneModel extends Equatable {
       departmentCodes: (json['departmentCodes'] as List<dynamic>? ?? [])
           .map((e) => e as String)
           .toList(),
-      freeShippingThreshold:
-          (json['freeShippingThreshold'] as num?)?.toDouble(),
+      freeShippingThreshold: (json['freeShippingThreshold'] as num?)
+          ?.toDouble(),
     );
   }
 

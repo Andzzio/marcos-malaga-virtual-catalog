@@ -118,7 +118,8 @@ void main() {
     });
 
     test('fromJson without deletedAt key returns null deletedAt', () {
-      final jsonSinDeletedAt = Map<String, dynamic>.from(tJson)..remove('deletedAt');
+      final jsonSinDeletedAt = Map<String, dynamic>.from(tJson)
+        ..remove('deletedAt');
       final result = ProductModel.fromJson(jsonSinDeletedAt);
       expect(result.deletedAt, isNull);
     });
@@ -127,7 +128,10 @@ void main() {
       final jsonConDeletedAt = Map<String, dynamic>.from(tJson)
         ..['deletedAt'] = '2025-06-01T00:00:00.000Z';
       final result = ProductModel.fromJson(jsonConDeletedAt);
-      expect(result.deletedAt, equals(DateTime.parse('2025-06-01T00:00:00.000Z')));
+      expect(
+        result.deletedAt,
+        equals(DateTime.parse('2025-06-01T00:00:00.000Z')),
+      );
     });
   });
 }

@@ -35,6 +35,6 @@ final removeCartItemUsecaseProvider = Provider<RemoveCartItemUsecase>((ref) {
 
 final updateCartItemQuantityUsecaseProvider =
     Provider<UpdateCartItemQuantityUsecase>((ref) {
-  final repository = ref.watch(cartRepositoryProvider);
-  return UpdateCartItemQuantityUsecase(repository);
-});
+      final repository = ref.watch(cartRepositoryProvider);
+      return UpdateCartItemQuantityUsecase(repository);
+    });

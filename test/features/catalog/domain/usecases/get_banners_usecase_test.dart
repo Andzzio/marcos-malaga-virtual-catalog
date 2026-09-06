@@ -38,13 +38,16 @@ void main() {
       verifyNoMoreInteractions(mockRepo);
     });
 
-    test('should get an empty list from the repository when no banners are available', () async {
-      when(() => mockRepo.getBanners()).thenAnswer((_) async => []);
+    test(
+      'should get an empty list from the repository when no banners are available',
+      () async {
+        when(() => mockRepo.getBanners()).thenAnswer((_) async => []);
 
-      final result = await usecase();
+        final result = await usecase();
 
-      expect(result, isEmpty);
-      verify(() => mockRepo.getBanners()).called(1);
-    });
+        expect(result, isEmpty);
+        verify(() => mockRepo.getBanners()).called(1);
+      },
+    );
   });
 }

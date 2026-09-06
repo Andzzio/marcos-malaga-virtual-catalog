@@ -36,7 +36,10 @@ void main() {
 
     test('toEntity should return a valid StoreLocationEntity', () {
       /// Arrange
-      const tModel = StoreLocationModel(latitude: tLatitude, longitude: tLongitude);
+      const tModel = StoreLocationModel(
+        latitude: tLatitude,
+        longitude: tLongitude,
+      );
 
       /// Act
       final result = tModel.toEntity();

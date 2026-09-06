@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marcos_malaga_app/app/config/theme/app_theme.dart';
 
 class NewsletterSection extends StatefulWidget {
   const NewsletterSection({super.key});
@@ -29,10 +30,10 @@ class _NewsletterSectionState extends State<NewsletterSection> {
   Widget build(BuildContext context) {
     final style = Theme.of(
       context,
-    ).textTheme.labelMedium?.copyWith(color: Colors.white, fontSize: 14);
+    ).textTheme.labelMedium?.copyWith(color: Colors.white, fontSize: 11);
     final titleStyle = Theme.of(context).textTheme.labelMedium?.copyWith(
       color: Colors.white,
-      fontSize: 16,
+      fontSize: 14,
       fontWeight: FontWeight.bold,
     );
 
@@ -54,11 +55,7 @@ class _NewsletterSectionState extends State<NewsletterSection> {
               decoration: InputDecoration(
                 filled: false,
                 hintText: 'Dirección de correo electrónico',
-                hintStyle: TextStyle(
-                  color: Colors.white.withValues(alpha: 0.7),
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                ),
+                hintStyle: style?.copyWith(color: AppTheme.mutedColor),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(6),
                   borderSide: BorderSide(

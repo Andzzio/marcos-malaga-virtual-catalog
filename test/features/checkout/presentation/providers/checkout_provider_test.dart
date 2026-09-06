@@ -2,31 +2,35 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/usecases/create_order_usecase.dart';
+import 'package:marcos_malaga_app/app/shared/domain/usecases/order/create_order_usecase.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/get_checkout_session_usecase.dart';
 import 'package:marcos_malaga_app/features/checkout/presentation/providers/checkout_provider.dart';
+import 'package:marcos_malaga_app/providers/core/core_providers.dart';
 import 'package:marcos_malaga_app/features/checkout/presentation/states/checkout_state.dart';
 import 'package:marcos_malaga_app/providers/features/checkout/checkout_providers.dart';
 
 class MockCreateOrderUseCase extends Mock implements CreateOrderUseCase {}
-class MockGetCheckoutSessionUseCase extends Mock implements GetCheckoutSessionUseCase {}
+
+class MockGetCheckoutSessionUseCase extends Mock
+    implements GetCheckoutSessionUseCase {}
 
 class FakeOrderEntity extends Fake implements OrderEntity {}
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
   late MockCreateOrderUseCase mockCreateOrderUseCase;
   late MockGetCheckoutSessionUseCase mockGetCheckoutSessionUseCase;
   late ProviderContainer container;
 
   const tCustomer = CustomerInfo(
     firstName: 'Carmen',
-      lastName: 'Rosa',
+    lastName: 'Rosa',
     dni: '45678901',
     phone: '955443322',
-      );
+  );
 
   const tAddress = ShippingAddress(
     department: 'Lima',
@@ -58,7 +62,9 @@ void main() {
     container = ProviderContainer(
       overrides: [
         createOrderUseCaseProvider.overrideWithValue(mockCreateOrderUseCase),
-        getCheckoutSessionUseCaseProvider.overrideWithValue(mockGetCheckoutSessionUseCase),
+        getCheckoutSessionUseCaseProvider.overrideWithValue(
+          mockGetCheckoutSessionUseCase,
+        ),
       ],
     );
   });
@@ -79,7 +85,6 @@ void main() {
 
     test('updateCustomerInfo updates state with customer info', () async {
       final notifier = container.read(checkoutProvider(tSession).notifier);
-      
 
       notifier.updateCustomerInfo(tCustomer);
 
@@ -89,9 +94,8 @@ void main() {
 
     test('updateShippingAddress updates state with shipping address', () async {
       final notifier = container.read(checkoutProvider(tSession).notifier);
-      
 
-      notifier.updateShippingAddress(tAddress);
+      await notifier.updateShippingAddress(tAddress);
 
       final state = container.read(checkoutProvider(tSession));
       expect(state.shippingAddress, equals(tAddress));
@@ -99,7 +103,6 @@ void main() {
 
     test('setPaymentMethod updates state with payment method id', () async {
       final notifier = container.read(checkoutProvider(tSession).notifier);
-      
 
       notifier.setPaymentMethod('yape');
 
@@ -107,69 +110,88 @@ void main() {
       expect(state.paymentMethodId, equals('yape'));
     });
 
-    test('submitOrder sets isLoading true and false, and calls CreateOrderUseCase', () async {
-      when(() => mockGetCheckoutSessionUseCase('test-session')).thenAnswer((_) async => tSession);
-      when(() => mockCreateOrderUseCase(
+    test(
+      'submitOrder sets isLoading true and false, and calls CreateOrderUseCase',
+      () async {
+        when(
+          () => mockGetCheckoutSessionUseCase('test-session'),
+        ).thenAnswer((_) async => tSession);
+        when(
+          () => mockCreateOrderUseCase(
             session: any(named: 'session'),
             customer: any(named: 'customer'),
             shipping: any(named: 'shipping'),
+            billing: any(named: 'billing'),
             paymentMethodId: any(named: 'paymentMethodId'),
             deliveryType: any(named: 'deliveryType'),
             shippingMethodId: any(named: 'shippingMethodId'),
             shippingCost: any(named: 'shippingCost'),
-          )).thenAnswer((_) async {});
+            notes: any(named: 'notes'),
+          ),
+        ).thenAnswer((_) async {});
 
-      final notifier = container.read(checkoutProvider(tSession).notifier);
-      
-      notifier.updateCustomerInfo(tCustomer);
-      notifier.updateShippingAddress(tAddress);
-      notifier.setPaymentMethod('yape');
+        final notifier = container.read(checkoutProvider(tSession).notifier);
 
-      final states = <CheckoutState>[];
-      container.listen(
-        checkoutProvider(tSession),
-        (_, next) => states.add(next),
-        fireImmediately: false,
-      );
+        notifier.updateCustomerInfo(tCustomer);
+        await notifier.updateShippingAddress(tAddress);
+        notifier.setPaymentMethod('yape');
 
-      await notifier.submitOrder();
+        final states = <CheckoutState>[];
+        container.listen(
+          checkoutProvider(tSession),
+          (_, next) => states.add(next),
+          fireImmediately: false,
+        );
 
-      verify(() => mockCreateOrderUseCase(
+        await notifier.submitOrder();
+
+        verify(
+          () => mockCreateOrderUseCase(
             session: any(named: 'session'),
             customer: any(named: 'customer'),
             shipping: any(named: 'shipping'),
+            billing: any(named: 'billing'),
             paymentMethodId: any(named: 'paymentMethodId'),
             deliveryType: any(named: 'deliveryType'),
             shippingMethodId: any(named: 'shippingMethodId'),
             shippingCost: any(named: 'shippingCost'),
-          )).called(1);
+            notes: any(named: 'notes'),
+          ),
+        ).called(1);
 
-      // expect loading
-      // not loading
-      // no error
-    });
+        // expect loading
+        // not loading
+        // no error
+      },
+    );
 
-    test('submitOrder leaves state with error when CreateOrderUseCase throws', () async {
-      when(() => mockGetCheckoutSessionUseCase('test-session')).thenAnswer((_) async => tSession);
-      when(() => mockCreateOrderUseCase(
+    test(
+      'submitOrder leaves state with error when CreateOrderUseCase throws',
+      () async {
+        when(
+          () => mockGetCheckoutSessionUseCase('test-session'),
+        ).thenAnswer((_) async => tSession);
+        when(
+          () => mockCreateOrderUseCase(
             session: any(named: 'session'),
             customer: any(named: 'customer'),
             shipping: any(named: 'shipping'),
+            billing: any(named: 'billing'),
             paymentMethodId: any(named: 'paymentMethodId'),
             deliveryType: any(named: 'deliveryType'),
             shippingMethodId: any(named: 'shippingMethodId'),
             shippingCost: any(named: 'shippingCost'),
-          )).thenThrow(Exception('Order creation failed'));
+            notes: any(named: 'notes'),
+          ),
+        ).thenThrow(Exception('Order creation failed'));
 
-      final notifier = container.read(checkoutProvider(tSession).notifier);
-      
-      expect(
-        () => notifier.submitOrder(),
-        throwsA(isA<Exception>()),
-      );
+        final notifier = container.read(checkoutProvider(tSession).notifier);
 
-      // expect error
-      // not loading
-    });
+        expect(() => notifier.submitOrder(), throwsA(isA<Exception>()));
+
+        // expect error
+        // not loading
+      },
+    );
   });
 }

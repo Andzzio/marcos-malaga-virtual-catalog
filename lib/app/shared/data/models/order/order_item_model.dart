@@ -1,17 +1,42 @@
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
-class OrderItemModel extends OrderItem {
+import 'package:equatable/equatable.dart';
+
+class OrderItemModel extends Equatable {
+  final String productId;
+  final String designId;
+  final String sizeName;
+  final int quantity;
+  final String productName;
+  final String designName;
+  final String imageUrl;
+  final double unitPrice;
+  final double? discountPrice;
+
   const OrderItemModel({
-    required super.productId,
-    required super.designId,
-    required super.sizeName,
-    required super.quantity,
-    required super.productName,
-    required super.designName,
-    required super.imageUrl,
-    required super.unitPrice,
-    super.discountPrice,
+    required this.productId,
+    required this.designId,
+    required this.sizeName,
+    required this.quantity,
+    required this.productName,
+    required this.designName,
+    required this.imageUrl,
+    required this.unitPrice,
+    this.discountPrice,
   });
+
+  @override
+  List<Object?> get props => [
+    productId,
+    designId,
+    sizeName,
+    quantity,
+    productName,
+    designName,
+    imageUrl,
+    unitPrice,
+    discountPrice,
+  ];
 
   factory OrderItemModel.fromJson(Map<String, dynamic> json) {
     return OrderItemModel(
@@ -55,7 +80,6 @@ class OrderItemModel extends OrderItem {
     };
   }
 
-  @override
   OrderItemModel copyWith({
     String? productId,
     String? designId,

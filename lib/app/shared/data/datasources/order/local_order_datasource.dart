@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_model.dart';
+import 'package:marcos_malaga_app/app/shared/data/models/order/order_model.dart';
 
 class LocalOrderDatasource {
   final SharedPreferences prefs;

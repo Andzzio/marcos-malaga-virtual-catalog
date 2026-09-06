@@ -16,6 +16,10 @@ import 'package:marcos_malaga_app/features/legal/presentation/screens/refund_pol
 import 'package:marcos_malaga_app/features/legal/presentation/screens/shipping_policy_screen.dart';
 import 'package:marcos_malaga_app/features/legal/presentation/screens/terms_screen.dart';
 import 'package:marcos_malaga_app/features/legal/presentation/screens/complaints_book_screen.dart';
+import 'package:marcos_malaga_app/app/core/presentation/shell/admin_shell.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/presentation/screens/inventory_screen.dart';
+import 'package:marcos_malaga_app/features/crm_orders/presentation/screens/crm_orders_screen.dart';
+import 'package:marcos_malaga_app/features/crm_customers/presentation/screens/crm_customers_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
@@ -135,6 +139,35 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 path: '/login',
                 name: 'login',
                 builder: (context, state) => const LoginScreen(),
+              ),
+            ],
+          ),
+        ],
+      ),
+      ShellRoute(
+        builder: (context, state, child) => AdminShell(child: child),
+        routes: [
+          GoRoute(
+            path: '/admin',
+            redirect: (context, state) {
+              if (state.uri.path == '/admin') return '/admin/inventory';
+              return null;
+            },
+            routes: [
+              GoRoute(
+                path: 'inventory',
+                name: 'admin-inventory',
+                builder: (context, state) => const InventoryScreen(),
+              ),
+              GoRoute(
+                path: 'orders',
+                name: 'admin-orders',
+                builder: (context, state) => const CrmOrdersScreen(),
+              ),
+              GoRoute(
+                path: 'customers',
+                name: 'admin-customers',
+                builder: (context, state) => const CrmCustomersScreen(),
               ),
             ],
           ),

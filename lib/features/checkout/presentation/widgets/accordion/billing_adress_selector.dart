@@ -142,7 +142,9 @@ class _BillingAdressSelectorState extends ConsumerState<BillingAdressSelector> {
                 child: Container(
                   decoration: BoxDecoration(
                     border: selected
-                        ? Border.all(color: Theme.of(context).colorScheme.primary)
+                        ? Border.all(
+                            color: Theme.of(context).colorScheme.primary,
+                          )
                         : Border(
                             top: first
                                 ? BorderSide(color: AppTheme.mutedColor)
@@ -165,7 +167,9 @@ class _BillingAdressSelectorState extends ConsumerState<BillingAdressSelector> {
                           ? Radius.circular(8)
                           : Radius.circular(0),
                     ),
-                    color: selected ? primaryBackgroundColor : Colors.transparent,
+                    color: selected
+                        ? primaryBackgroundColor
+                        : Colors.transparent,
                   ),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(

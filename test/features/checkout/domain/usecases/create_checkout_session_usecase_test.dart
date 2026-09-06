@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/repositories/checkout_session_repository.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/usecases/create_checkout_session_usecase.dart';
 
@@ -35,26 +35,29 @@ void main() {
     useCase = CreateCheckoutSessionUseCase(mockRepository);
   });
 
-  test('should call repository.createSession with correct parameters', () async {
-    when(
-      () => mockRepository.createSession(
-        items: any(named: 'items'),
-        clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
-      ),
-    ).thenAnswer((_) async => tSession);
+  test(
+    'should call repository.createSession with correct parameters',
+    () async {
+      when(
+        () => mockRepository.createSession(
+          items: any(named: 'items'),
+          clearCartOnSuccess: any(named: 'clearCartOnSuccess'),
+        ),
+      ).thenAnswer((_) async => tSession);
 
-    final result = await useCase(
-      items: tSession.items,
-      clearCartOnSuccess: true,
-    );
-
-    expect(result, equals(tSession));
-    verify(
-      () => mockRepository.createSession(
+      final result = await useCase(
         items: tSession.items,
         clearCartOnSuccess: true,
-      ),
-    ).called(1);
-    verifyNoMoreInteractions(mockRepository);
-  });
+      );
+
+      expect(result, equals(tSession));
+      verify(
+        () => mockRepository.createSession(
+          items: tSession.items,
+          clearCartOnSuccess: true,
+        ),
+      ).called(1);
+      verifyNoMoreInteractions(mockRepository);
+    },
+  );
 }

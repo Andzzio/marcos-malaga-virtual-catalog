@@ -24,9 +24,7 @@ void main() {
     paymentMethods: [],
   );
 
-  const tUbigeo = UbigeoEntity(
-    departments: [],
-  );
+  const tUbigeo = UbigeoEntity(departments: []);
 
   setUp(() {
     mockGetCheckoutConfig = MockGetCheckoutConfigUseCase();
@@ -34,8 +32,9 @@ void main() {
 
     container = ProviderContainer(
       overrides: [
-        getCheckoutConfigUseCaseProvider
-            .overrideWithValue(mockGetCheckoutConfig),
+        getCheckoutConfigUseCaseProvider.overrideWithValue(
+          mockGetCheckoutConfig,
+        ),
         getUbigeoUseCaseProvider.overrideWithValue(mockGetUbigeo),
       ],
     );

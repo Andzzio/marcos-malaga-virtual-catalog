@@ -17,8 +17,10 @@ void main() {
 
   test('should return ProductSizeEntity when found in repo', () async {
     const tSize = ProductSizeEntity(size: 'M', stock: 10);
-    
-    when(() => mockRepo.getSizeByName('p1', 'd1', 'M')).thenAnswer((_) async => tSize);
+
+    when(
+      () => mockRepo.getSizeByName('p1', 'd1', 'M'),
+    ).thenAnswer((_) async => tSize);
 
     final result = await useCase('p1', 'd1', 'M');
 
@@ -27,7 +29,9 @@ void main() {
   });
 
   test('should return null when not found in repo', () async {
-    when(() => mockRepo.getSizeByName('p1', 'd1', 'M')).thenAnswer((_) async => null);
+    when(
+      () => mockRepo.getSizeByName('p1', 'd1', 'M'),
+    ).thenAnswer((_) async => null);
 
     final result = await useCase('p1', 'd1', 'M');
 

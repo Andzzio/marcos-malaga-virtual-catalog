@@ -16,9 +16,16 @@ void main() {
   });
 
   test('should return ProductDesignEntity when found in repo', () async {
-    const tDesign = ProductDesignEntity(id: 'd1', name: 'Design 1', imageUrls: [], sizes: []);
-    
-    when(() => mockRepo.getDesignById('p1', 'd1')).thenAnswer((_) async => tDesign);
+    const tDesign = ProductDesignEntity(
+      id: 'd1',
+      name: 'Design 1',
+      imageUrls: [],
+      sizes: [],
+    );
+
+    when(
+      () => mockRepo.getDesignById('p1', 'd1'),
+    ).thenAnswer((_) async => tDesign);
 
     final result = await useCase('p1', 'd1');
 
@@ -27,7 +34,9 @@ void main() {
   });
 
   test('should return null when not found in repo', () async {
-    when(() => mockRepo.getDesignById('p1', 'd1')).thenAnswer((_) async => null);
+    when(
+      () => mockRepo.getDesignById('p1', 'd1'),
+    ).thenAnswer((_) async => null);
 
     final result = await useCase('p1', 'd1');
 

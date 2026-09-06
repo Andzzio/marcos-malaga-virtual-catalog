@@ -7,7 +7,11 @@ class FakeLegalDocumentsRepository implements LegalDocumentsRepository {
   @override
   Future<List<LegalDocumentEntity>> getLegalDocuments() async {
     return [
-      const LegalDocumentEntity(id: '1', title: 'Fake Usecase', content: 'Content'),
+      const LegalDocumentEntity(
+        id: '1',
+        title: 'Fake Usecase',
+        content: 'Content',
+      ),
     ];
   }
 }
@@ -21,9 +25,12 @@ void main() {
     usecase = GetLegalDocumentsUsecase(repo: fakeRepository);
   });
 
-  test('call debe retornar List<LegalDocumentEntity> desde el repositorio', () async {
-    final result = await usecase();
-    expect(result.length, 1);
-    expect(result.first.title, 'Fake Usecase');
-  });
+  test(
+    'call debe retornar List<LegalDocumentEntity> desde el repositorio',
+    () async {
+      final result = await usecase();
+      expect(result.length, 1);
+      expect(result.first.title, 'Fake Usecase');
+    },
+  );
 }

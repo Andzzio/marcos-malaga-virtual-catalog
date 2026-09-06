@@ -6,7 +6,7 @@ import 'package:marcos_malaga_app/app/config/theme/app_theme.dart';
 import 'package:marcos_malaga_app/app/core/presentation/providers/store_schedule_ui_provider.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/ubigeo_entities.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
 import 'package:marcos_malaga_app/features/checkout/presentation/providers/checkout_provider.dart';
 import 'package:marcos_malaga_app/features/checkout/presentation/providers/checkout_config_provider.dart';

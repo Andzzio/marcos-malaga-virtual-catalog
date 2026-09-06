@@ -16,7 +16,9 @@ void main() {
 
   group('RestoreProductUsecase Tests', () {
     test('should call repository.restoreProduct with the given id', () async {
-      when(() => mockRepository.restoreProduct('PROD-001')).thenAnswer((_) async {});
+      when(
+        () => mockRepository.restoreProduct('PROD-001'),
+      ).thenAnswer((_) async {});
 
       await usecase('PROD-001');
 

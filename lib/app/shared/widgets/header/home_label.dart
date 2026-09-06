@@ -5,11 +5,7 @@ class HomeLabel extends StatelessWidget {
   final String label;
   final bool hideOnMobile;
 
-  const HomeLabel({
-    super.key,
-    required this.label,
-    this.hideOnMobile = true,
-  });
+  const HomeLabel({super.key, required this.label, this.hideOnMobile = true});
 
   @override
   Widget build(BuildContext context) {

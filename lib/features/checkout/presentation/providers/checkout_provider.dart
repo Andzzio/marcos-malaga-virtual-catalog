@@ -1,12 +1,13 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:marcos_malaga_app/providers/core/core_providers.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/billing_address.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/checkout_session.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_method_entity.dart';
 import 'package:marcos_malaga_app/features/checkout/presentation/states/checkout_state.dart';
-import 'package:marcos_malaga_app/providers/features/checkout/checkout_providers.dart';
+
 import 'package:marcos_malaga_app/features/checkout/presentation/providers/checkout_config_provider.dart';
 
 class CheckoutProvider extends Notifier<CheckoutState> {

@@ -21,18 +21,10 @@ class DistrictModel extends Equatable {
   }
 
   Map<String, dynamic> toJson() {
-    return {
-      'code': code,
-      'name': name,
-      'provinceCode': provinceCode,
-    };
+    return {'code': code, 'name': name, 'provinceCode': provinceCode};
   }
 
-  DistrictModel copyWith({
-    String? code,
-    String? name,
-    String? provinceCode,
-  }) {
+  DistrictModel copyWith({String? code, String? name, String? provinceCode}) {
     return DistrictModel(
       code: code ?? this.code,
       name: name ?? this.name,
@@ -41,11 +33,7 @@ class DistrictModel extends Equatable {
   }
 
   DistrictEntity toEntity() {
-    return DistrictEntity(
-      code: code,
-      name: name,
-      provinceCode: provinceCode,
-    );
+    return DistrictEntity(code: code, name: name, provinceCode: provinceCode);
   }
 
   @override

@@ -1,12 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:marcos_malaga_app/features/checkout/data/datasources/local_order_datasource.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/repositories/local_order_repository_impl.dart';
+import 'package:marcos_malaga_app/app/shared/data/datasources/order/local_order_datasource.dart';
+import 'package:marcos_malaga_app/app/shared/data/models/order/order_model.dart';
+import 'package:marcos_malaga_app/app/shared/data/repositories/order/local_order_repository_impl.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/customer_info.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_entity.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_status.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_entity.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_status.dart';
 import 'package:marcos_malaga_app/features/checkout/domain/entities/shipping_address.dart';
 
 class MockLocalOrderDatasource extends Mock implements LocalOrderDatasource {}
@@ -32,10 +32,10 @@ void main() {
       orderCode: 'MM-2026-0001',
       customer: const CustomerInfo(
         firstName: 'María',
-      lastName: 'Pérez',
+        lastName: 'Pérez',
         dni: '12345678',
         phone: '987654321',
-              ),
+      ),
       shipping: const ShippingAddress(
         department: 'Lima',
         province: 'Lima',
@@ -77,8 +77,9 @@ void main() {
 
         await repository.createOrder(tOrderEntity);
 
-        final captured =
-            verify(() => mockDatasource.saveOrder(captureAny())).captured;
+        final captured = verify(
+          () => mockDatasource.saveOrder(captureAny()),
+        ).captured;
         expect(captured.length, 1);
         final savedOrder = captured.first as OrderModel;
         expect(savedOrder.id, 'ord-001');

@@ -15,9 +15,5 @@ class CheckoutConfigEntity extends Equatable {
   });
 
   @override
-  List<Object?> get props => [
-        shippingZones,
-        shippingMethods,
-        paymentMethods,
-      ];
+  List<Object?> get props => [shippingZones, shippingMethods, paymentMethods];
 }

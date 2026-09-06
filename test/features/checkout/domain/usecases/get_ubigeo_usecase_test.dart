@@ -16,13 +16,10 @@ void main() {
     useCase = GetUbigeoUseCase(mockRepository);
   });
 
-  const tUbigeo = UbigeoEntity(
-    departments: [],
-  );
+  const tUbigeo = UbigeoEntity(departments: []);
 
   test('should get ubigeo from repository', () async {
-    when(() => mockRepository.getUbigeo())
-        .thenAnswer((_) async => tUbigeo);
+    when(() => mockRepository.getUbigeo()).thenAnswer((_) async => tUbigeo);
 
     final result = await useCase();
 

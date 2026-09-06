@@ -9,10 +9,10 @@ class LegalSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final style = Theme.of(
       context,
-    ).textTheme.labelMedium?.copyWith(color: Colors.white, fontSize: 14);
+    ).textTheme.labelMedium?.copyWith(color: Colors.white, fontSize: 11);
     final titleStyle = Theme.of(context).textTheme.labelMedium?.copyWith(
       color: Colors.white,
-      fontSize: 16,
+      fontSize: 14,
       fontWeight: FontWeight.bold,
     );
     return Column(

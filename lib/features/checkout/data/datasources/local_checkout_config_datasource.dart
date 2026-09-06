@@ -11,7 +11,7 @@ class LocalCheckoutConfigDatasource {
   static const String _checkoutConfigPath = 'assets/json/checkout_config.json';
 
   LocalCheckoutConfigDatasource({AssetBundle? bundle})
-      : _bundle = bundle ?? rootBundle;
+    : _bundle = bundle ?? rootBundle;
 
   Future<UbigeoModel> getUbigeo() async {
     try {

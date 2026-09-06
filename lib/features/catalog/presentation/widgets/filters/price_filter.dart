@@ -34,8 +34,12 @@ class PriceFilter extends StatelessWidget {
               controller: minController,
               style: style,
               textAlign: TextAlign.right,
-              keyboardType: const TextInputType.numberWithOptions(decimal: true),
-              inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'^\d*\.?\d*'))],
+              keyboardType: const TextInputType.numberWithOptions(
+                decimal: true,
+              ),
+              inputFormatters: [
+                FilteringTextInputFormatter.allow(RegExp(r'^\d*\.?\d*')),
+              ],
               decoration: const InputDecoration(
                 hintText: '0.0',
                 prefixText: 'S/. ',
@@ -57,8 +61,12 @@ class PriceFilter extends StatelessWidget {
               controller: maxController,
               style: style,
               textAlign: TextAlign.right,
-              keyboardType: const TextInputType.numberWithOptions(decimal: true),
-              inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'^\d*\.?\d*'))],
+              keyboardType: const TextInputType.numberWithOptions(
+                decimal: true,
+              ),
+              inputFormatters: [
+                FilteringTextInputFormatter.allow(RegExp(r'^\d*\.?\d*')),
+              ],
               decoration: const InputDecoration(
                 hintText: '0.0',
                 prefixText: 'S/.',

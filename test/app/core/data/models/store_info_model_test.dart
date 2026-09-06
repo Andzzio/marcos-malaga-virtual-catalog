@@ -17,7 +17,10 @@ void main() {
       expect(model.ruc, '1234567890');
       expect(model.schedule.timeZone, 'America/Lima');
       expect(model.schedule.regularHours.length, 7);
-      expect(model.schedule.regularHours.last.isClosed, true); // Domingo cerrado
+      expect(
+        model.schedule.regularHours.last.isClosed,
+        true,
+      ); // Domingo cerrado
       expect(model.schedule.exceptions.length, 2);
       expect(model.schedule.exceptions.first.date, DateTime(2026, 12, 25));
       expect(model.schedule.exceptions.first.isClosed, true);
@@ -27,9 +30,9 @@ void main() {
       final file = File('assets/json/store_info.json');
       final jsonMap = jsonDecode(file.readAsStringSync());
       final model = StoreInfoModel.fromJson(jsonMap);
-      
+
       final entity = model.toEntity();
-      
+
       expect(entity.businessName, 'Marcos Malaga SAC');
       expect(entity.schedule.exceptions.first.date, DateTime(2026, 12, 25));
     });

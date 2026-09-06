@@ -51,12 +51,14 @@ class ProductsProvider extends AsyncNotifier<List<ProductEntity>> {
     required String sizeName,
     required int newStock,
   }) async {
-    await ref.read(updateStockUsecaseProvider).call(
-      productId: productId,
-      designId: designId,
-      sizeName: sizeName,
-      newStock: newStock,
-    );
+    await ref
+        .read(updateStockUsecaseProvider)
+        .call(
+          productId: productId,
+          designId: designId,
+          sizeName: sizeName,
+          newStock: newStock,
+        );
     ref.invalidateSelf();
   }
 }

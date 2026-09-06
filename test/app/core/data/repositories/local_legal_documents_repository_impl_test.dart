@@ -3,7 +3,8 @@ import 'package:marcos_malaga_app/app/core/data/datasources/local_legal_document
 import 'package:marcos_malaga_app/app/core/data/models/legal_document_model.dart';
 import 'package:marcos_malaga_app/app/core/data/repositories/local_legal_documents_repository_impl.dart';
 
-class FakeLocalLegalDocumentsDatasource implements LocalLegalDocumentsDatasource {
+class FakeLocalLegalDocumentsDatasource
+    implements LocalLegalDocumentsDatasource {
   @override
   Future<List<LegalDocumentModel>> fetchLegalDocuments() async {
     return [

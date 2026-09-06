@@ -11,7 +11,7 @@ void main() {
       lastName: 'Pérez',
       dni: '87654321',
       phone: '912345678',
-          );
+    );
 
     const tAddress = ShippingAddress(
       department: 'Lima',
@@ -75,17 +75,20 @@ void main() {
       expect(updated.session, equals(tSession));
     });
 
-    test('copyWith returns identical instance when no arguments are passed', () {
-      final state = CheckoutState(
-        customerInfo: tCustomer,
-        shippingAddress: tAddress,
-        paymentMethodId: 'yape',
-        session: tSession,
-      );
+    test(
+      'copyWith returns identical instance when no arguments are passed',
+      () {
+        final state = CheckoutState(
+          customerInfo: tCustomer,
+          shippingAddress: tAddress,
+          paymentMethodId: 'yape',
+          session: tSession,
+        );
 
-      final copy = state.copyWith();
+        final copy = state.copyWith();
 
-      expect(copy, equals(state));
-    });
+        expect(copy, equals(state));
+      },
+    );
   });
 }

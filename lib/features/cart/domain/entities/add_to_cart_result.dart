@@ -1,5 +1,1 @@
-enum AddToCartResult {
-  added,
-  cappedToMax,
-  alreadyAtMax,
-}
+enum AddToCartResult { added, cappedToMax, alreadyAtMax }

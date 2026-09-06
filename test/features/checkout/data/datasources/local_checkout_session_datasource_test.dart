@@ -4,13 +4,14 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:marcos_malaga_app/features/checkout/data/datasources/local_checkout_session_datasource.dart';
 import 'package:marcos_malaga_app/features/checkout/data/models/checkout_session_model.dart';
-import 'package:marcos_malaga_app/features/checkout/data/models/order_item_model.dart';
+
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 void main() {
   late SharedPreferences prefs;
   late LocalCheckoutSessionDatasource datasource;
 
-  const tOrderItem = OrderItemModel(
+  const tOrderItem = OrderItem(
     productId: 'prod-001',
     designId: 'des-001',
     sizeName: 'M',
@@ -36,46 +37,55 @@ void main() {
 
   group('LocalCheckoutSessionDatasource', () {
     group('createSession', () {
-      test('should create a session, save it to SharedPreferences and return model',
-          () async {
-        final session = await datasource.createSession(
-          items: const [tOrderItem],
-          clearCartOnSuccess: true,
-        );
+      test(
+        'should create a session, save it to SharedPreferences and return model',
+        () async {
+          final session = await datasource.createSession(
+            items: const [tOrderItem],
+            clearCartOnSuccess: true,
+          );
 
-        expect(session.id, startsWith('cs_'));
-        expect(session.items.length, 1);
-        expect(session.clearCartOnSuccess, isTrue);
+          expect(session.id, startsWith('cs_'));
+          expect(session.items.length, 1);
+          expect(session.clearCartOnSuccess, isTrue);
 
-        final storedString = prefs.getString('checkout_sessions');
-        expect(storedString, isNotNull);
+          final storedString = prefs.getString('checkout_sessions');
+          expect(storedString, isNotNull);
 
-        final decodedMap = jsonDecode(storedString!) as Map<String, dynamic>;
-        expect(decodedMap.containsKey(session.id), isTrue);
-        expect(decodedMap[session.id]['clearCartOnSuccess'], isTrue);
-      });
+          final decodedMap = jsonDecode(storedString!) as Map<String, dynamic>;
+          expect(decodedMap.containsKey(session.id), isTrue);
+          expect(decodedMap[session.id]['clearCartOnSuccess'], isTrue);
+        },
+      );
     });
 
     group('getSession', () {
-      test('should return CheckoutSessionModel when session exists in SharedPreferences',
-          () async {
-        final sessionsMap = {tSession.id: tSession.toJson()};
-        await prefs.setString('checkout_sessions', jsonEncode(sessionsMap));
+      test(
+        'should return CheckoutSessionModel when session exists in SharedPreferences',
+        () async {
+          final sessionsMap = {tSession.id: tSession.toJson()};
+          await prefs.setString('checkout_sessions', jsonEncode(sessionsMap));
 
-        final result = await datasource.getSession(tSession.id);
+          final result = await datasource.getSession(tSession.id);
 
-        expect(result, isNotNull);
-        expect(result!.id, equals(tSession.id));
-        expect(result.clearCartOnSuccess, equals(tSession.clearCartOnSuccess));
-        expect(result.items.first.productId, equals('prod-001'));
-      });
+          expect(result, isNotNull);
+          expect(result!.id, equals(tSession.id));
+          expect(
+            result.clearCartOnSuccess,
+            equals(tSession.clearCartOnSuccess),
+          );
+          expect(result.items.first.productId, equals('prod-001'));
+        },
+      );
 
-      test('should return null when session does not exist in SharedPreferences',
-          () async {
-        final result = await datasource.getSession('non_existent_id');
+      test(
+        'should return null when session does not exist in SharedPreferences',
+        () async {
+          final result = await datasource.getSession('non_existent_id');
 
-        expect(result, isNull);
-      });
+          expect(result, isNull);
+        },
+      );
 
       test('should return null when json is invalid/corrupted', () async {
         await prefs.setString('checkout_sessions', 'invalid_json_string');
@@ -99,25 +109,29 @@ void main() {
     });
 
     group('deleteSession', () {
-      test('should remove session from SharedPreferences if it exists',
-          () async {
-        final sessionsMap = {tSession.id: tSession.toJson()};
-        await prefs.setString('checkout_sessions', jsonEncode(sessionsMap));
+      test(
+        'should remove session from SharedPreferences if it exists',
+        () async {
+          final sessionsMap = {tSession.id: tSession.toJson()};
+          await prefs.setString('checkout_sessions', jsonEncode(sessionsMap));
 
-        await datasource.deleteSession(tSession.id);
+          await datasource.deleteSession(tSession.id);
 
-        final storedString = prefs.getString('checkout_sessions');
-        final decodedMap = jsonDecode(storedString!) as Map<String, dynamic>;
-        expect(decodedMap.containsKey(tSession.id), isFalse);
-      });
+          final storedString = prefs.getString('checkout_sessions');
+          final decodedMap = jsonDecode(storedString!) as Map<String, dynamic>;
+          expect(decodedMap.containsKey(tSession.id), isFalse);
+        },
+      );
 
-      test('should do nothing if session does not exist in SharedPreferences',
-          () async {
-        await datasource.deleteSession('non_existent_id');
+      test(
+        'should do nothing if session does not exist in SharedPreferences',
+        () async {
+          await datasource.deleteSession('non_existent_id');
 
-        final storedString = prefs.getString('checkout_sessions');
-        expect(storedString, isNull);
-      });
+          final storedString = prefs.getString('checkout_sessions');
+          expect(storedString, isNull);
+        },
+      );
     });
   });
 }

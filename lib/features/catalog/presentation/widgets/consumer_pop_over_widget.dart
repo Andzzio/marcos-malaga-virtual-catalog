@@ -6,7 +6,11 @@ import 'package:popover/popover.dart';
 class ConsumerPopOverWidget extends StatelessWidget {
   final String label;
   final Widget Function(BuildContext context, WidgetRef ref) bodyBuilder;
-  const ConsumerPopOverWidget({super.key, required this.bodyBuilder, this.label = ''});
+  const ConsumerPopOverWidget({
+    super.key,
+    required this.bodyBuilder,
+    this.label = '',
+  });
 
   @override
   Widget build(BuildContext context) {

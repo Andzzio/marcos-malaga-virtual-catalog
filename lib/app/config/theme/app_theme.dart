@@ -25,6 +25,7 @@ class AppTheme {
         surface: scaffoldBackground,
         error: error,
       ),
+      dividerTheme: DividerThemeData(color: Colors.grey.shade400),
       textTheme: TextTheme(
         displayLarge: GoogleFonts.instrumentSerif(
           color: textColor,

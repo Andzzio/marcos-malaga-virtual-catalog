@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:marcos_malaga_app/app/shared/widgets/image/custom_image.dart';
 import 'package:marcos_malaga_app/features/catalog/presentation/widgets/product_price.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 
 class OrderRow extends ConsumerWidget {
   const OrderRow({super.key, required this.orderItem, this.style});

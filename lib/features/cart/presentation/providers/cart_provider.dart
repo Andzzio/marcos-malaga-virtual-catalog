@@ -7,7 +7,7 @@ import 'package:marcos_malaga_app/features/cart/domain/entities/add_to_cart_resu
 import 'package:marcos_malaga_app/features/cart/domain/entities/cart_item_entity.dart';
 import 'package:marcos_malaga_app/features/cart/presentation/states/cart_state.dart';
 import 'package:marcos_malaga_app/features/cart/presentation/states/cart_display_item.dart';
-import 'package:marcos_malaga_app/features/checkout/domain/entities/order_item.dart';
+import 'package:marcos_malaga_app/app/shared/domain/entities/order/order_item.dart';
 import 'package:marcos_malaga_app/providers/features/cart/cart_providers.dart';
 import 'package:marcos_malaga_app/providers/features/checkout/checkout_providers.dart';
 

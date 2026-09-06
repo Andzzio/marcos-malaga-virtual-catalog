@@ -8,11 +8,7 @@ void main() {
     departmentCode: '15',
   );
 
-  final tJson = {
-    'code': '1501',
-    'name': 'Lima',
-    'departmentCode': '15',
-  };
+  final tJson = {'code': '1501', 'name': 'Lima', 'departmentCode': '15'};
 
   group('ProvinceModel', () {
     test('supports value equality', () {

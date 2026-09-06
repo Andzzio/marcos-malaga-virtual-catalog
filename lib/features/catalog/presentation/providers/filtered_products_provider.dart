@@ -58,7 +58,8 @@ class FilteredProductsNotifier extends AsyncNotifier<List<ProductEntity>> {
 
       if (filters.category != null && filters.category!.isNotEmpty) {
         final catMatch = product.categoryIds.any(
-            (c) => c.toLowerCase() == filters.category!.toLowerCase());
+          (c) => c.toLowerCase() == filters.category!.toLowerCase(),
+        );
         if (!catMatch) return false;
       }
 

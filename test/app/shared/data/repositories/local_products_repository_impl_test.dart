@@ -62,26 +62,36 @@ void main() {
       expect(result, isEmpty);
     });
 
-    test('should return ProductEntity when getProductById finds a product', () async {
-      when(() => mockDatasource.fetchProductById(any()))
-          .thenAnswer((_) async => tProductModel);
+    test(
+      'should return ProductEntity when getProductById finds a product',
+      () async {
+        when(
+          () => mockDatasource.fetchProductById(any()),
+        ).thenAnswer((_) async => tProductModel);
 
-      final result = await repository.getProductById('PROD-001');
+        final result = await repository.getProductById('PROD-001');
 
-      verify(() => mockDatasource.fetchProductById('PROD-001')).called(1);
-      expect(result, isA<ProductEntity>());
-      expect(result, equals(tProductEntity));
-    });
+        verify(() => mockDatasource.fetchProductById('PROD-001')).called(1);
+        expect(result, isA<ProductEntity>());
+        expect(result, equals(tProductEntity));
+      },
+    );
 
-    test('should return null when getProductById does not find a product', () async {
-      when(() => mockDatasource.fetchProductById(any()))
-          .thenAnswer((_) async => null);
+    test(
+      'should return null when getProductById does not find a product',
+      () async {
+        when(
+          () => mockDatasource.fetchProductById(any()),
+        ).thenAnswer((_) async => null);
 
-      final result = await repository.getProductById('NON-EXISTENT-ID');
+        final result = await repository.getProductById('NON-EXISTENT-ID');
 
-      verify(() => mockDatasource.fetchProductById('NON-EXISTENT-ID')).called(1);
-      expect(result, isNull);
-    });
+        verify(
+          () => mockDatasource.fetchProductById('NON-EXISTENT-ID'),
+        ).called(1);
+        expect(result, isNull);
+      },
+    );
   });
 
   group('LocalProductsRepositoryImpl Write Tests', () {
@@ -97,32 +107,47 @@ void main() {
       deletedAt: null,
     );
 
-    test('createProduct calls datasource.createProduct with converted model', () async {
-      when(() => mockDatasource.createProduct(any())).thenAnswer((_) async {});
+    test(
+      'createProduct calls datasource.createProduct with converted model',
+      () async {
+        when(
+          () => mockDatasource.createProduct(any()),
+        ).thenAnswer((_) async {});
 
-      await repository.createProduct(tProductEntity);
+        await repository.createProduct(tProductEntity);
 
-      verify(() => mockDatasource.createProduct(any())).called(1);
-      verifyNoMoreInteractions(mockDatasource);
-    });
+        verify(() => mockDatasource.createProduct(any())).called(1);
+        verifyNoMoreInteractions(mockDatasource);
+      },
+    );
 
-    test('updateProduct calls datasource.updateProduct with converted model', () async {
-      when(() => mockDatasource.updateProduct(any())).thenAnswer((_) async {});
+    test(
+      'updateProduct calls datasource.updateProduct with converted model',
+      () async {
+        when(
+          () => mockDatasource.updateProduct(any()),
+        ).thenAnswer((_) async {});
 
-      await repository.updateProduct(tProductEntity);
+        await repository.updateProduct(tProductEntity);
 
-      verify(() => mockDatasource.updateProduct(any())).called(1);
-      verifyNoMoreInteractions(mockDatasource);
-    });
+        verify(() => mockDatasource.updateProduct(any())).called(1);
+        verifyNoMoreInteractions(mockDatasource);
+      },
+    );
 
-    test('softDeleteProduct calls datasource.softDeleteProduct with id', () async {
-      when(() => mockDatasource.softDeleteProduct(any())).thenAnswer((_) async {});
+    test(
+      'softDeleteProduct calls datasource.softDeleteProduct with id',
+      () async {
+        when(
+          () => mockDatasource.softDeleteProduct(any()),
+        ).thenAnswer((_) async {});
 
-      await repository.softDeleteProduct('PROD-001');
+        await repository.softDeleteProduct('PROD-001');
 
-      verify(() => mockDatasource.softDeleteProduct('PROD-001')).called(1);
-      verifyNoMoreInteractions(mockDatasource);
-    });
+        verify(() => mockDatasource.softDeleteProduct('PROD-001')).called(1);
+        verifyNoMoreInteractions(mockDatasource);
+      },
+    );
 
     test('restoreProduct calls datasource.restoreProduct with id', () async {
       when(() => mockDatasource.restoreProduct(any())).thenAnswer((_) async {});
@@ -133,28 +158,35 @@ void main() {
       verifyNoMoreInteractions(mockDatasource);
     });
 
-    test('updateStock calls datasource.updateStock with correct params', () async {
-      when(() => mockDatasource.updateStock(
-        productId: any(named: 'productId'),
-        designId: any(named: 'designId'),
-        sizeName: any(named: 'sizeName'),
-        newStock: any(named: 'newStock'),
-      )).thenAnswer((_) async {});
+    test(
+      'updateStock calls datasource.updateStock with correct params',
+      () async {
+        when(
+          () => mockDatasource.updateStock(
+            productId: any(named: 'productId'),
+            designId: any(named: 'designId'),
+            sizeName: any(named: 'sizeName'),
+            newStock: any(named: 'newStock'),
+          ),
+        ).thenAnswer((_) async {});
 
-      await repository.updateStock(
-        productId: 'PROD-001',
-        designId: 'DES-001',
-        sizeName: 'M',
-        newStock: 10,
-      );
+        await repository.updateStock(
+          productId: 'PROD-001',
+          designId: 'DES-001',
+          sizeName: 'M',
+          newStock: 10,
+        );
 
-      verify(() => mockDatasource.updateStock(
-        productId: 'PROD-001',
-        designId: 'DES-001',
-        sizeName: 'M',
-        newStock: 10,
-      )).called(1);
-      verifyNoMoreInteractions(mockDatasource);
-    });
+        verify(
+          () => mockDatasource.updateStock(
+            productId: 'PROD-001',
+            designId: 'DES-001',
+            sizeName: 'M',
+            newStock: 10,
+          ),
+        ).called(1);
+        verifyNoMoreInteractions(mockDatasource);
+      },
+    );
   });
 }
