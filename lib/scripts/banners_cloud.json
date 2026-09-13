@@ -1,0 +1,41 @@
+[
+  {
+    "actionType": "openCategory",
+    "actionValue": "coleccion_nocturna",
+    "createdAt": "2026-09-13T15:51:57-05:00",
+    "desktopMediaType": "video",
+    "desktopUrl": "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/banners%2Fbanner_4.mp4?alt=media",
+    "id": "BANNER-001",
+    "index": 0,
+    "isActive": true,
+    "mobileMediaType": "video",
+    "mobileUrl": "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/banners%2Fbanner_4_mobile.mp4?alt=media",
+    "title": "Colección Nocturna"
+  },
+  {
+    "actionType": "openCategory",
+    "actionValue": "coleccion_brisa",
+    "createdAt": "2026-09-13T15:51:57-05:00",
+    "desktopMediaType": "image",
+    "desktopUrl": "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/banners%2Fbanner_2_original.webp?alt=media",
+    "id": "BANNER-002",
+    "index": 1,
+    "isActive": true,
+    "mobileMediaType": "image",
+    "mobileUrl": "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/banners%2Fbanner_2_mobile_original.webp?alt=media",
+    "title": "Colección Brisa"
+  },
+  {
+    "actionType": "openCategory",
+    "actionValue": "coleccion_aurora",
+    "createdAt": "2026-09-13T15:51:57-05:00",
+    "desktopMediaType": "image",
+    "desktopUrl": "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/banners%2Fbanner_3_original.webp?alt=media",
+    "id": "BANNER-003",
+    "index": 2,
+    "isActive": true,
+    "mobileMediaType": "image",
+    "mobileUrl": "https://firebasestorage.googleapis.com/v0/b/marcos-malaga-app.firebasestorage.app/o/banners%2Fbanner_3_mobile_original.webp?alt=media",
+    "title": "Colección Aurora"
+  }
+]

@@ -57,6 +57,9 @@ ios/Runner/GoogleService-Info.plist
 # Scripts Secrets and Garbage
 lib/scripts/serviceAccountKey.json
 lib/scripts/output_processed_images/
+lib/scripts/output_processed_banners/
 lib/scripts/*.exe
 lib/scripts/url_mapping.json
+lib/scripts/banners_url_mapping.json
+lib/scripts/cwebp
 lib/scripts/cwebp.exe

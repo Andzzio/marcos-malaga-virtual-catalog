@@ -4,8 +4,8 @@ import 'package:marcos_malaga_app/features/catalog/domain/entities/banner_entity
 void main() {
   const tBanner = BannerEntity(
     id: 'BANNER-001',
-    desktopImageUrl: 'assets/images/banners/banner_1.png',
-    mobileImageUrl: 'assets/images/banners/banner_1.png',
+    desktopUrl: 'assets/images/banners/banner_1.png',
+    mobileUrl: 'assets/images/banners/banner_1.png',
     title: 'New Arrivals: Warmer Days Ahead',
     actionType: BannerActionType.openCategory,
     actionValue: 'vestidos',
@@ -16,8 +16,8 @@ void main() {
     test('should be a subclass of Equatable and support value equality', () {
       const tBanner2 = BannerEntity(
         id: 'BANNER-001',
-        desktopImageUrl: 'assets/images/banners/banner_1.png',
-        mobileImageUrl: 'assets/images/banners/banner_1.png',
+        desktopUrl: 'assets/images/banners/banner_1.png',
+        mobileUrl: 'assets/images/banners/banner_1.png',
         title: 'New Arrivals: Warmer Days Ahead',
         actionType: BannerActionType.openCategory,
         actionValue: 'vestidos',

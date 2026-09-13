@@ -19,8 +19,8 @@ void main() {
 
   const tBannerModel = BannerModel(
     id: 'BANNER-001',
-    desktopImageUrl: 'assets/images/banners/banner_1.png',
-    mobileImageUrl: 'assets/images/banners/banner_1.png',
+    desktopUrl: 'assets/images/banners/banner_1.png',
+    mobileUrl: 'assets/images/banners/banner_1.png',
     title: 'New Arrivals',
     actionType: 'openCategory',
     actionValue: 'vestidos',

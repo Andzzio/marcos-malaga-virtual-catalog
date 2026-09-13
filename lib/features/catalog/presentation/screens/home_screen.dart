@@ -51,6 +51,11 @@ class HomeScreen extends StatelessWidget {
                   builder: (context, ref, productsAsync) {
                     return productsAsync.when(
                       data: (products) {
+                        if (products.isEmpty) {
+                          return const SliverToBoxAdapter(
+                            child: SizedBox.shrink(),
+                          );
+                        }
                         final heroProduct = products.first;
                         return ProductView(
                           product: heroProduct,

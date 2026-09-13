@@ -31,8 +31,26 @@ import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/soft_de
 import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/restore_products_usecase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+
+
+
+import 'package:marcos_malaga_app/app/shared/data/services/image_processing_service_impl.dart';
+import 'package:marcos_malaga_app/app/shared/domain/services/image_processing_service.dart';
+import 'package:marcos_malaga_app/app/shared/domain/usecases/process_banner_image_usecase.dart';
+import 'package:marcos_malaga_app/app/shared/domain/usecases/process_product_image_usecase.dart';
+import 'package:marcos_malaga_app/app/shared/data/services/url_launcher_service_impl.dart';
+import 'package:marcos_malaga_app/app/shared/domain/services/url_launcher_service.dart';
+import 'package:marcos_malaga_app/app/shared/domain/usecases/launch_external_url_usecase.dart';
+
+
 import 'package:marcos_malaga_app/app/shared/data/datasources/firestore_products_datasource.dart';
 import 'package:marcos_malaga_app/app/shared/data/repositories/firestore_products_repository_impl.dart';
+import 'package:marcos_malaga_app/app/shared/data/datasources/firebase_storage_datasource.dart';
+import 'package:marcos_malaga_app/app/shared/domain/repositories/product_images_repository.dart';
+import 'package:marcos_malaga_app/app/shared/data/repositories/firebase_product_images_repository_impl.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/domain/usecases/upload_product_image_usecase.dart';
 
 final sharedPreferencesProvider = Provider<SharedPreferences>(
   (ref) => throw UnimplementedError(),
@@ -144,7 +162,10 @@ final createOrderUseCaseProvider = Provider<CreateOrderUseCase>((ref) {
 });
 
 final firebaseFirestoreProvider = Provider<FirebaseFirestore>(
-  (ref) => FirebaseFirestore.instance,
+  (ref) => FirebaseFirestore.instanceFor(
+    app: Firebase.app(),
+    databaseId: 'default',
+  ),
 );
 
 final firestoreProductsDatasourceProvider = Provider<FirestoreProductsDatasource>(
@@ -154,3 +175,48 @@ final firestoreProductsDatasourceProvider = Provider<FirestoreProductsDatasource
 final firestoreProductsRepositoryProvider = Provider<FirestoreProductsRepositoryImpl>(
   (ref) => FirestoreProductsRepositoryImpl(ref.watch(firestoreProductsDatasourceProvider)),
 );
+
+final firebaseStorageProvider = Provider<FirebaseStorage>(
+  (ref) => FirebaseStorage.instanceFor(
+    app: Firebase.app(),
+    bucket: 'marcos-malaga-app.firebasestorage.app',
+  ),
+);
+
+final firebaseStorageDatasourceProvider = Provider<FirebaseStorageDatasource>(
+  (ref) => FirebaseStorageDatasource(ref.watch(firebaseStorageProvider)),
+);
+
+final imageProcessingServiceProvider = Provider<ImageProcessingService>(
+  (ref) => const ImageProcessingServiceImpl(),
+);
+
+final processBannerImageUsecaseProvider = Provider<ProcessBannerImageUsecase>(
+  (ref) => ProcessBannerImageUsecase(service: ref.watch(imageProcessingServiceProvider)),
+);
+
+final processProductImageUsecaseProvider = Provider<ProcessProductImageUsecase>(
+  (ref) => ProcessProductImageUsecase(service: ref.watch(imageProcessingServiceProvider)),
+);
+
+final productImagesRepositoryProvider = Provider<ProductImagesRepository>(
+  (ref) => FirebaseProductImagesRepositoryImpl(
+    ref.watch(firebaseStorageDatasourceProvider),
+    imageService: ref.watch(imageProcessingServiceProvider),
+  ),
+);
+
+final uploadProductImageUsecaseProvider = Provider<UploadProductImageUsecase>(
+  (ref) => UploadProductImageUsecase(repo: ref.watch(productImagesRepositoryProvider)),
+);
+
+final urlLauncherServiceProvider = Provider<UrlLauncherService>(
+  (ref) => const UrlLauncherServiceImpl(),
+);
+
+final launchExternalUrlUsecaseProvider = Provider<LaunchExternalUrlUsecase>(
+  (ref) => LaunchExternalUrlUsecase(service: ref.watch(urlLauncherServiceProvider)),
+);
+
+
+

@@ -78,6 +78,7 @@ class _MapViewState extends ConsumerState<MapView> {
                     spacing: 10,
                     children: [
                       FloatingActionButton(
+                        heroTag: 'map_zoom_in',
                         onPressed: () {
                           _mapController.move(
                             _mapController.camera.center,
@@ -88,6 +89,7 @@ class _MapViewState extends ConsumerState<MapView> {
                         child: FaIcon(FontAwesomeIcons.plus),
                       ),
                       FloatingActionButton(
+                        heroTag: 'map_zoom_out',
                         onPressed: () {
                           _mapController.move(
                             _mapController.camera.center,

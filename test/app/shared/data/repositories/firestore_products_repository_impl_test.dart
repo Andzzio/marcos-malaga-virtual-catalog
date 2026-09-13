@@ -4,19 +4,18 @@ import 'package:marcos_malaga_app/app/shared/data/datasources/firestore_products
 import 'package:marcos_malaga_app/app/shared/data/models/firestore/firestore_product_model.dart';
 import 'package:marcos_malaga_app/app/shared/data/models/firestore/firestore_product_design_model.dart';
 import 'package:marcos_malaga_app/app/shared/data/models/firestore/firestore_product_size_model.dart';
-import 'package:marcos_malaga_app/app/shared/domain/entities/product_entity.dart';
-import 'package:marcos_malaga_app/app/shared/domain/entities/product_design_entity.dart';
-import 'package:marcos_malaga_app/app/shared/domain/entities/product_size_entity.dart';
 import 'package:marcos_malaga_app/app/shared/data/repositories/firestore_products_repository_impl.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class MockFirestoreProductsDatasource extends Mock implements FirestoreProductsDatasource {}
+class MockFirestoreProductsDatasource extends Mock
+    implements FirestoreProductsDatasource {}
+
 class FakeFirestoreProductModel extends Fake implements FirestoreProductModel {}
 
 void main() {
   late MockFirestoreProductsDatasource datasource;
   late FirestoreProductsRepositoryImpl repository;
-  
+
   setUpAll(() {
     registerFallbackValue(FakeFirestoreProductModel());
   });
@@ -59,7 +58,9 @@ void main() {
 
   group('FirestoreProductsRepositoryImpl', () {
     test('getProducts returns entities from datasource', () async {
-      when(() => datasource.fetchProducts()).thenAnswer((_) async => [productModel]);
+      when(
+        () => datasource.fetchProducts(),
+      ).thenAnswer((_) async => [productModel]);
 
       final result = await repository.getProducts();
 
@@ -68,7 +69,9 @@ void main() {
     });
 
     test('getProductById returns entity from datasource', () async {
-      when(() => datasource.fetchProductById('prod1')).thenAnswer((_) async => productModel);
+      when(
+        () => datasource.fetchProductById('prod1'),
+      ).thenAnswer((_) async => productModel);
 
       final result = await repository.getProductById('prod1');
 
@@ -77,7 +80,9 @@ void main() {
     });
 
     test('getProductById returns null if datasource returns null', () async {
-      when(() => datasource.fetchProductById('prod1')).thenAnswer((_) async => null);
+      when(
+        () => datasource.fetchProductById('prod1'),
+      ).thenAnswer((_) async => null);
 
       final result = await repository.getProductById('prod1');
 
@@ -86,7 +91,9 @@ void main() {
     });
 
     test('getDesignById returns entity from datasource', () async {
-      when(() => datasource.fetchDesignById('prod1', 'design1')).thenAnswer((_) async => designModel);
+      when(
+        () => datasource.fetchDesignById('prod1', 'design1'),
+      ).thenAnswer((_) async => designModel);
 
       final result = await repository.getDesignById('prod1', 'design1');
 
@@ -95,7 +102,9 @@ void main() {
     });
 
     test('getDesignById returns null if not found', () async {
-      when(() => datasource.fetchDesignById('prod1', 'design1')).thenAnswer((_) async => null);
+      when(
+        () => datasource.fetchDesignById('prod1', 'design1'),
+      ).thenAnswer((_) async => null);
 
       final result = await repository.getDesignById('prod1', 'design1');
 
@@ -104,12 +113,16 @@ void main() {
     });
 
     test('getSizeByName returns entity from datasource', () async {
-      when(() => datasource.fetchSizeByName('prod1', 'design1', 'M')).thenAnswer((_) async => sizeModel);
+      when(
+        () => datasource.fetchSizeByName('prod1', 'design1', 'M'),
+      ).thenAnswer((_) async => sizeModel);
 
       final result = await repository.getSizeByName('prod1', 'design1', 'M');
 
       expect(result, productEntity.designs.first.sizes.first);
-      verify(() => datasource.fetchSizeByName('prod1', 'design1', 'M')).called(1);
+      verify(
+        () => datasource.fetchSizeByName('prod1', 'design1', 'M'),
+      ).called(1);
     });
 
     test('createProduct calls datasource with correct model', () async {
@@ -129,7 +142,9 @@ void main() {
     });
 
     test('softDeleteProduct calls datasource', () async {
-      when(() => datasource.softDeleteProduct('prod1')).thenAnswer((_) async {});
+      when(
+        () => datasource.softDeleteProduct('prod1'),
+      ).thenAnswer((_) async {});
 
       await repository.softDeleteProduct('prod1');
 
@@ -145,12 +160,14 @@ void main() {
     });
 
     test('updateStock calls datasource', () async {
-      when(() => datasource.updateStock(
-        productId: 'prod1',
-        designId: 'design1',
-        sizeName: 'M',
-        newStock: 5,
-      )).thenAnswer((_) async {});
+      when(
+        () => datasource.updateStock(
+          productId: 'prod1',
+          designId: 'design1',
+          sizeName: 'M',
+          newStock: 5,
+        ),
+      ).thenAnswer((_) async {});
 
       await repository.updateStock(
         productId: 'prod1',
@@ -159,12 +176,14 @@ void main() {
         newStock: 5,
       );
 
-      verify(() => datasource.updateStock(
-        productId: 'prod1',
-        designId: 'design1',
-        sizeName: 'M',
-        newStock: 5,
-      )).called(1);
+      verify(
+        () => datasource.updateStock(
+          productId: 'prod1',
+          designId: 'design1',
+          sizeName: 'M',
+          newStock: 5,
+        ),
+      ).called(1);
     });
   });
 }

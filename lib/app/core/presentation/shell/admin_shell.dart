@@ -170,6 +170,13 @@ class _AdminNavItems extends StatelessWidget {
         ),
         _AdminNavItem(
           style: style,
+          icon: FontAwesomeIcons.images,
+          label: 'Banners',
+          route: '/admin/banners',
+          isActive: currentPath.startsWith('/admin/banners'),
+        ),
+        _AdminNavItem(
+          style: style,
           icon: FontAwesomeIcons.clipboardList,
           label: 'Pedidos',
           route: '/admin/orders',

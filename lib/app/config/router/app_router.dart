@@ -18,8 +18,11 @@ import 'package:marcos_malaga_app/features/legal/presentation/screens/terms_scre
 import 'package:marcos_malaga_app/features/legal/presentation/screens/complaints_book_screen.dart';
 import 'package:marcos_malaga_app/app/core/presentation/shell/admin_shell.dart';
 import 'package:marcos_malaga_app/features/crm_inventory/presentation/screens/inventory_screen.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/presentation/screens/product_batch_screen.dart';
+import 'package:marcos_malaga_app/features/crm_inventory/presentation/providers/product_batch_state.dart';
 import 'package:marcos_malaga_app/features/crm_orders/presentation/screens/crm_orders_screen.dart';
 import 'package:marcos_malaga_app/features/crm_customers/presentation/screens/crm_customers_screen.dart';
+import 'package:marcos_malaga_app/features/crm_banners/presentation/screens/crm_banners_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) {
   return GoRouter(
@@ -158,6 +161,28 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 path: 'inventory',
                 name: 'admin-inventory',
                 builder: (context, state) => const InventoryScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'batch',
+                    name: 'admin-inventory-batch',
+                    builder: (context, state) {
+                      final extra = state.extra as Map<String, dynamic>?;
+                      final mode = extra?['mode'] as ProductBatchMode? ??
+                          ProductBatchMode.create;
+                      final products =
+                          extra?['products'] as List<ProductEntity>? ?? [];
+                      return ProductBatchScreen(
+                        mode: mode,
+                        initialProducts: products,
+                      );
+                    },
+                  ),
+                ],
+              ),
+              GoRoute(
+                path: 'banners',
+                name: 'admin-banners',
+                builder: (context, state) => const CrmBannersScreen(),
               ),
               GoRoute(
                 path: 'orders',

@@ -49,7 +49,11 @@ class ProductGrid<T extends AsyncNotifier<List<ProductEntity>>>
           child: SliverPadding(
             padding: EdgeInsetsGeometry.symmetric(horizontal: 10),
             sliver: SliverGrid.builder(
-              itemCount: itemCount,
+              itemCount: productsAsync.maybeWhen(
+                data: (products) =>
+                    products.length < itemCount ? products.length : itemCount,
+                orElse: () => itemCount,
+              ),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: isCatalog && ResponsiveTheme.isMobile(context)
                     ? 2
@@ -71,6 +75,9 @@ class ProductGrid<T extends AsyncNotifier<List<ProductEntity>>>
               itemBuilder: (context, index) {
                 return productsAsync.when(
                   data: (products) {
+                    if (index >= products.length) {
+                      return const SizedBox.shrink();
+                    }
                     final product = products[index];
                     return ProductCard(
                       product: product,

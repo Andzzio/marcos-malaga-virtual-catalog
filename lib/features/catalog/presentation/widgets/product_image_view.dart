@@ -57,7 +57,9 @@ class _ProductImageViewState extends State<ProductImageView> {
                   Center(
                     child: PhotoView(
                       tightMode: true,
-                      imageProvider: AssetImage(imageUrl),
+                      imageProvider: imageUrl.startsWith('http')
+                          ? NetworkImage(imageUrl)
+                          : AssetImage(imageUrl) as ImageProvider,
                       heroAttributes: PhotoViewHeroAttributes(
                         tag:
                             '${widget.heroPrefix}_photo_view_${widget.product.id}',
@@ -98,6 +100,7 @@ class _ProductImageViewState extends State<ProductImageView> {
             alignment: Alignment.center,
             children: [
               PageView.builder(
+                itemCount: images.length,
                 controller: _pageController,
                 onPageChanged: (newPage) {
                   setState(() {
